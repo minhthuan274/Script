@@ -541,8 +541,7 @@ Vậy ta lên đường thôi&. Dù không biết có ăn hay không! Con giun x
 
 @action
 -message id="ヒミコ", face="笑顔", voice="ヒミコ##S01_ジパング編_プロローグ#0018.ogg"
-Hahaha! Look!
-I took advantage of their trap&, just like I said I would!
+Hahaha! Nhìn xem! Thấy ta lợi dụng lỗ hổng từ cái bẫy của địch chưa&, ta đã bảo mà!
 \
 // ふふふふ！
 // さすが私です！
@@ -550,15 +549,14 @@ I took advantage of their trap&, just like I said I would!
 
 @action
 -message id="兵士１"
-<FONT interval=60>Really&.&.&.? Looks like we fell right into the trap to me&.&.&.</FONT>
+<FONT interval=60>Thật ạ? Chúng thuộc hạ lại thấy như ta rơi vào tròng thì đúng hơn&.</FONT>
 \
 // <FONT interval=60>そうでしょうか……
 // まんまと、術中にはまったような…</FONT>
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0019.ogg"
-That's not true! Look at who's in the
-general's seat&, sitting proudly as usual&.&.&.
+Làm gì có! Nhìn lên cái ghế chủ tướng của chúng kìa&, ả hẳn giờ đang ngồi chễnh chệ như mọi ngày&.&.&.
 \
 // そんなことはありません！
 // ほら、いつものように、
@@ -566,14 +564,14 @@ general's seat&, sitting proudly as usual&.&.&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0020.ogg"
-Um&.&.&. What? Where is she&.&.&. Where did she go!?
+Êh&.&.&. Hả? Cô ta đâu&.&.&. Cô ta đâu rồi!?
 \
 // あれ…あれれ？
 // あの人は、どこ……どこにいるんですかっ！？
 
 @action
 -message id="織田信長", log_name="？？？", message_name="？？？", face="None", voice="織田信長##S01_ジパング編_プロローグ#0001.ogg"
-You sure are dumb&.
+Cô ngốc quá đó&.
 \
 // お前って、本当に間抜けだよな。
 
@@ -592,7 +590,7 @@ You sure are dumb&.
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0022.ogg"
-<FONT interval=30 speed=400 effect="Jump">Ah!?</FONT> Why did the curtains fall by themselves?
+<FONT interval=30 speed=400 effect="Jump">Ah!?</FONT> Tại sao màn cửa lại tự kéo xuống?
 \
 // <FONT interval=30 speed=400 effect="Jump">きゃっ…！？</FONT>...
 // 誰もいないのに、陣幕が落ちた…！？
@@ -600,7 +598,7 @@ You sure are dumb&.
 //＠↓《冷静です》
 @action
 -message id="織田信長", log_name="？？？", message_name="？？？", face="None", voice="織田信長##S01_ジパング編_プロローグ#0002.ogg"
-Muskets&, ready&.
+Xạ thủ&, vào vị trí&.
 \
 // 鉄砲隊、構え。
 
@@ -608,13 +606,13 @@ Muskets&, ready&.
 
 @action
 -message id="兵士１"
-Enemy troops!?
+Có địch?
 \
 // てっ、敵兵！？
 
 @action
 -message id="兵士２"
-Musketeers! We're surrounded! Lady Himiko!
+Là xạ thủ! Thưa công nương Himiko&, ta bị vây rồi!
 \
 // 鉄砲隊です！
 // 囲まれました！
@@ -622,8 +620,7 @@ Musketeers! We're surrounded! Lady Himiko!
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0023.ogg"
-<FONT interval=30 speed=200 effect="OffCenter">W&-What!?</FONT> I thought there was nobody here!
-Why are there so many of them!?
+<FONT interval=30 speed=200 effect="OffCenter">W&-What!?</FONT> Ta tưởng không có ai ở đây chứ! Sao giờ nhiều quá vậy!?
 \
 // <FONT interval=30 speed=200 effect="OffCenter">え、ええー！？</FONT>...
 // だ、誰もいないと思っていたら、こんなに…！
@@ -632,10 +629,7 @@ Why are there so many of them!?
 //＠↓《あきれ気味です》
 @action
 -message id="織田信長", log_name="？？？", message_name="？？？", face="None", voice="織田信長##S01_ジパング編_プロローグ#0003.ogg"
-Because it's a trap&, of course&. Who would even
-charge in like this? You understand you're
-the leader&, responsible for the lives of all your
-troops&, don't you? How stupid can you get&.&.&.
+Vì nó là cái bẫy chứ sao trăng gì&. Làm quái có kẻ nào chịu khoang tay ngồi sẵn đợi cô tới trói? Tướng cầm quân kiểu gì ngốc mà thế không biết? Bao nhiêu sinh mạng nằm trong tay cô đó&.&.&.
 \
 // 罠だからに決まってるだろ。
 // っていうか、普通、突っ込んでくるか？
@@ -653,8 +647,7 @@ That voice&.&.&.
 
 @action
 -message id="織田信長", face="笑顔", voice="織田信長##S01_ジパング編_プロローグ#0004.ogg"
-Hey&, Himiko&. Long time no see&.
-Glad to see you're still as dumb as always&.
+Chào Himiko&. Lâu ngày không gặp&. Mừng vì cô vẫn ngốc như ngày nào&.
 \
 // よお、ヒミコ。
 // 久しぶりだな。
@@ -662,9 +655,7 @@ Glad to see you're still as dumb as always&.
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0025.ogg"
-We made it this far&, and you catch us
-in a trap&, Nobunaga? This is unfair!
-Victory was right before our eyes!
+Bọn tôi bị mắc bẫy ư? Ăn gian! Bọn này sắp thắng rồi mà!
 \
 // せっかくここまで辿り着いたのに、
 // 罠を仕掛けるなんて卑怯です、信長さん！
@@ -676,15 +667,14 @@ Victory was right before our eyes!
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0005.ogg"
-<FONT interval=60>&.&.&.Haa&.
-Where does that confidence come from&, I wonder&.</FONT>
+<FONT interval=60>Ủa&, đâu ra cái tự tin đó thế&.</FONT>
 \
 // <FONT interval=60>……はあ…
 // その自信が、どこから生まれているんだか…</FONT>
 
 @action
 -message id="ヒミコ", face="笑顔", voice="ヒミコ##S01_ジパング編_プロローグ#0026.ogg"
-From this bountiful chest&. <FONT speed=200 effect="Jump">See?</FONT>
+Dĩ nhiên là từ bộ ngực nảy nở này&. <FONT speed=200 effect="Jump">See?</FONT>
 \
 // このこぼれ落ちそうな胸からです。..
 // <FONT speed=200 effect="Jump">えっへん。</FONT>
@@ -692,38 +682,36 @@ From this bountiful chest&. <FONT speed=200 effect="Jump">See?</FONT>
 //＠↓《冒頭は嘲笑です》
 @action
 -message id="織田信長", face="笑顔", voice="織田信長##S01_ジパング編_プロローグ#0006.ogg"
-&.&.&.Ha&. Bountiful&, you say?
+Haha&. Nảy nở á?
 \
 // ……はっ。
 // こぼれ落ちそう、ねぇ。
 
 @action
 -message id="ヒミコ", face="シリアス", voice="ヒミコ##S01_ジパング編_プロローグ#0027.ogg"
-Hey&, stop laughing! Yours aren't that big either!
+Nè&, không được cười! Của cô cũng chả to hơn tôi!
 \
 // あー、笑いましたね！
 // 信長さんだって、そんなに大きくないくせに！
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0007.ogg"
-They're just hidden behind armor&.
-They're not as pathetic as yours&.
+Vì chúng được giấu kĩ bên dưới lớp chiến y&. Chứ đâu có thảm hại như cô&.
 \
 // これは鎧で隠れてるだけだ。
 // 貧相なお前の胸と一緒にすんな。
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0028.ogg"
-<FONT speed=200 effect="OffCenter">Wha&.&.&.!</FONT> My chest is full of hope!
+<FONT speed=200 effect="OffCenter">Gì chứứứ!</FONT> Ngực tôi là hiện thân của niềm khát vọng đó!
 \
 // <FONT speed=200 effect="OffCenter">わっ…！</FONT>...
 // 私の胸には希望が詰まってるんです！
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0008.ogg"
-What a tiny hope&.
-You have plenty of evil intentions&, though&.
-To think that's what's behind that cute guise&.
+Niềm khát vọng rõ le lói&. 
+Tôi thừa biết&, cô thoạt trông tính con nít chứ trong đầu cô đặc nghẹt mấy suy định ranh ma&. 
 \
 // ちっちゃい希望だなぁ。
 // 腹には黒いモンがたっぷり詰まってるけど。
@@ -731,10 +719,7 @@ To think that's what's behind that cute guise&.
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0009.ogg"
-I remember all the times we had together&.
-The time you made me eat a mud cake&, when
-you took the ladder away after I climbed up&,
-when you dropped me into a trap hole&.&.&.
+Tôi còn nhớ lúc ta ở chung&. Hết cho tôi ăn bùn đến rút thang khiến tôi ngã chổng vó xuống hố&.
 \
 // 昔から色々ちょっかいかけてくれたよな。
 // お遊びでドロ饅頭を食わされたり、
@@ -743,14 +728,13 @@ when you dropped me into a trap hole&.&.&.
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0029.ogg"
-<FONT interval=60>&.&.&.Youthful indiscretions&.</FONT>
+<FONT interval=60>&.&.&.Ơ&, nông nỗi tuổi trẻ ấy mà&.</FONT>
 \
 // <FONT interval=60>…わ、若さゆえの過ちです。</FONT>
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0010.ogg"
-Hey&. Why don't you look me in
-the eyes when you speak?
+Hey&. Vậy sao không dám nhìn thẳng mặt tôi khi nói?
 \
 // おいこら。
 // こっち見て話せ。
@@ -764,7 +748,7 @@ the eyes when you speak?
 //＠↓《いたた、ほっぺいたいです。離して》
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0030.ogg"
-<FONT interval=60 speed=400 effect="Wave">Ow&, owowow! Thah hurrs! Ret me ho!</FONT>
+<FONT interval=60 speed=400 effect="Wave">Ow&, owowow! Thah hurrs! để toi ii!</FONT>
 \
 // <FONT interval=60 speed=400 effect="Wave">いひゃ、いひゃひゃひゃっ！
 // ほっぺいらいれすっ…！
@@ -780,7 +764,7 @@ the eyes when you speak?
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0031.ogg"
 //はぁはぁ…ひどいです！
-<FONT speed=400 effect="OffCenter">Wah!</FONT> That hurt! I hate you&, Nobunaga! Stupidhead!
+<FONT speed=400 effect="OffCenter">Wah!</FONT> Đau! Ta ghét ngươi&, Nobunaga! Stupidhead!
 \
 // <FONT speed=400 effect="OffCenter">はぅあ！</FONT>...
 // う、うう～…ひどいです！
@@ -788,7 +772,7 @@ the eyes when you speak?
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0011.ogg"
-You're the stupid one&, falling for such an obvious trap&.
+Cô rõ ngốc&, cái bẫy lồ lộ ra mà cũng mắc vào cho được&.
 \
 // 馬鹿って言う方が馬鹿なんだよ。
 // 見え見えの罠に引っかかってるクセに、
@@ -804,9 +788,7 @@ You're the stupid one&, falling for such an obvious trap&.
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0012.ogg"
-Every time you attack it fails&.
-Every time there's a trap you fall for it&.
-And you keep coming back for more&, like now&.&.&.
+Đánh đâu thua đó&, toàn rơi vào ổ mai phục&. Thế mà cứ khoái đánh hoài&.&.&.
 \
 // 攻め込む度に返り討ちにあって、
 // 罠を仕掛ける度に引っかかって。
@@ -822,8 +804,8 @@ And you keep coming back for more&, like now&.&.&.
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0013.ogg"
-You have no strength&, no wit&.
-You're just plain weak&, so give up already&.
+Không sức không mưu&. 
+Cô non lắm&, bỏ mộng là vừa&.
 \
 // 武力もない。
 // 知謀もない。
@@ -836,7 +818,7 @@ You're just plain weak&, so give up already&.
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0034.ogg"
 <FONT size=36 interval=20 speed=400 effect="OffCenter">Bahhh!!</FONT>
 \
-// <FONT size=36 interval=20 speed=400 effect="OffCenter">ぷはぁぁぁ！！</FONT>
+// <FONT size=36 interval=20 speed=400 effect="OffCenter">Puhaa！！</FONT>
 
 //＠↓《呆然としています》
 @action
@@ -847,9 +829,7 @@ You're just plain weak&, so give up already&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0036.ogg"
-<FONT interval=60>Heh&.&.&. Heh heh&.&.&. I was beginning to
-realize it&, but I&.&.&. I didn't think you would
-be the one to tell me so&, Nobunaga&.&.&.</FONT>
+<FONT interval=60>He&, he he&. Tôi lờ mờ biết rồi&, nhưng&, tôi chưa từng nghĩ lại phải nghe những lời đó từ chính miệng cô&, Nobunaga&.</FONT>
 \
 // <FONT interval=60>ふ、ふふ…ふふふ……
 // 薄々気付いていたものの……
@@ -857,9 +837,8 @@ be the one to tell me so&, Nobunaga&.&.&.</FONT>
 
 @action
 -message id="織田信長", face="笑顔", voice="織田信長##S01_ジパング編_プロローグ#0014.ogg"
-So you knew&, but didn't want to admit it&. But good
-for you&. Now you can finally give it all up and
-go down a different path&. Hahahaha&.
+Biết mà vẫn không muốn thừa nhận à&. Tốt&. 
+Cô nên từ bỏ và chọn một hướng mục tiêu khác đi&. Hahahaha&.
 \
 // 自覚はあったけど、認めたくなかったって訳か。
 // でも良かったな。これで何もかも諦めて、
@@ -868,15 +847,15 @@ go down a different path&. Hahahaha&.
 
 @action
 -message id="兵士１"
-Lady Nobunaga! Please&, no more!
+Thưa ngài Nobunaga! Xin đừng nói nữa!
 \
 // の、信長様ー！
 // もうお許しを！
 
 @action
 -message id="兵士２"
-Himiko's heart's Hit Points are already in the negative!
-Ahhh&, something's coming out of her mouth!
+Công nương Himiko sắp chịu hết nổi rồi! 
+Ôi không&, công nương sắp trào bọt mép kìa!!!
 \
 // ヒミコ様の心のヒットポイントが
 // マイナスになってます！
@@ -884,16 +863,14 @@ Ahhh&, something's coming out of her mouth!
 
 @action
 -message id="織田信長", face="笑顔", voice="織田信長##S01_ジパング編_プロローグ#0015.ogg"
-Good for you&, Himiko&, looks like you
-at least have some loyal troops&.
+Cũng may cho cô&, coi bộ cô vẫn còn những tên thuộc hạ trung thành&.
 \
 // 良かったな、ヒミコ。
 // 人望だけはあるみたいで。
 
 @action
 -message id="織田信長", face="笑顔", voice="織田信長##S01_ジパング編_プロローグ#0016.ogg"
-Or maybe they're just worried about you because
-you're so weak&. Oh well&, it doesn't matter either way&.
+Hoặc cũng có khi tại cô yếu quá nên chúng mới lo&. Mà thôi&, chẳng phải chuyện của tôi&.
 \
 // っていうか、へっぽこすぎて
 // ほっとけないってのがホントのとこかな。
@@ -902,8 +879,7 @@ you're so weak&. Oh well&, it doesn't matter either way&.
 //＠↓《からかう感じです》
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0017.ogg"
-Now&.&.&. I could capture you like this&, but it'd
-be a hassle to take you back with me&.&.&.
+Còn giờ&. Tôi sẽ tạm giam cô&. Để cô cứ thế ra về e sau này chuốc thêm rắc rối&.
 \
 // さて……と。
 // このまま、とっ捕まえるのも手だが、どうすっかな。
@@ -911,15 +887,14 @@ be a hassle to take you back with me&.&.&.
 
 @action
 -message id="ヒミコ", face="シリアス", voice="ヒミコ##S01_ジパング編_プロローグ#0037.ogg"
-W&-What are you going to do to me!?
+G&-Gì chứ&, cô định làm gì!?
 \
 // わ、私を捕まえて、どうするつもりなんですか…！？
 
 //＠↓《からかう感じです》
 @action
 -message id="織田信長", face="笑顔", voice="織田信長##S01_ジパング編_プロローグ#0018.ogg"
-I'm going to take your goofy self and do stuff
-that people do to hostages&, of course&.
+Làm mấy điều thú vị như người ta hay làm với con tin&.
 \
 // 決まってるだろ。
 // 脳天気なお前に、
@@ -929,7 +904,7 @@ that people do to hostages&, of course&.
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0038.ogg"
 Wha&-&.&.&. <FONT interval=30 speed=200 effect="OffCenter">Whaaaaat!</FONT>
 \
-// えっ…...<FONT interval=30 speed=200 effect="OffCenter">えええっ…！</FONT>
+// えっ…...<FONT interval=30 speed=200 effect="OffCenter">Eeeee！</FONT>
 
 //中村　ここ、回想に行くそれっぽいブロック系のエフェクトの方がいいでしょうか。
 
@@ -951,13 +926,13 @@ Wha&-&.&.&. <FONT interval=30 speed=200 effect="OffCenter">Whaaaaat!</FONT>
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0039.ogg"
-Please&, stop&.&.&.
+Làm ơn&, đừng mà&.&.&.
 \
 // や、やめてください…
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0019.ogg"
-You're a hostage&. Why are you telling me what to do?
+Kêu cứu vô ích&. Cô là con tin&.
 \
 // お前は人質なんだ。
 // オレが何をしようが勝手だろ？
@@ -965,15 +940,14 @@ You're a hostage&. Why are you telling me what to do?
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0040.ogg"
-This is inhumane&.&.&. You won't get away with this&.&.&.
+Đây là vô nhân đạo&.&.&. Cô không được phép làm điều này&.&.&.
 \
 // お、横暴です…
 // こんなことが許されるわけがありません…
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0020.ogg"
-I'm the law around here and there's
-nobody to question it&. Besides&.&.&.
+Tôi là luật ở đây&. Ai dám cự cãi&. Với cả&.&.&.
 \
 // ここではオレが法だ。
 // 誰も文句を言うヤツなんていねえよ。
@@ -986,30 +960,28 @@ nobody to question it&. Besides&.&.&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0041.ogg"
-Oww! That hurts!
+Ou!! Đau!!!
 \
 // はぅぅっ…！
 // いたぁい…！
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0021.ogg"
-You look like you're enjoying being whipped&.
-Are you sure you weren't looking forward to it?
+Coi cô khoái ra mặt kìa&. Coi bộ đúng ý cô luôn nhỉ?
 \
 // 鞭で叩かれてる割には気持ちよさそうじゃねえか。
 // 本当は期待していたんじゃないのか？
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0042.ogg"
-No&, I wasn't&.&.&.
+Không&, tôi không có&.&.&.
 \
 // そ、そんなことありません…
 
 //＠↓《弄ばれて＝もてあそばれて》
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0022.ogg"
-You liar&.
-You enjoy being treated like this&, tied up and helpless&.
+Bớt dối lòng đi&. Cô khoái bị trói cứng và hành hạ kiểu vầy chứ gì&.&.&. 
 \
 // 嘘つけ。
 // こうやって自由が利かない状態で(弄/もてあそ)ばれて、
@@ -1034,15 +1006,14 @@ Kya! Mguh&.&.&.
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0023.ogg"
-How indecent&.
-It's hard to think that you're actually a hostage&.
+Dâm quá đó&. Ai mà tin nổi cô là con tin&.
 \
 // だらしないったらねえな。
 // とても人質の立場とは思えねえ。
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0044.ogg"
-Ah&.&.&. Please&.&. Please stop&.&.&. No more&.&.&.
+Ah&.&.&. Xin cô&.&.&. Dừng lại đi&.&.&. Đừng mà&.&.&.
 \
 // はぁはぁ…
 // やめ…やめて、ください…
@@ -1050,16 +1021,14 @@ Ah&.&.&. Please&.&. Please stop&.&.&. No more&.&.&.
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0024.ogg"
-Can't do that&.
-I still need to pay you back for everything&.
+Sao dừng được&. Cô phải trả cho đủ lời lãi chứ&.
 \
 // そういうわけにはいかねえな。
 // お前には今までの借りを返さなくちゃいけねえ。
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0025.ogg"
-Hehe&.&.&. I'll make it so you won't be able to live
-without me&, always craving the feel of my whip&.
+Hehe&.&.&. Tôi sẽ khiến cô phải sống dở vì tôi&, lúc nào cũng tơ tưởng đến cây roi này&.
 \
 // ふふっ…
 // 今日からはオレなしではいられない身体にしてやるよ。
@@ -1067,8 +1036,7 @@ without me&, always craving the feel of my whip&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0045.ogg"
-No&.&.&. No more&.&.&. I'm getting hot&.&.&. At this rate&, I&.&.&.
-Somebody help&.&.&.
+Không&.&.&. Đừng mà&.&.&. Tôi thấy nóng&.&.&. Tôi&.&.&. Ai cứu với&.&.&.
 \
 // そ、そんな…これ以上はもう…
 // んっ、身体が熱く…くぅ…
@@ -1098,8 +1066,7 @@ Somebody help&.&.&.
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0046.ogg"
 <FONT size=30 interval=30 speed=400 effect="OffCenter">Nooo!</FONT>
-<FONT size=30 interval=30>Nobunaga&, you pervert!
-I don't want to be your personal toy!</FONT>
+<FONT size=30 interval=30>Nobunaga&, đồ biến thái! Tôi không phải đồ chơi của cô!</FONT>
 \
 // <FONT size=30 interval=30 speed=400 effect="OffCenter">いやぁぁ！</FONT>...
 // <FONT size=30 interval=30>信長さんは、淫乱なんですかぁぁ！
@@ -1107,9 +1074,8 @@ I don't want to be your personal toy!</FONT>
 
 @action
 -message id="織田信長", face="照れ", voice="織田信長##S01_ジパング編_プロローグ#0026.ogg"
-<FONT size=30 interval=30 speed=200 effect="Bang">What do you think I'm going to do!?</FONT>
-<FONT size=30>How did you even come up with that!?
-Your imagination is terrifying!</FONT>
+<FONT size=30 interval=30 speed=200 effect="Bang">Cô nghĩ cái quái gì thế!?</FONT>
+<FONT size=30>Đầu óc cô đen vừa thôi!</FONT>
 \
 // <FONT size=30 interval=30 speed=200 effect="Bang">誰がそんなことするか！</FONT>.....
 // <FONT size=30>っていうか、すごい想像力だな！
@@ -1117,16 +1083,15 @@ Your imagination is terrifying!</FONT>
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0047.ogg"
-Huh? Am I wrong?
+Hử? Không phải à?
 \
 // え？　違うんですか？
 
 //＠↓《ため息つきつつ》
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0027.ogg"
-&.&.&.Of course you're wrong&. That's how you've always
-been&, bullying me like that&. But now that I'm in your
-position&, I won't be dragged down to your level&.
+Dĩ nhiên&. Bởi vậy nên cô toàn bị tôi ăn hiếp&. Dù xét thân phận chúng ta ngang nhau&, 
+nhưng tôi không phải loại ngắn nghĩ như cô&.
 \
 // ……違うに決まってるだろ。
 // はあ…昔から、こうやって弄られてきたんだよな…
@@ -1136,9 +1101,8 @@ position&, I won't be dragged down to your level&.
 //＠↓《優しく諭すように》
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0028.ogg"
-Give up your delusions of grandeur and
-your dream of world conquest&. Go back
-home and live a quiet life&, or else&.&.&.
+Thôi&, từ bỏ ảo vọng bá chủ thế giới đi&. 
+Về thành mình mà sống an nhàn đi&, bằng không&.&.&.
 \
 // 世界征服なんて不相応な夢は諦めて、
 // 自分の国で隠居してろ。
@@ -1149,9 +1113,7 @@ home and live a quiet life&, or else&.&.&.
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0029.ogg"
-My muskets will light up&. If you don't want
-holes in that little bottom of yours&, you'd
-better turn tail and go back home&.
+Xạ thủ của tôi sẽ nổ súng&. Nếu cô không muốn mông mình thủng vài lỗ thì tốt hơn nên quắc đuôi lên chạy nhanh đi&.
 \
 // オレの鉄砲隊が火を噴くぞ。
 // そのお尻を撃たれたくなけりゃ、
@@ -1159,23 +1121,22 @@ better turn tail and go back home&.
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0048.ogg"
-<FONT interval=30>I&.&.&. I still have a secret plan!
-I'm going to turn this battle around!</FONT>
+<FONT interval=30>T&.&.&. Tôi vẫn còn một kế hoạch bí mật&. 
+Hãy xem tôi xoay chuyển tình thế đây!!</FONT>
 \
 // <FONT interval=30>わ、私にはまだ秘策があるんです！
 // 今から逆転劇の始まりなんですよ！？</FONT>
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0030.ogg"
-Sure&, sure&. You've got 5 seconds&.
+Tốt&, tốt&. Cô có 5 giây&.
 \
 // はいはい。
 // ５秒数える間に決めな。
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0049.ogg"
-<FONT interval=30>Wait&, hold on!
-They say slow and steady wins the race&.&.&.</FONT>
+<FONT interval=30>Khoan&, gượng đã! Từ từ&, đếm chậm thôi&.&.&.!</FONT>
 \
 // <FONT interval=30>ま、待ってください！
 // 急いては事を仕損じると言いますし、ここはひとつ…</FONT>
@@ -1188,8 +1149,8 @@ They say slow and steady wins the race&.&.&.</FONT>
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0050.ogg"
-<FONT interval=60 speed=200 effect="OffCenter">Guhhhhh&.&.&.</FONT> I'll get you next time! I hate you&, Nobunaga!
-Everyone&, retreat&, retreat!
+<FONT interval=60 speed=200 effect="OffCenter">Guhhhhh&.&.&.</FONT>Lần tới tôi sẽ tóm được cô! Nobunaga là đồ đáng ghét! 
+Toàn quân&, rút&, rút lui! 
 \
 // <FONT interval=60 speed=200 effect="OffCenter">ぐ、う、う、うーっ！</FONT>.....
 // つ、次は覚えてなさい！
@@ -1207,8 +1168,8 @@ Everyone&, retreat&, retreat!
 
 @action
 -message id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0032.ogg"
-Phew&, they're finally gone&.
-But "I'll get you next time&," seriously?
+Phù&, cuối cùng cũng chịu đi&. 
+Ủa&, nãy cô ta vừa bảo "lần tới" á?
 \
 // やれやれ…やっと行ったか。
 // しっかし、ベタな捨て台詞だな。
@@ -1216,8 +1177,7 @@ But "I'll get you next time&," seriously?
 
 @action
 -message id="敵兵士１"
-Lady Nobunaga&. If Himiko's the only general
-from Yamatai&, then that rumor must be true&.
+Thưa ngài Nobunaga&. Himiko là lãnh chúa duy nhất ở Yamatai&, khéo cô ta nói thật ấy chứ&.
 \
 // 邪馬台の大将がヒミコ様だけということは、
 // あの噂は本当のようですね。
@@ -1225,8 +1185,8 @@ from Yamatai&, then that rumor must be true&.
 
 @action
 -message id="織田信長", face="笑顔", voice="織田信長##S01_ジパング編_プロローグ#0033.ogg"
-Right&. If we're up against Himiko&, it should be no
-problem at all&. Heh&.&.&. Luck is finally on my side&.
+Ừ&. Himiko không đáng lo ngại&. 
+Heh&, may mắn luôn mỉm cười với chúng ta mà&.
 \
 // そうだな。
 // まあ、相手がヒミコだったら、造作ない。
@@ -1235,7 +1195,7 @@ problem at all&. Heh&.&.&. Luck is finally on my side&.
 //＠↓《不敵です》
 @action
 -message id="織田信長", face="笑顔", voice="織田信長##S01_ジパング編_プロローグ#0034.ogg"
-I will rule Zipang&, even without Kusanagi in my hand&.
+Ta phải thống nhất Nhật Bản&, dù cho không có Kusanagi&.
 \
 // この手に草薙の剣がなくても、
 // ジパングの王には、オレがなる。
