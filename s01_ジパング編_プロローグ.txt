@@ -54,7 +54,7 @@ A small&, small battle&.&.&.
 //@action
 -message id="ムー", log_name="？？？", message_name="？？？", voice="ムー##S01_ジパング編_プロローグ#0002.ogg"
 Chiến tranh là điều không thể tránh khỏi&. Bởi nó là một phần quy luật của nhân loại&.
-Và cái quy luật ấy sẽ mãi tiếp diễn&.
+Và cái quy luật ấy sẽ mãi tiếp diễn&.&.&.
 \
 // …戦いは、必然だ。
 // それが理だ。
@@ -84,8 +84,7 @@ Phủ giăng khắp nơi cảnh loạn lạc&, vì một trật tự mới&.
 //＠↓《理解る＝わかる》
 //@action
 -message id="ムー", log_name="？？？", message_name="？？？", voice="ムー##S01_ジパング編_プロローグ#0005.ogg"
-There is no need to know why&. All you need is to
-dance like fools&, drunk on your cheap ideals&.
+Đừng hỏi tại sao&. Các ngươi chỉ cần nhảy múa lên như những tên ngốc&, say sưa trong các ý tưởng nghèo nàn của mình&.
 \
 // 何故、と、(理解/わか)る必要はなし。
 // ただ無様に踊り続けろ。
@@ -94,9 +93,8 @@ dance like fools&, drunk on your cheap ideals&.
 //＠↓《他人＝あだびと》
 //@action
 -message id="ムー", log_name="？？？", message_name="？？？", voice="ムー##S01_ジパング編_プロローグ#0006.ogg"
-Bear arms&, let your weapons clash&.
-Battle&, fight&, drag not only others&, but also
-yourselves into the spiral of chaos!
+Hãy vung tay&, hãy để cho tiếng binh khí vang lên&.
+Chiến trận&, tranh đấu&, cuốn tất cả vào guồng quay hỗn mang&.
 \
 // 武器と武器を交わらせ、
 // 戦い、争い、混沌の螺旋に叩き込むといい。
@@ -161,15 +159,14 @@ yourselves into the spiral of chaos!
 //＠↓《ヒミコ、兵士に呼びかけられるまでは優秀そうな話し方で》
 @action
 -message id="ヒミコ", face="シリアス", log_name="？？？", message_name="？？？", voice="ヒミコ##S01_ジパング編_プロローグ#0001.ogg"
-&.&.&.At last&. This day has finally come&.
+&.&.&.Cuối cùng ngày này cũng đến&.
 \
 // ……ようやくです…
 // やっと、この日が訪れました。
 
 @action
 -message id="ヒミコ", face="シリアス", log_name="？？？", message_name="？？？", voice="ヒミコ##S01_ジパング編_プロローグ#0002.ogg"
-With this victory at hand&, I will take my
-first step toward world domination!
+Chiến thắng chắc nịch này sẽ là bước chân đầu tiên của ta trên con đường thống trị thế giới&.
 \
 // ついにこの私が、勝利を片手に
 // 世界征服の一歩を踏み出します！
@@ -200,9 +197,7 @@ first step toward world domination!
 
 @action
 -message id="ヒミコ", face="シリアス", log_name="？？？", message_name="？？？", voice="ヒミコ##S01_ジパング編_プロローグ#0003.ogg"
-I have summoned heroes from far and wide&, made
-plans through night and day&, and sown the seeds
-of victory amongst my unsuspecting foes&.
+Ta đã chiêu mộ được biết bao hào kiệt từ khắp mọi nơi&, ngày đêm lập ra vô số mưu kế&, âm thầm gieo rắc mầm thắng xuống mọi kẻ địch&.
 \
 // 各地に呼びかけて集めた豪傑たち、
 // 寝食を惜しんで考え抜いた布陣、
@@ -210,8 +205,7 @@ of victory amongst my unsuspecting foes&.
 
 @action
 -message id="ヒミコ", face="シリアス", log_name="？？？", message_name="？？？", voice="ヒミコ##S01_ジパング編_プロローグ#0004.ogg"
-We are invincible! We are the best!
-Nothing will shake our victory!
+Quân ta là bất bại! Là dũng mãnh nhất! Bách chiến bách thắng!
 \
 // まさに無敵！
 // まさに最強！
@@ -232,8 +226,7 @@ Nothing will shake our victory!
 
 @action
 -message id="ヒミコ", log_name="？？？", message_name="？？？", voice="ヒミコ##S01_ジパング編_プロローグ#0005.ogg"
-Hehehe&.&.&. I'll get you this time&. If you think I'm going
-to lose every time&, you'd better think again!
+Hehehe&. Lần này ta sẽ tóm được cô&. Nếu cô vẫn khư khư suy nghĩ ta toàn thua thì lo mà hối đi!
 \
 // ふふふ…
 // 今回こそ、吠え面をかかせてやりますよっ。
@@ -242,8 +235,8 @@ to lose every time&, you'd better think again!
 
 @action
 -message id="ヒミコ", log_name="？？？", message_name="？？？", voice="ヒミコ##S01_ジパング編_プロローグ#0006.ogg"
-Once I catch you&, first I'll subject you to tickling hell!
-The back of your foot&, by this hand!
+Một khi bắt được cô&, ta sẽ cù cho cô phải lăn lộn!
+bằng bàn tay này!
 <FONT interval=60>Heh&, hehehe&.&.&.</FONT>
 \
 // 捕まえたら、まずは、くすぐりの刑です。
@@ -274,14 +267,14 @@ The back of your foot&, by this hand!
 
 @action
 -message id="兵士１"
-Himiko!
+Thưa công nương Himiko!
 \
 // ヒミコ様！
 
 @action
 -message id="ヒミコ", face="シリアス", voice="ヒミコ##S01_ジパング編_プロローグ#0007.ogg"
 So the enemy has been defeated&, I see&. Time to
-prepare my victory proclamation&, and the tickling&.&.&.
+Đánh bại kẻ địch rồi chứ gì&, ta biết&. Đã đến lúc tuyên bố chiến thắng&, và cù ch-&.&.&.
 \
 // 敵軍が全滅したのですね。
 // では、勝利宣言と、くすぐりの刑の準備を……
@@ -290,13 +283,13 @@ prepare my victory proclamation&, and the tickling&.&.&.
 
 @action
 -message id="兵士１"
-Our troops have just retreated&. All of them&.
+Quân ta đã bị đánh bật&. Toàn bộ&.
 \
 // たった今、こちらの全軍が撤退しました。はい。
 
 @action
 -message id="ヒミコ", face="シリアス", voice="ヒミコ##S01_ジパング編_プロローグ#0008.ogg"
-Wha&.&.&.
+Haaaả&. GÌ CHỨỨỨỨ!!!!?
 \
 // なっ……
 
@@ -359,9 +352,9 @@ Wha&.&.&.
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0010.ogg"
-<FONT interval=30>Wait&, wait&, what do you mean!?
-My strategies were perfect!
-And the heroes I gathered&, where have they gone!?</FONT>
+<FONT interval=30>Khoan&, khoan&, ý ngươi là sao!?
+Chiến lược của ta rất hoàn hảo mà!
+Còn những dũng tướng ta chiêu mộ, họ đâu cả rồi!?</FONT>
 \
 // <FONT interval=30>ど、どど、どういうことですか！？
 // 私の考えた布陣は完璧ですよ！
@@ -370,9 +363,7 @@ And the heroes I gathered&, where have they gone!?</FONT>
 
 @action
 -message id="兵士１"
-Well&.&.&. The "Three Days' Reign Formation" you
-came up with while eating pickled radish was taken
-out with ease&. Quite impressively&, I may add&.
+Ưmmm&. Cái chiến lược 'Ba Hôm' người nảy ra trong lúc ăn củ cải muối đã bị bẻ gãy dễ quá&. Thật quá không ngờ&.
 \
 // え、えーと。
 // ヒミコ様がたくわんを食べている時に思いつかれた
@@ -381,8 +372,7 @@ out with ease&. Quite impressively&, I may add&.
 
 @action
 -message id="兵士２"
-Um&.&.&. I hate to break the news&, but some of the
-heroes betrayed us&. Rather quickly&, I may add&.
+Ưm&.&.&. Xin lỗi đã chen ngang&, nhưng vài 'hào kiệt' người chiêu dụ đã phản chúng ta rồi&. Trở mặt khá là nhanh&.
 \
 // その…こちらも言いにくいのですが、
 // 豪傑の何名かは寝返ったようです。
@@ -393,8 +383,7 @@ heroes betrayed us&. Rather quickly&, I may add&.
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0011.ogg"
-<FONT interval=60>T&-That can't be&.&.&. I prepared everything so
-that this time we would be victorious&.&.&.</FONT>
+<FONT interval=60>S-Sao có thể&.&.&. Ta đã chuẩn bị mọi thứ cho chiến thắng này rồi mà&.&.&.</FONT>
 \
 // <FONT interval=60>あ、ありえません……
 // 今回は絶対に勝てるよう、
@@ -403,8 +392,7 @@ that this time we would be victorious&.&.&.</FONT>
 //＠↓《こしょこしょナイショ》
 @action
 -message id="兵士２"
-<FONT size=24>Well&, you know&.
-Himiko just can't hold a candle to her opponent&.</FONT>
+<FONT size=24>Ưmm&, vậy là công nương Himiko không thể nhỏ sáp lên đối thủ của nàng rồi&.</FONT>
 \
 // <FONT size=24>まぁ、アレだよね…
 // 向こうとヒミコ様じゃ、
@@ -413,15 +401,14 @@ Himiko just can't hold a candle to her opponent&.</FONT>
 //＠↓《こしょこしょナイショ》
 @action
 -message id="兵士１"
-<FONT size=24>That formation was riddled with holes&, even to my untrained eyes&.
-Himiko's really not fit for batt&-&.&.&.</FONT>
+<FONT size=24>Mù binh pháp như tôi còn thấy rõ mồm một lỗ hỗng của cái chiến lược mà&. Công nương đúng là không có khiếu đánh tr-</FONT>
 \
 // <FONT size=24>第一あの布陣、素人の私でも穴だらけに見えたし、
 // ヒミコ様は、戦に向いてな…</FONT>
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0012.ogg"
-<FONT size=30 interval=30>Hey! I can hear you!</FONT>
+<FONT size=30 interval=30>Này! Ta nghe thấy đó!</FONT>
 \
 // <FONT size=30 interval=30>そこ！！
 // 聞こえてますよっ！</FONT>
@@ -434,14 +421,13 @@ Himiko's really not fit for batt&-&.&.&.</FONT>
 
 @action
 -message id="兵士２"
-<FONT size=30 interval=30>Please forgive me!</FONT>
+<FONT size=30 interval=30>Xin công nương thứ tội!</FONT>
 \
 // <FONT size=30 interval=30>す、すみません！</FONT>
 
 @action
 -message id="ヒミコ", face="シリアス", voice="ヒミコ##S01_ジパング編_プロローグ#0013.ogg"
-But we haven't lost yet!
-Your great leader Himiko has not been defeated!
+Nhưng ta vẫn chưa thua! Đại nữ vương Himiko này sẽ không thua đâu!
 \
 // むっ、むぅぅっ…
 // まだ負けたわけじゃありません！
@@ -451,10 +437,7 @@ Your great leader Himiko has not been defeated!
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0014.ogg"
-You say our formation has holes&, but so
-does the enemy's! Look here&, a path
-straight to enemy headquarters&. You may
-fool others&, but you won't fool me!
+Ngươi nói đội hình ta có lỗ hổng&, kẻ địch cũng thế thôi! Nhìn nè&, một con đường dẫn thẳng vào đại bản doanh của chúng&. Xí gạt ai chứ gạt Himiko này đâu dễ!
 \
 // 布陣の穴なら、敵だって同じ！
 // この地図を見れば一目瞭然です！
@@ -463,8 +446,7 @@ fool others&, but you won't fool me!
 
 @action
 -message id="兵士１"
-But&.&.&. Himiko&, you said that was a trap yesterday&.
-And we all agreed and said we should avoid it&.&.&.
+Êh&.&.&. Thưa công nương&, chẳng hôm qua người bảo đấy là cái bẫy&. Mọi người đều đồng tình nên tránh rồi mà&.
 \
 // でも、それ……
 // 昨日、ヒミコ様、罠だと仰ってましたよ？
@@ -472,8 +454,7 @@ And we all agreed and said we should avoid it&.&.&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0015.ogg"
-Ha! We're going to turn their trap back on them&. They'll
-be completely dumbstruck by my genius plan&.&.&.
+Haha! Ta sẽ dùng gậy ông đập lưng ông&. Chúng sẽ hoàn toàn ngơ ngẩn trước mưu thần của ta&.
 \
 // ふふっ…
 // 敵の裏の裏をかくのです。
@@ -481,14 +462,13 @@ be completely dumbstruck by my genius plan&.&.&.
 
 @action
 -message id="兵士１"
-<FONT interval=60>You're not listening&, are you&.&.&.</FONT>
+<FONT interval=60>Người chẳng chịu biết lắng nghe gì cả&.&.&.</FONT>
 \
 // <FONT interval=60>き、聞いていませんね…</FONT>
 
 @action
 -message id="兵士２"
-Himiko&, let's go home&. We can't win&.
-Nobody else bet on us winning either&.
+Công nương Himiko&, ta về thành thôi&. Ta không thể thắng đâu&. Chẳng ai trong quân nghĩ ta thắng được cả&.
 \
 // ヒミコ様、もう帰りませんかー？
 // 私たちじゃ絶対に勝てませんってー。
@@ -496,8 +476,7 @@ Nobody else bet on us winning either&.
 
 @action
 -message id="兵士１"
-Oh&, I bet on our victory! I believed in you&, Himiko&.
-You can trust me on this&, Himiko&.
+Vâng&, thuộc hạ e ta khó thể thắng! Chúng thuộc hạ luôn một lòng vì Người&, công nương Himiko&. Nên xin Người lần này hãy nghe lời can của thuộc hạ&.
 \
 // あ、私はこちらの勝利に賭けましたよ！
 // ヒミコ様なら、やってくれると思いましたから。
@@ -512,15 +491,14 @@ You can trust me on this&, Himiko&.
 
 @action
 -message id="兵士２"
-Oh&. She's snapped&.
+Ôi trời&. Công nương dỗi kìa&.
 \
 // あっ。なんか切れた。
 
 @action
 -message id="ヒミコ", face="笑顔", voice="ヒミコ##S01_ジパング編_プロローグ#0016.ogg"
 <FONT interval=60>Heh&. Heh heh heh&.&.&.</FONT>
-Then we'll go all out&, whether we make it out or not!
-Even cornered mice will bite back at a cat!
+Vậy ta lên đường thôi&. Dù không biết có ăn hay không! Con giun xéo lắm cũng quằn mà!
 \
 // <FONT interval=60>ふ、ふふ、ふふふ…</FONT>..
 // こうなったら玉砕覚悟で突っ込んでやります！
@@ -528,16 +506,13 @@ Even cornered mice will bite back at a cat!
 
 @action
 -message id="兵士１"
-Himiko&, did you just refer to us as mice&.&.&.?
+Ý công nương ám chỉ chúng ta là giun??
 \
 // ヒミコ様、自分たちのことを、ネズミって…
 
 @action
 -message id="ヒミコ", face="シリアス", voice="ヒミコ##S01_ジパング編_プロローグ#0017.ogg"
-<FONT interval=30>Overcome the wall before us&, and there is
-nothing between us and their headquarters! We'll
-get her this time for sure! All troops&, forward
-march! The foe is before our eyes!</FONT>
+<FONT interval=30>Hãy vượt qua tường thành trước mặt&, và tiến thẳng vào đại bản doanh của địch! Lên đường thôi! Toàn quân&, xông lên&, địch đang ở ngay trước mắt!</FONT>
 \
 // <FONT interval=30>目の前の壁さえ取り除けば、本陣まで一直線です！
 // 今日こそは、ぎゃふんと言わせてやるんですからーっ！
