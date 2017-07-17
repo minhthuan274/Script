@@ -1226,8 +1226,7 @@ Ta phải thống nhất Nhật Bản&, dù cho không có Kusanagi&.
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0051.ogg"
 <FONT interval=60>Ugh&.&.&. This storm is just adding insult to injury&.
-I'm sorry&, everyone&.&.&. I'm causing problems for
-everyone because of my incompetence&.&.&.</FONT>
+Ưmmm&.&.&. Đã thua trận còn gặp mưa lớn&. Ta xin lỗi mọi người&. Tại ta bất tài đã khiến các ngươi liên lụy&. </FONT>
 \
 // <FONT interval=60>うう…踏んだり蹴ったりです…
 // まさか帰り道で嵐に遭うなんて…
@@ -1236,8 +1235,8 @@ everyone because of my incompetence&.&.&.</FONT>
 
 @action
 -message id="兵士１"
-What are you talking about?
-We've always known you're incompetent&.
+Công nương đừng nên nói thế&. 
+Chúng thuộc hạ biết thừa mà&.
 \
 // 何を言っているんですか。
 // ヒミコ様が不甲斐ないことは、
@@ -1248,23 +1247,21 @@ We've always known you're incompetent&.
 -揺れ name="MainChar", time=500, 方向="横", 幅=8, 回数=10
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0052.ogg"
 <FONT interval=20 speed=200 effect="OffCenter">Wha&.&.&.!</FONT>
-<FONT interval=80>I want to cry&.&.&.</FONT>
+<FONT interval=80>Gììììì&.&.&.! Ôi&, đau lòng quá&.&.&.</FONT>
 \
 // <FONT interval=20 speed=200 effect="OffCenter">ふぉ…っ！</FONT>
 // <FONT interval=80>み、皆さんの心が痛いです…</FONT>
 
 @action
 -message id="兵士１"
-Don't worry about it!
-Once we get over this mountain&, we'll be back home!
+Xin công nương chớ buồn! Qua được ngọn nói này là vì tới thành!
 \
 // 気にしては負けですよ！
 // この山を越えれば、都ですから頑張りましょう！
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0053.ogg"
-You're right&. We'll finally be back&.&.&.
-We'll eat a warm meal&, and plan our&-&-
+Ngươi nói đúng&. Ta sắp về nhà rồi&. Ăn một bữa no nê xong chúng ta sẽ bàn&-&.&.&.
 \
 // そ、そうですね…
 // ああ…やっと着くんですね…
@@ -1276,7 +1273,7 @@ We'll eat a warm meal&, and plan our&-&-
 
 @action
 -message id="兵士２"
-Ambush! Bandits! Bandits are attacking our troops!
+Cấp báo! Có địch! Lũ thảo khấu đang tấn công quân ta!
 \
 // 敵襲ーっ！
 // 山賊です！
@@ -1284,9 +1281,8 @@ Ambush! Bandits! Bandits are attacking our troops!
 
 @action
 -message id="ヒミコ", face="シリアス", voice="ヒミコ##S01_ジパング編_プロローグ#0054.ogg"
-<FONT interval=30 speed=200 effect="OffCenter">What!?</FONT>
-What horrible people for showing up at a time like this!
-You should stay home when it rains!
+<FONT interval=30 speed=200 effect="OffCenter">Cái gì!?</FONT>
+Mấy cái người khủng khiếp đó lại xuất hiện ngay lúc này ư! Đáng lẽ mưa thì nên ở nhà trú mưa chứ!
 \
 // <FONT interval=30 speed=200 effect="OffCenter">なっ…！！</FONT>...
 // このタイミングで現れるなんて、
@@ -1300,15 +1296,15 @@ You should stay home when it rains!
 
 @action
 -message id="兵士１"
-Himiko&, it's dangerous here! Please go on ahead!
+Công nương Himiko, ở đây nguy hiểm lắm! Xin người mau theo ngả này!
 \
 // ヒミコ様、ここは危険です！
 // 先に逃げてください！
 
 @action
 -message id="ヒミコ", face="シリアス", voice="ヒミコ##S01_ジパング編_プロローグ#0055.ogg"
-No! I can't leave you all here!
-There's no point if we all don't go back together!
+Không! Ta không thể bỏ mặc các ngươi! 
+Chỉ mình ta sống sót thì còn có nghĩa lý gì&.&.&.! 
 \
 // だめです！
 // 皆さんを置いて、先に行けるわけがありません！
@@ -1317,8 +1313,7 @@ There's no point if we all don't go back together!
 //＠↓《笑顔だけど声は必死です》
 @action
 -message id="ヒミコ", face="笑顔", voice="ヒミコ##S01_ジパング編_プロローグ#0056.ogg"
-We're almost home&, everybody! Once we take
-care of this&, we'll go back and have a feast!
+Chúng ta sắp tới thành rồi! Chỉ cần dọn dẹp được đám này&, chúng ta sẽ về tới nơi và mở tiệc ăn mừng!
 \
 // 皆さん、もう一息ですよー！
 // これをなんとかした後、
@@ -1341,8 +1336,7 @@ care of this&, we'll go back and have a feast!
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0057.ogg"
-&(Everyone's worn out from the battle
-with Nobunaga&, and now this rain&.&.&.&)
+&(Trận chiến với Nobunaga đã khiến binh sĩ kiệt sức&, dầm thêm trận mưa này&.&.&.&)
 \
 // （みんな、信長さんとの戦いで疲弊しているのに、
 // 　この雨……）
@@ -1350,9 +1344,7 @@ with Nobunaga&, and now this rain&.&.&.&)
 //＠↓《都＝みやこ》
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0058.ogg"
-&(And these bandits are strong&, too&.
-We'll lose at this rate&.&.&.
-And we're so close to the capital&.&.&.&)
+&(Lũ cướp lại đang thế mạnh&. Quân ta sẽ thua mất&. Đã gần tới thành thế kia mà&.&.&.&)
 \
 // （しかも、この山賊さんたち、強いです…
 // 　このままじゃ負けてしまいます…
@@ -1380,8 +1372,7 @@ And we're so close to the capital&.&.&.&)
 -text x="Center", y=291, id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0013.ogg"
 //&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0035&.ogg"
 //&(flashback from earlier&)
-You have no strength&, no wit&.
-You're just plain weak&, so give up already&.
+Không sức không mưu&. Cô non lắm&, bỏ mộng là vừa&.
 \
 // 武力もない。
 // 知謀もない。
@@ -1393,7 +1384,7 @@ You're just plain weak&, so give up already&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0060.ogg"
-&(Yes&, I'm weak&, like Nobunaga said&.&.&. Pathetic&.&.&.&)
+&(Phải&, Nobunaga nói đúng&, mình quá non yếu&.&.&. Quá thảm hại&.&.&.&)
 \
 // （そう…ですね。
 // 　私は信長さんの言うとおり、駄目な子です……
@@ -1401,9 +1392,7 @@ You're just plain weak&, so give up already&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0061.ogg"
-&(Like now&, we'd have made it through much
-better&, had Takeru been in command&.&.&.
-I'm the worst&, most useless&, helpless&.&.&.&)
+&(Chẳng qua mình được như giờ là nhờ có Takeru&.&.&. Mình là kẻ tồi tệ&, vô dụng&, bất tài&.&.&.&)
 \
 // （今だって、指揮を執るのが私じゃなく、
 // 　タケルだったら、もっとちゃんと凌げていたはず…
@@ -1423,9 +1412,7 @@ I'm the worst&, most useless&, helpless&.&.&.&)
 -text x="Center", y=291, id="織田信長", voice="織田信長##S01_ジパング編_プロローグ#0014.ogg"
 //&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0036&.ogg"
 //&(flashback from earlier&)
-So you knew&, but didn't want to admit it&. But good
-for you&. Now you can finally give it all up and
-go down a different path&. Hahahaha&.
+Biết mà vẫn không muốn thừa nhận à&. Tốt&. Cô nên từ bỏ và chọn một hướng mục tiêu khác đi&. Hahahaha&.
 \
 // 自覚はあったけど、認めたくなかったって訳か。
 // でも良かったな。これで何もかも諦めて、
@@ -1436,9 +1423,7 @@ go down a different path&. Hahahaha&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0063.ogg"
-&(But even I had a dream&.
-I found a goal that I wanted to reach&.
-And because of it&, I had everyone fight&, and suffer&.&)
+&(Nhưng giấc mơ của mình&. Khát khao mình ấp ủng bao năm&. Vì nó&, mình phải chiến đấu&, phải sống sót&.&)
 \
 // （だけど、へっぽこな私でも、夢見てしまった。
 // 　目指したい場所を見つけてしまったんです。
@@ -1447,8 +1432,7 @@ And because of it&, I had everyone fight&, and suffer&.&)
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0064.ogg"
-&(And for that&, I need a solution&.&.&.
-Something that even I can do right now&.&)
+&(Phải có thứ gì đó mình có thể làm chứ&. Một lối thoát khỏi tình cảnh này&.&.&.&)
 \
 // （そのために、何か策を…
 // 　今の私にも取れる手段を探さなくては
@@ -1458,9 +1442,7 @@ Something that even I can do right now&.&)
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0065.ogg"
-&(I haven't done anything yet&. I can't just give
-up here&. I need to do something&, something&,
-anything! For me&.&.&. For everyone!&)
+&(Dẫu biết không thể buông xuôi&, nhưng mình chẳng nghĩ ra được gì&. Mình cần thứ gì đó&, thứ gì&, bất cứ gì! Cho mình&.&.&. và cho cả ba quân!&)
 \
 // （私は、まだ何もしていません。
 // 　こんなところで、へこたれている訳にもいきません。
@@ -1482,19 +1464,19 @@ Huh&.&.&.
 
 @action
 -message id="兵士１"
-Lady Himiko!?
+Công nương Himiko!?
 \
 // ヒミコ様！？
 
 @action
 -message id="兵士２"
-Lady Himiko!!!
+Công nương Himiko!?
 \
 // ヒミコ様ー！！
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0067.ogg"
-What&.&.&.
+Hả&.&.&.
 \
 // そん、な……
 
@@ -1502,8 +1484,7 @@ What&.&.&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0068.ogg"
-&(Am I&.&.&. going to die here&.&.&.?
-Without having accomplished anything&.&.&.&)
+&(Mình&.&.&. sẽ chết sao&.&.&.? Cứ trắng tay mà chết?&)
 \
 // （私……死ぬ、の？
 // 　こんなところで……
@@ -1511,20 +1492,19 @@ Without having accomplished anything&.&.&.&)
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0069.ogg"
-&(I haven't even taken the first step
-toward achieving my dream&.&.&.!&)
+&(Thậm chí mình còn chưa có nổi một chiến công&.&.&.&)
 \
 // （夢のための第一歩さえ、歩んではいないのにっ…！）
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0070.ogg"
-No&.&.&.
+Không&.&.&.
 \
 // い、や……
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0071.ogg"
-<FONT size=30 interval=60>Nooo!!!</FONT>
+<FONT size=30 interval=60>Ta không cam!!!</FONT>
 \
 // <FONT size=30 interval=60>いやぁぁっ……！！</FONT>
 
@@ -1586,20 +1566,20 @@ Huh&.&.&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0073.ogg"
-&(Who is it? Why did they save me?&)
+&(Người ấy là ai? Sao lại cứu mình?&)
 \
 // （誰……？
 // 　どうして、私を助けてくださったの…？）
 
 @action
 -message id="兵士１"
-&.&.&.Who's there?
+&.&.&.Ngươi là ai?
 \
 // ……誰だ…？
 
 @action
 -message id="兵士２"
-Wait&.&.&. He came from the heavens?
+Khoan&.&.&. Lẽ nào anh ta là sứ giả thiên đàng?
 \
 // っていうか…
 // 空から降りてきた……？
@@ -1608,7 +1588,7 @@ Wait&.&.&. He came from the heavens?
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0074.ogg"
-The heavens&.&.&. A Servant of&.&.&. Heaven?
+Thiên đàng&.&.&. Sứ giả&.&.&. thiên đàng?
 \
 // …空から…
 // ……天の…御使い…？
