@@ -1602,13 +1602,13 @@ Yes&.&.&. Yes&, Lady Himiko!
 @action
 -message id="兵士２"
 //thinking the word "angel" should be avoided
-Truly&, a Servant of Heaven!
+Đúng rồi&, sứ giả Thiên đàng!
 \
 // 仰るとおり、天の御使いですよっ！
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0075.ogg"
-Oh&.&.&.
+Hơ&.&.&.
 \
 // ……ぁ……
 
@@ -1617,9 +1617,7 @@ Oh&.&.&.
 //＠↓《御旗＝みはた》
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0076.ogg"
-The heavens have sided with us! Our flag bears
-victory! Push these bandits back&, and show
-them what the Himiko Army is made of!
+Cao xanh cũng ủng hộ chúng ta! Mọi người hãy giương lên ngọn cờ chiến thắng! Hãy đánh lui bọn thảo khấu kia&, và cho chúng chứng kiến sức mạnh tướng sĩ Himiko ta đi!
 \
 // て、天は、私たちに味方しています！
 // 勝利は、我が(御旗/みはた)の元にあります！
@@ -1649,8 +1647,7 @@ them what the Himiko Army is made of!
 
 @action
 -message id="ヒミコ", face="シリアス"
-Is he protecting us? That means this is our chance!
-Fight back&, everyone! Let's destroy these bandits!
+Anh ấy về phe mình!? Đây là cơ hội phản công! Chiến đấu đi&, mọi người! Hãy tiêu diệt lũ cường san đó đi!
 \
 // この人、私たちを守ってくれている…？
 // それなら、チャンスは今しかありません！
@@ -1671,7 +1668,7 @@ Fight back&, everyone! Let's destroy these bandits!
 
 @action
 -message id="ヒミコ"
-We&.&.&. We did it&.&.&. Now we can go back to the city&.&.&.
+Chúng ta&.&.&. chúng ta đã thắng&.&.&. Mọi người nhanh về kinh thành thôi nào&.&.&.
 \
 // な、なんとか勝てました…
 // これで都まで無事に戻れます…
@@ -1684,8 +1681,8 @@ We&.&.&. We did it&.&.&. Now we can go back to the city&.&.&.
 
 @action
 -message id="ヒミコ", face="シリアス"
-We lost&.&.&. without even making it back&.&.&.
-I guess my battle ends here&.&.&.
+Ta thua rồi&.&.&. thảm bại đến nỗi có thành còn chẳng về được&.&.&. 
+Giấc mộng của mình vậy là chấm dứt&.&.&.
 \
 // ま、まだ都に着いていないのに
 // こんなところで負けてしまうなんて…
@@ -1710,8 +1707,7 @@ I guess my battle ends here&.&.&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0077.ogg"
-Phew&.&.&.! I think we're good for now&.
-I thought we might not make it&.&.&.
+Phù&.&.&. Cứ tưởng là mình tiêu đời rồi chứ&. Suýt nữa chúng tôi đã bỏ thây tại đây&.&.&.
 \
 // はあ…！
 // どうにか、一段落つきましたね…
@@ -1725,8 +1721,7 @@ I thought we might not make it&.&.&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0078.ogg"
-Um&.&.&. I don't know who you are&,
-but thank you for rescuing us!
+Ưm&.&.&. Dù không biết anh là ai&, nhưng xin cảm ơn anh đã cứu chúng tôi!
 \
 // あ、あの……
 // どなたか知りませんが、ありがとうございます！
@@ -1768,8 +1763,8 @@ Huh&.&.&.?
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0081.ogg"
-<FONT interval=60 speed=400 effect="Wave">Gah&.&.&. So heavy&.&.&.!</FONT>
-Why did you fall over&.&.&. Huh!?
+<FONT interval=60 speed=400 effect="Wave">Gahh&.&.&. Nặng quá!</FONT>
+Anh bị sao vậy!?
 \
 // <FONT interval=60 speed=400 effect="Wave">ぐっ…く、お、重いですぅぅ～！</FONT>...
 // ど、どうして、急に倒れて…
@@ -1777,9 +1772,7 @@ Why did you fall over&.&.&. Huh!?
 
 @action
 -message id="兵士１"
-Are you all right&, Lady Himiko! You&.&.&. You
-might be a Servant of Heaven&, but you can't
-assault Himiko like that! How dare you!
+Công nương không sao chứ!? Ngươi&.&.&. Ngươi dám&.&.&. đừng tưởng là Sứ Giả Thiên Đàng thì dám cả gan mạo phạm công nương!
 \
 // 大丈夫ですか、ヒミコ様！
 // この…天の御使いとはいえ、無礼な！
@@ -1787,8 +1780,7 @@ assault Himiko like that! How dare you!
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0082.ogg"
-<FONT interval=30>I'm fine! But this man is hurt&, badly!
-He needs help now!</FONT>
+<FONT interval=30>Ta không sao! Nhưng người này đang bị trọng thương! Anh ấy cần giúp đỡ!</FONT>
 \
 // <FONT interval=30>私は大丈夫です！
 // それより、この人、怪我をしています！
@@ -1797,16 +1789,15 @@ He needs help now!</FONT>
 
 @action
 -message id="兵士２"
-U&-Understood! Right away!
+Đã&, đã rõ! Thuộc hạ tới ngay!
 \
 // わっ、わかりました！
 // すぐ、手配します！
 
 @action
 -message id="ヒミコ", face="照れ", voice="ヒミコ##S01_ジパング編_プロローグ#0083.ogg"
-<FONT interval=60>Who is this man&.&.&.
-He's burning up&, probably because of his injury&.&.&.</FONT>
-If we don't treat him soon&.&.&.!
+<FONT interval=60>Người này là ai nhỉ&.&.&. Trông anh ấy khá đau đớn&, chắc tại vết thương&.</FONT>
+Nếu ta không nhanh chóng chữa trị e&.&.&.
 \
 // <FONT interval=60>このお方は、一体…
 // …怪我のせいなのかしら…熱もすごい…</FONT>...
@@ -1821,8 +1812,8 @@ If we don't treat him soon&.&.&.!
 
 @action
 -message id="ヒミコ", face="照れ", voice="ヒミコ##S01_ジパング編_プロローグ#0085.ogg"
-&(Why did he help me when he's hurt so badly himself?
-Is it because he's a Servant of Heaven&.&.&.?&)
+&(Tại sao anh ấy lại giúp mình trong khi chính bản thân lại bị trọng thương? 
+Hay lẽ nào đó là nghĩa vụ Thiên Đàng giao phó&.&.&.?&)
 \
 // （……こんなにひどい怪我をしてるのに、
 // 　私を助けてくれた……
@@ -1831,15 +1822,14 @@ Is it because he's a Servant of Heaven&.&.&.?&)
 
 @action
 -message id="ヒミコ", face="照れ", voice="ヒミコ##S01_ジパング編_プロローグ#0086.ogg"
-<FONT interval=60>&(He's so warm&.&.&. and firm&, masculine&.&.&.&)</FONT>
+<FONT interval=60>&(Anh ấy thật ấm&, và rắn chắc&, cơ bắp&.&.&.&)</FONT>
 \
 // <FONT interval=60>（……温かい…
 // 　それに、がっちりしていて、逞しくて…）</FONT>
 
 @action
 -message id="ヒミコ", face="照れ", voice="ヒミコ##S01_ジパング編_プロローグ#0087.ogg"
-<FONT interval=60>&(If I had an older brother&, maybe
-this is what he'd be like&.&.&.&)</FONT>
+<FONT interval=60>&(Nếu mình có một người anh trai&, hẳn người ấy cũng sẽ trông như thế này&.&.&.&)</FONT>
 \
 // <FONT interval=60>（…私にお兄様がいれば……
 // 　こんな感じなのかしら……）</FONT>
@@ -1885,10 +1875,7 @@ this is what he'd be like&.&.&.&)</FONT>
 
 @action
 -message id="老人", log_name="？？？", message_name="？？？", face="None"
-A man protects his village&, and the village protects
-him&. Sometimes he must put his life on the line&.
-That is the duty of those who plant their roots in the
-village&. Surely you know the meaning of this&.
+Nghĩa vụ của người một người đàn ông là bảo vệ lấy mảnh đất chôn nhau cắt rốn của mình&, thậm chí liều cả sinh mạnh bản thân&. Con phải luôn ghi tâm trọng trách ấy&.
 \
 // ……人は村を守り、村は人を守る。
 // 時には命をかけて守らなければならぬ。
@@ -1897,7 +1884,7 @@ village&. Surely you know the meaning of this&.
 
 @action
 -message
-My head&.&.&. it hurts&.&.&.
+Đầu mình&.&.&. đau quá&.&.&.
 \
 // 頭が…痛い…
 
@@ -1905,8 +1892,7 @@ My head&.&.&. it hurts&.&.&.
 
 @action
 -message id="壮年の男性", log_name="？？？", message_name="？？？", face="None"
-There's nothing more I can teach you&. Heh&.&.&.
-I didn't think you would surpass me this quickly&.
+Ta đã dạy cho con mọi điều có thể&. Heh&.&.&. Con đã đủ trưởng thành rồi&.
 \
 // お前にはもう教えることはない。
 // ふっ…こんなに早く、
@@ -1914,8 +1900,7 @@ I didn't think you would surpass me this quickly&.
 
 @action
 -message id="壮年の男性", log_name="？？？", message_name="？？？", face="None"
-With your skill in the sword&, you'll be able to make a
-living anywhere&. That is&, if you can find a place&.
+Với kiếm thuật của con&, con sẽ sinh tồn được ở bất cứ đâu&.
 \
 // その剣の腕があれば、
 // どこに行っても食っていけるだろう。
@@ -1923,8 +1908,8 @@ living anywhere&. That is&, if you can find a place&.
 
 @action
 -message
-Where am I&.&.&.? I feel like I'm floating&.&.&.
-What's happening to me&.&.&.
+Đây là đâu&.&.&.? Cơ thể mình như đang lơ lửng&.&.&. 
+Chuyện gì xảy ra với mình&.&.&.
 \
 // 俺は、どこにいるんだろうか…？
 // まるで宙に浮いているようで……
@@ -1934,8 +1919,7 @@ What's happening to me&.&.&.
 
 @action
 -message id="女性", log_name="？？？", message_name="？？？", face="None"
-&.&.&.If I can just finish this report&,
-I'll be able to show them up&.
+&.&.&.Xong bản báo cáo này là đi thuyết trình ngon lành&.
 \
 // ……うん。
 // このレポートさえできれば、
@@ -1943,8 +1927,8 @@ I'll be able to show them up&.
 
 @action
 -message id="女性", log_name="？？？", message_name="？？？", face="None"
-It's all thanks to you&.
-I owe you a reward&, so come up with something&.
+Cũng nhờ cả vào cậu đấy&. May nhờ cậu&. 
+Phen này tớ nợ cậu rồi&, phải báo đáp mới được&. 
 \
 // 貴方が協力してくれたおかげよ。
 // 近いうちに何かお礼をしなくちゃいけないわね。
@@ -1961,32 +1945,29 @@ A scene flashes through my head like a film&.&.&.
 
 @action
 -message id="男性", log_name="？？？", message_name="？？？", face="None"
-That last movie was pretty boring&. We looked around
-for a good one&, but what was up with that ending?
+Một cảnh tượng tựa phước phim chợt thoáng qua trong đầu tôi&.&.&.
 \
 // さっきの映画、つまんなかったよなー。
 // ハシゴしたのに、最後の最後でアレかよ。
 
 @action
 -message id="男性", log_name="？？？", message_name="？？？", face="None"
-I know we left to take a break from exams&,
-but it would have been better to stay
-home and study world history&.
+Tớ biết đây là khoảng thời gian xả hơi sau kỳ thi&, nhưng tốt hơn là chúng ta nên ở nhà ôn tập môn lịch sử thế giới&.
 \
 // 試験の息抜きで出かけたのに最悪だよな。
 // 家で世界史の勉強してた方がよかったぜ。
 
 @action
 -message
-Who am I&.&.&. Where did I come from&.&.&. Why&.&.&.
+Tôi là ai&.&.&. Tôi từ đâu đến&.&.&. Tại sao&.&.&.&.
 \
 // 俺が、いつ…どこで…どうして…
 // 何をしていたのか…
 
 @action
 -message
-My memories are a jumbled mess&.&.&.
-They feel like a swirling vortex of mud&.&.&.
+Ký ức của mình là hỗn độn quá&.&.&. 
+Chúng cứ như là một cơn lốc bùn vậy&.&.&.
 \
 // 記憶が混濁する…
 // 泥の渦の中にいるみたいだ……
@@ -2005,7 +1986,7 @@ They feel like a swirling vortex of mud&.&.&.
 
 @action
 -message
-Who am I&.&.&.?
+Tôi là ai&.&.&.?
 \
 // 俺は『誰』なんだ……？
 
@@ -2059,32 +2040,31 @@ Ah&.&.&.! Ow&.&.&.
 
 @action
 -message id="主人公", face="シリアス", log_name="？？？", message_name="？？？"
-Where am I&.&.&.
-What happened&.&.&.
+Mình đang ở đâu&.&.&.
+Chuyện gì đã xảy ra&.&.&.
 \
 // ここは…
 // 俺は、何をして…
 
 @action
 -message
-It looks like a movie set&.&.&.
-Did I fall asleep during rehearsal?
+Nơi này sao như phim trường vậy&.&.&.
+Lẽ nào mình ngủ quên trong lúc đang diễn kịch?
 \
 // まるで映画のセットみたいな場所だ…
 // リハーサル中に、うたた寝でもしたのか？
 
 @action
 -message id="主人公", face="シリアス", log_name="？？？", message_name="？？？"
-Rehearsal&.&.&.? Am I an actor&.&.&.?
+Diễn kịch&.&.&.? Mình là diễn viên&.&.&.?
 \
 // ……リハーサル…？
 // 俺、役者だったっけ…？
 
 @action
 -message
-I don't know&. My memory's clouded&.&.&.
-I can form thoughts&, but everything
-about myself is beyond the haze&.
+Mình không biết&. Ký ức mù mờ quá&.&.&.
+Mọi thứ về bản thân trong đầu mình sao mơ hồ&.
 \
 // ……わからない。
 // まだ記憶がどろどろで…
@@ -2093,8 +2073,7 @@ about myself is beyond the haze&.
 
 @action
 -message id="主人公", face="シリアス", log_name="？？？", message_name="？？？"
-I don't really know what's happening&, but I should get up
-first&.
+Thật sự chuyện gì đang xảy ra&. thôi&, cứ tỉnh dậy trước đã&.
 \
 // よくわからないけど、まずは起きて…
 
@@ -2114,16 +2093,16 @@ Ouch! Augh&.&.&.
 
 @action
 -message id="主人公", face="シリアス", log_name="？？？", message_name="？？？"
-<FONT interval=30>Damn&.&.&.!</FONT>
-What is this&.&.&.
+<FONT interval=30>Chết tiệt&.&.&.!</FONT>
+Cái gì đây&.&.&.
 \
 // <FONT interval=30>いっ…ててて！</FONT>...
 // …くそっ…なんなんだ…
 
 @action
 -message
-What's going on? I'm covered in bandages&.&.&.
-Did I get hit by a car or something?
+Chuyện gì thế này? Cơ thể mình quấn đầy băng&.&.&.
+Mình bị xe tông hay sao?
 \
 // 何がどうなっているんだ？
 // 全身が包帯まみれになって…
@@ -2131,7 +2110,7 @@ Did I get hit by a car or something?
 
 @action
 -message id="主人公", face="シリアス", log_name="？？？", message_name="？？？"
-It doesn't look like I'm in a hospital&.&.&.
+Nhưng nơi này không có vẻ giống bệnh viện&.&.&.
 \
 // ここは、病院…なわけないよな…
 
@@ -2142,8 +2121,7 @@ It doesn't look like I'm in a hospital&.&.&.
 //中村　普通のままの音声より、扉の向こうのような加工をした方が合うかもです。
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0088.ogg"
-First impressions are the most important&. He should
-be waking soon&, so I'll go in first and greet him&.&.&.
+Ấn tượng ban đầu là việc quan trọng nhất&. Anh ấy sẽ sớm tỉnh dậy thôi&, vì thế ta sẽ vào trước và chào anh ấy&.&.&.
 \
 // 何事も第一印象が肝心なんですよ。
 // そろそろ目が覚める頃ですし、
@@ -2152,8 +2130,8 @@ be waking soon&, so I'll go in first and greet him&.&.&.
 //中村　普通のままの音声より、扉の向こうのような加工をした方が合うかもです。
 @action
 -message id="女性"
-But&, Lady Himiko&.&.&.
-You shouldn't bite off more than you can chew&.&.&.
+Nhưng&, Công nương Himiko&.&.&.
+Ngài nên biết tham thực là cực thân đấy&.&.&.
 \
 // ですが、ヒミコ様…
 // あまりご無理はされない方が…
@@ -2161,8 +2139,8 @@ You shouldn't bite off more than you can chew&.&.&.
 //中村　普通のままの音声より、扉の向こうのような加工をした方が合うかもです。
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0089.ogg"
-I'm fine! I can handle a tray by myself&. If I can win
-over his stomach&, it's as good as our victory&.
+Ta ổn! Ta có thể tự lo liệu được! Chiến thắng được
+dạ dày của anh ấy sẽ như là chiến thắng cho chúng ta&.
 \
 // 大丈夫です！
 // お膳ぐらい、私１人で運べます。
@@ -2172,8 +2150,8 @@ over his stomach&, it's as good as our victory&.
 //中村　普通のままの音声より、扉の向こうのような加工をした方が合うかもです。
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0090.ogg"
-And besides&, you were the ones who said that men
-appreciate women who take care of their needs&.
+Và ngoài ra&, chính ngươi cũng nói rằng đàn ông
+thích phụ nữ hay chăm lo họ mà&.
 \
 // それに、甲斐甲斐しく看病する女性は、
 // 殿方に好かれると、
@@ -2182,9 +2160,9 @@ appreciate women who take care of their needs&.
 //中村　普通のままの音声より、扉の向こうのような加工をした方が合うかもです。
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0091.ogg"
-We can't let the Servant of Heaven get
-away&. I'll make a good impression on
-him and steer matters to our favor!
+Chúng ta không thể để Sứ Giả Thiên Đường rời đi được&.
+Ta phải tạo ra ấn tượng ban đầu thật tốt và 
+và nhờ anh ấy giúp chúng ta!
 \
 // 天の御使いを、絶対に逃がすわけにはいきません。
 // あの御方に良い印象を持ってもらって、
@@ -2192,9 +2170,8 @@ him and steer matters to our favor!
 
 @action
 -message
-&.&.&.I think they're talking about me? I don't
-know what Servant of Heaven means&, but
-I guess it's an award of some sort&.&.&.
+...Hình như đang nói về mình? "Sứ Giả Thiên Đường" là quái gì,
+chắc là danh hiệu hay gì đó...
 \
 // ……よくわからないけど、俺のことを話してるのか？
 // 天の御使いの意味がわからないけど、
@@ -2203,7 +2180,7 @@ I guess it's an award of some sort&.&.&.
 //＠↓《少し緊張しています》
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0092.ogg"
-Ah&, umm&.&.&. Ahem&. Excuse me&.
+Ah&,umm&.&.&. Ahem&. Xin thứ lỗi&.
 \
 // あ、あー…あー、こほん。
 // 失礼いたします。
@@ -2217,7 +2194,7 @@ Ah&, umm&.&.&. Ahem&. Excuse me&.
 
 @action
 -message id="女性"
-Lady Himiko! There's someone beneath you!
+Công nương Himiko! Có người nằm dưới chân Người kìa!
 \
 // ヒ、ヒミコ様！　足下に人がぁぁ！
 
@@ -2258,8 +2235,8 @@ Ow&.&.&.
 
 @action
 -message id="ヒミコ", face="固有", voice="ヒミコ##S01_ジパング編_プロローグ#0094.ogg"
-<FONT interval=60>Not only did I step on your wounded body&, but I also
-dropped the tray&.&.&. I'm sorry&.&.&. </FONT><FONT interval=30>I'm so&, so sorry!</FONT>
+<FONT interval=60>Vừa đạp lên vết thương của anh&, vừa làm
+rớt khay đồ ăn&.&.&.</FONT><FONT interval=30>Em&.&.&. em xin lỗi&.&.&.</FONT>
 \
 // <FONT interval=60>怪我をしているお身体を踏みつけ、
 // お膳までひっくりかえしてしまい…
@@ -2268,8 +2245,8 @@ dropped the tray&.&.&. I'm sorry&.&.&. </FONT><FONT interval=30>I'm so&, so sorr
 
 @action
 -message id="主人公", log_name="？？？", message_name="？？？"
-Ah&.&.&. yeah&. I'm fine&. Don't worry about it&.
-Lift up your head&.
+À&.&.&. phải&. Tôi ổn&. Đừng lo&.
+Ngẩng mặt lên đi&.
 \
 // ああ…うん。
 // 大丈夫だから、そんなに気にしなくていい。
@@ -2279,8 +2256,8 @@ Lift up your head&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0095.ogg"
-&.&.&.Phew&. You're so kind&. Are all servants of the
-heavens as kind as you are&, Big Brother?
+&.&.&.Phù&. Anh thật là tốt bụng&. Có phải mọi sứ giả trên Thiên Đường
+cũng đều tốt bụng như anh không&, Anh Hai?
 \
 // ……ほっ。
 // お優しいのですね。
@@ -2289,9 +2266,8 @@ heavens as kind as you are&, Big Brother?
 
 @action
 -message id="主人公", face="シリアス", log_name="？？？", message_name="？？？"
-So you were talking about me when you
-mentioned a Servant of Heaven earlier&.
-And&, brother&.&.&. are we siblings?
+Vậy là hồi nãy cô nói Sứ Giả Thiên Đường là ám chỉ tôi&.
+Ủa&, anh hai&.&.&. Chúng ta là anh em à?
 \
 // やっぱり、さっき言っていた
 // 天の御使いって、俺のことなのか。
@@ -2299,22 +2275,22 @@ And&, brother&.&.&. are we siblings?
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0096.ogg"
-Yes&, Big Brother&, you are the Servant
-of Heaven&, but not my big brother&.
+Phải&, Anh Hai&, anh là Sứ Giả Thiên Đường&,
+nhưng anh không phải là anh hai của em&.
 \
 // お兄様は天の御使いですけど、
 // 私のお兄様ではありません。
 
 @action
 -message id="主人公", face="シリアス", log_name="？？？", message_name="？？？"
-But then why "Big Brother"&.&.&.?
+Vậy thì tại sao lại gọi "Anh Hai"&.&.&.?
 \
 // でも、俺のこと、お兄様って…
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0097.ogg"
-I don't know your name&.
-Could you be so kind as to tell me what it might be?
+Tại em không biết tên của anh&.
+Anh có thể vui lòng cho em biết tên của anh là gì được không?
 \
 // はい、お名前がわかりませんでしたので。
 // 教えてくださいますか？
@@ -2327,9 +2303,9 @@ Could you be so kind as to tell me what it might be?
 
 @action
 -message id="主人公", face="シリアス", log_name="？？？", message_name="？？？"
-&.&.&.Sorry&, I don't know&.
-I don't remember who I am&, where I'm from&.&.&.
-I just don't have any memory of it&.
+&.&.&.Xin lỗi&, tôi không biết&.
+Tôi không nhớ tôi là ai&, hay tôi đến từ đâu&.&.&.
+Tôi không hề có ký ức gì về những thứ đó&.
 \
 // ……ごめん、わからない。
 // 思い出せない…
@@ -2338,8 +2314,8 @@ I just don't have any memory of it&.
 
 @action
 -message id="ヒミコ", voice="ヒミコ##S01_ジパング編_プロローグ#0098.ogg"
-You were hurt badly&.
-Maybe that caused you to lose your memory&.&.&.
+Anh bị thương rất nặng&.
+Có lẽ do vậy nên anh bị mất trí nhớ&.&.&.
 \
 // …ひどい怪我をされていたので、
 // もしかしたら、その時に記憶をなくすようなことが
@@ -2347,9 +2323,9 @@ Maybe that caused you to lose your memory&.&.&.
 
 @action
 -message id="ヒミコ", face="笑顔", voice="ヒミコ##S01_ジパング編_プロローグ#0099.ogg"
-But you are most definitely a Servant of Heaven!
-You descended from the skies and saved us&.
-I'll never forget that brilliant light&.&.&.
+Nhưng anh chắc chắn là Sứ Giả nơi Thiên Đường!
+Anh từ trời ngự xuống và giải cứu bọn em&.
+Em sẽ không bao giờ quên ánh sáng chói lọi đó&.
 \
 // で、でも、天の御使いであることには、
 // 間違いありません！
