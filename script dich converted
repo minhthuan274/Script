@@ -1,0 +1,5660 @@
+//&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-
+//英雄＊戦姫　イベントスクリプトファイル
+//&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-
+
+//※※※中村　いじったデータ※※※
+
+//****************************************
+//■イベント：プロローグ
+//属性：本筋
+//種別：自然発生
+//内容：重要
+
+@ＣＧ id="黒"&, name="cover"&, time=0&, z=1200
+@se_stop ch="All"&, time=2000
+@bgm_stop ch=0&, time=2000
+//@背景 id="黒"&, time=2000
+//@ＣＧ id="黒"&, name="cover"&, time=2000
+//@背景 id="黒"&, time=2000
+@wait time=2000
+
+//@地図詳細移動 x=2000&, y=800&, time=0&, flush=false
+//@地図移動 spot="江戸"&, time=3000&, flush=false
+//@背景消去 id=""&, time=2000
+
+@flip time=0
+&-ＣＧ id="世界地図"&, name="map"&, z=1100
+//&-move name="map"&, x=&-160&, y=250&, relative=true//&, x="Center"&, y="Middle"//
+&-move name="map"&, x=&-260&, y=250&, relative=true//&, x="Center"&, y="Middle"//
+&-zoom  name="map"&, sx=250%&, sy=250%
+//&-zoom  name="map"&, sx=400%&, sy=400%
+
+@bgm ch=0&, sound="暗闇"
+
+@mode_cinema
+
+//@地図移動 spot="江戸"&, time=0&, flush=false
+
+
+@action
+//&-ＣＧ消去 name="cover"&, time=3000
+&-opaque name="cover"&, alpha=40%&, time=3000
+&-move name="map"&, x=100&, y=0&, relative=true&, time=24000//&, x="Center"&, y="Middle"//
+//&-zoom  name="map"&, sx=250%&, sy=250%&, time=24000
+//@action
+&-message id="ムー"&, log_name="？？？"&, message_name="？？？"&, voice="ムー##S01_ジパング編_プロローグ#0001&.ogg"
+&&.&&.&&.Va tran chien da&&.&&.&&. This must be Zipang&&.
+A small&&, small battle&&.&&.&&.
+\
+// ……また、争いが始まるか……
+// これは、ジパングか。
+// 小さな小さな戦いだ……
+
+//＠↓《理＝ことわり》
+//@action
+&-message id="ムー"&, log_name="？？？"&, message_name="？？？"&, voice="ムー##S01_ジパング編_プロローグ#0002&.ogg"
+Battle is inevitable&&. That is the law of the world&&.
+Chiến tranh là điều không thể tránh khỏi&. Bởi nó là một phần quy luật của nhân loại&.
+Và cái quy luật ấy sẽ mãi tiếp diễn&.
+It must be kept so&&.&&.&&.
+\
+// …戦いは、必然だ。
+// それが理だ。
+// そうしなければいけないのだ…
+
+
+&-move name="map"&, x="Center"&, y="Middle"&, time=60000
+&-zoom  name="map"&, sx=81%&, sy=81%&, time=60000
+
+//@action
+&-message id="ムー"&, log_name="？？？"&, message_name="？？？"&, voice="ムー##S01_ジパング編_プロローグ#0003&.ogg"
+Dance&&, heroes&&. Dance until you become twisted and
+misshapen on this world's platform of conflict&&.
+Hãy nhảy múa đi&, hỡi những anh hùng&. Hãy nhảy múa tới khi thân xác các ngươi hoàn toàn chôn vùi trong vòng xoáy xung đột&.
+\
+// そのまま踊れ。
+// 踊り続けろ、舞い狂え、英雄たちよ。
+// この世界で、闘争の円舞に狂乱し続けるといい。
+
+//@action
+&-message id="ムー"&, log_name="？？？"&, message_name="？？？"&, voice="ムー##S01_ジパング編_プロローグ#0004&.ogg"
+Bring chaos upon this world&&. Even more chaos&&.
+To bring about order&&, spread more chaos&&.
+Hãy mang tới sự hỗn loạn cho thế giới này&. Hỗn loạn hơn nữa&.
+Phủ giăng khắp nơi cảnh loạn lạc&, vì một trật tự mới&.
+\
+// この世に混沌を。
+// さらなる混沌を。
+// 秩序のための混沌を広げるために。
+
+//＠↓《理解る＝わかる》
+//@action
+&-message id="ムー"&, log_name="？？？"&, message_name="？？？"&, voice="ムー##S01_ジパング編_プロローグ#0005&.ogg"
+There is no need to know why&&. All you need is to
+dance like fools&&, drunk on your cheap ideals&&.
+Đừng hỏi tại sao&. Các ngươi chỉ cần nhảy múa lên như những tên ngốc&, say sưa trong các ý tưởng nghèo nàn của mình&.
+\
+// 何故、と、&(理解/わか&)る必要はなし。
+// ただ無様に踊り続けろ。
+// 安っぽい信念に酩酊し続けろ。
+
+//＠↓《他人＝あだびと》
+//@action
+&-message id="ムー"&, log_name="？？？"&, message_name="？？？"&, voice="ムー##S01_ジパング編_プロローグ#0006&.ogg"
+Bear arms&&, let your weapons clash&&.
+Battle&&, fight&&, drag not only others&&, but also
+yourselves into the spiral of chaos!
+Hãy vung tay&, hãy để cho tiếng binh khí vang lên&.
+Chiến trận&, tranh đấu&, cuốn tất cả vào guồng quay hỗn mang&.
+\
+// 武器と武器を交わらせ、
+// 戦い、争い、混沌の螺旋に叩き込むといい。
+// ……&(他人/あだびと&)だけでなく、自らをもな…！
+
+//@mode_window
+
+&-bgm_stop ch=0&, time=3000
+&-opaque name="cover"&, alpha=100%&, time=3000
+&-wait time=3000
+&-move name="map"&, x="Center"&, y="Middle"&, time=0
+&-zoom  name="map"&, sx=80%&, sy=80%&, time=0
+
+@action
+&-ＣＧ消去 name="map"&, time=0
+&-wait time=2000
+
+//中村　今、のこれは、仮のつもりで入れています。
+//　　　場面転換、何かよいものがあればお願いいたします。
+
+/*
+//中村　メッセージ枠設定、仮です。正式設定をお願いいたします。
+@action
+&-text x="Center"&, y=291
+時は戦国。
+乱世に生きる英雄たちが野望を果たすため、
+戦乱の渦を生み出していく時代。
+\
+&-clear
+//中村clearコマンドも仮です。よい案配にしてください。
+//　　　というか、通常と同じ処理が良いと思ってます。
+
+@action
+&-text x="Center"&, y=291
+生者が亡骸を積み重ねて、
+淀んだ思惑で踏み固めながら、
+乱世という激動の波を乗り越えていく。
+\
+&-clear
+*/
+
+//中村　ここ、どうして炎の音が入っているのか、ちょっとわからないでいます。
+//　　　どちらかというと、合戦の音ではないでしょうか…
+//*SE火事の音、メラメラメラ
+//中村　１小節終わるタイミングでのエフェクトウェイトにしています。
+//　　　重いようでしたら、適宜調整お願いいたします。
+
+@bgm ch=0&, sound="行軍"
+//@風景 id="青空"&, time=0
+@地図移動 spot="邪馬台"&, time=0&, flush=false
+@wait time=2500
+//@背景消去 id=""&, time=2500
+@ＣＧ消去 name="cover"&, time=2000
+
+@地図移動 spot="江戸"&, time=1000
+
+@風景 id="青空"&, time=500
+
+//@立ち絵 id="ヒミコ"&, time=300
+
+//このシーンのヒミコは？？？
+//＠↓《ヒミコ、兵士に呼びかけられるまでは優秀そうな話し方で》
+@action
+&-message id="ヒミコ"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"&, voice="ヒミコ##S01_ジパング編_プロローグ#0001&.ogg"
+&&.&&.&&.At last&&. This day has finally come&&.
+Cuối cùng ngày này cũng đến&.
+\
+// ……ようやくです…
+// やっと、この日が訪れました。
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"&, voice="ヒミコ##S01_ジパング編_プロローグ#0002&.ogg"
+With this victory at hand&&, I will take my
+first step toward world domination!
+Chiến thắng chắc nịch này sẽ là bước chân đầu tiên của ta trên con đường thống trị thế giới&.
+\
+// ついにこの私が、勝利を片手に
+// 世界征服の一歩を踏み出します！
+
+//@se ch=0&, sound="玉串"
+
+/*
+@ＣＧ id="黒"&, name="CG"&, time=500
+
+@action
+&-text x="Center"&, y=291
+時には裏切り、
+時には忠義を示し、
+武力と謀略を剣にして自らを誇示する。
+\
+&-clear
+
+//輩＝ともがら
+@action
+&-text x="Center"&, y=291
+君主すら蹴落とす様は悪鬼の如く。
+&&(輩/ともがら&&)をも喰らう様は羅刹の如く。
+\
+&-clear
+
+@ＣＧ消去 name="CG"&, time=500
+*/
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"&, voice="ヒミコ##S01_ジパング編_プロローグ#0003&.ogg"
+I have summoned heroes from far and wide&&, made
+plans through night and day&&, and sown the seeds
+of victory amongst my unsuspecting foes&&.
+Ta đã chiêu mộ được biết bao hào kiệt từ khắp mọi nơi&, ngày đêm lập ra vô số mưu kế&, âm thầm gieo rắc mầm thắng xuống mọi kẻ địch&.
+\
+// 各地に呼びかけて集めた豪傑たち、
+// 寝食を惜しんで考え抜いた布陣、
+// 敵軍に張り巡らせた謀略の数々……
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"&, voice="ヒミコ##S01_ジパング編_プロローグ#0004&.ogg"
+We are invincible! We are the best!
+Nothing will shake our victory!
+Quân ta là bất bại! Là dũng mãnh nhất! Bách chiến bách thắng!
+\
+// まさに無敵！
+// まさに最強！
+// 私達の勝利は、揺るぎません！
+
+/*
+@ＣＧ id="黒"&, name="CG"&, time=500
+
+@action
+&-text x="Center"&, y=291
+争いの末に生き残った者たちが、
+天下統一する時を窺いながら雌伏して時を待つ。
+\
+&-clear
+
+@ＣＧ消去 name="CG"&, time=500
+*/
+
+@action
+&-message id="ヒミコ"&, log_name="？？？"&, message_name="？？？"&, voice="ヒミコ##S01_ジパング編_プロローグ#0005&.ogg"
+Hehehe&&.&&.&&. I'll get you this time&&. If you think I'm going
+to lose every time&&, you'd better think again!
+Hehehe&. Lần này ta sẽ tóm được cô&. Nếu cô vẫn khư khư suy nghĩ ta toàn thua thì lo mà hối đi!
+\
+// ふふふ…
+// 今回こそ、吠え面をかかせてやりますよっ。
+// 負けっぱなしで終わると思ってたら、
+// 大間違いなんですから…！
+
+@action
+&-message id="ヒミコ"&, log_name="？？？"&, message_name="？？？"&, voice="ヒミコ##S01_ジパング編_プロローグ#0006&.ogg"
+Once I catch you&&, first I'll subject you to tickling hell!
+The back of your foot&&, by this hand!
+Một khi bắt được cô&, ta sẽ cù cho cô phải lăn lộn!
+bằng bàn tay này!
+<FONT interval=60>Heh&&, hehehe&&.&&.&&.</FONT>
+\
+// 捕まえたら、まずは、くすぐりの刑です。
+// 私が直接、足の裏を…！&.&.
+// <FONT interval=60>うふっ、ふふふっ…！</FONT>
+
+//@se ch=0&, sound="剣戟１"
+
+/*
+@ＣＧ id="黒"&, name="CG"&, time=500
+
+@action
+&-text x="Center"&, y=291
+今日もまた、白銀の刃が不浄の大地を血で染める。
+\
+&-clear
+
+@action
+&-text x="Center"&, y=291
+果てなき戦いに身を投じる英雄たちが、
+天下という名の欲望を果たすために。
+正義の旗を掲げて、同じ目的を持つ相手と剣を交えて。
+\
+&-clear
+
+@ＣＧ消去 name="CG"&, time=500
+*/
+
+@action
+&-message id="兵士１"
+Thưa công nương Himiko!
+\
+// ヒミコ様！
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0007&.ogg"
+So the enemy has been defeated&&, I see&&. Time to
+prepare my victory proclamation&&, and the tickling&&.&&.&&.
+Đánh bại kẻ địch rồi chứ gì&, ta biết&. Đã đến lúc tuyên bố chiến thắng&, và cù ch&-&.&.&.
+\
+// 敵軍が全滅したのですね。
+// では、勝利宣言と、くすぐりの刑の準備を……
+
+@bgm_stop ch=0&, time=2000
+
+@action
+&-message id="兵士１"
+Our troops have just retreated&&. All of them&&.
+Quân ta đã bị đánh bật&. Toàn bộ&.
+\
+// たった今、こちらの全軍が撤退しました。はい。
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0008&.ogg"
+Wha&&.&&.&&.
+Gìììììììììì!!
+\
+// なっ……
+
+/*
+@ＣＧ id="黒"&, name="CG"&, time=500
+
+@action
+&-text x="Center"&, y=291
+太平の世が生まれる日は訪れるのか。
+どうすれば、平和な世界は生まれるのか。
+その答えを出せる者は、誰もいない。
+\
+&-clear
+
+@ＣＧ消去 name="CG"&, time=500
+*/
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0009&.ogg"
+<FONT size=33 interval=100 >Wha&&.&&.&&. WHAAAAAAT!?!?</FONT>
+Haaaả&. GÌ CHỨỨỨỨ!!!!?
+\
+// <FONT size=33 interval=100 >な、&.&.&.&.&.&.&.&.&.なーーーーんですってぇーーーーっ！？</FONT>
+
+/*
+@ＣＧ id="黒"&, name="CG"&, time=500
+@立ち絵消去 id=""&, time=300
+
+@action
+&-text x="Center"&, y=291
+少なくとも、
+今、目の前にいる夢見がちな女の子には――
+\
+&-clear
+
+@ＣＧ消去 name="CG"&, time=500
+*/
+
+
+@se_stop ch="All"&, time=2000
+@bgm_stop ch=0&, time=2000
+@ＣＧ id="白"&, name="CG"&, time=2000//&, effect="CurtainLeft"
+@立ち絵消去 id=""&, time=0
+@風景消去 id=""&, time=0
+@ＣＧ消去 name="CG"&, time=1500//&, effect="CurtainLeft"
+
+@mode_window
+
+@風景 id="青空"&, time=500
+
+//@風景 id="青空"&, time=500
+@bgm ch=0&, sound="日常２"
+
+@action
+&-message
+＜Himiko Army &&- Main Camp＞
+\
+// ＜ヒミコ軍・本陣＞
+
+@立ち絵 id="ヒミコ"&, time=300
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0010&.ogg"
+<FONT interval=30>Wait&&, wait&&, what do you mean!?
+My strategies were perfect!
+And the heroes I gathered&&, where have they gone!?</FONT>
+Khoan&, khoan&, ý ngươi là sao!?
+Chiến lược của ta rất hoàn hảo mà!
+Còn những dũng tướng ta chiêu mộ&, họ đâu cả rồi!?
+\
+// <FONT interval=30>ど、どど、どういうことですか！？
+// 私の考えた布陣は完璧ですよ！
+// それに、私が選りすぐった豪傑は
+// どこへ行ったんですか！？</FONT>
+
+@action
+&-message id="兵士１"
+Well&&.&&.&&. The "Three Days' Reign Formation" you
+came up with while eating pickled radish was taken
+out with ease&&. Quite impressively&&, I may add&&.
+Ưmmm&. Cái chiến lược 'Ba Hôm' người nảy ra trong lúc ăn củ cải muối đã bị bẻ gãy dễ quá&. Thật quá không ngờ&.
+\
+// え、えーと。
+// ヒミコ様がたくわんを食べている時に思いつかれた
+// 『三日天下の陣』は、あっさりと崩されました。
+// それはもう見事に。
+
+@action
+&-message id="兵士２"
+Um&&.&&.&&. I hate to break the news&&, but some of the
+heroes betrayed us&&. Rather quickly&&, I may add&&.
+Ưm&.&.&. Xin lỗi đã chen ngang&, nhưng vài 'hào kiệt' người chiêu dụ đã phản chúng ta rồi&. Trở mặt khá là nhanh&.
+\
+// その…こちらも言いにくいのですが、
+// 豪傑の何名かは寝返ったようです。
+// それはもうあっさりと。
+
+@se sound="ガーン&.ogg"
+@揺れ name="MainChar"&, time=500&, 方向="横"&, 幅=16&, 回数=30
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0011&.ogg"
+<FONT interval=60>T&&-That can't be&&.&&.&&. I prepared everything so
+that this time we would be victorious&&.&&.&&.</FONT>
+S&-Sao có thể&.&.&. Ta đã chuẩn bị mọi thứ cho chiến thắng này rồi mà&.&.&.
+\
+// <FONT interval=60>あ、ありえません……
+// 今回は絶対に勝てるよう、
+// 万全の用意をしたのにぃ…</FONT>
+
+//＠↓《こしょこしょナイショ》
+@action
+&-message id="兵士２"
+<FONT size=24>Well&&, you know&&.
+Himiko just can't hold a candle to her opponent&&.</FONT>
+Ưmm&, vậy là công nương Himiko không thể nhỏ sáp lên đối thủ của nàng rồi&. 
+\
+// <FONT size=24>まぁ、アレだよね…
+// 向こうとヒミコ様じゃ、
+// 釣り合いが取れていないっていうか…</FONT>
+
+//＠↓《こしょこしょナイショ》
+@action
+&-message id="兵士１"
+<FONT size=24>That formation was riddled with holes&&, even to my untrained eyes&&.
+Himiko's really not fit for batt&&-&&.&&.&&.</FONT>
+Mù binh pháp như tôi còn thấy rõ mồm một lỗ hỗng của cái chiến lược mà&. Công nương đúng là không có khiếu đánh tr&-
+\
+// <FONT size=24>第一あの布陣、素人の私でも穴だらけに見えたし、
+// ヒミコ様は、戦に向いてな…</FONT>
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0012&.ogg"
+<FONT size=30 interval=30>Hey! I can hear you!</FONT>
+Này! Ta nghe thấy đó!
+\
+// <FONT size=30 interval=30>そこ！！
+// 聞こえてますよっ！</FONT>
+
+@action
+&-message id="兵士１"
+<FONT size=30 interval=23>I&&-I'm terribly sorry!</FONT>
+\
+// <FONT size=30 interval=23>も、申し訳ございません！</FONT>
+
+@action
+&-message id="兵士２"
+<FONT size=30 interval=30>Please forgive me!</FONT>
+Xin công nương thứ tội!
+\
+// <FONT size=30 interval=30>す、すみません！</FONT>
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0013&.ogg"
+But we haven't lost yet!
+Your great leader Himiko has not been defeated!
+Nhưng ta vẫn chưa thua! Đại nữ vương Himiko này sẽ không thua đâu!
+\
+// むっ、むぅぅっ…
+// まだ負けたわけじゃありません！
+// 総大将ヒミコは、健在なんですからね！
+
+@se sound="c紙ばさっ&.ogg"
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0014&.ogg"
+You say our formation has holes&&, but so
+does the enemy's! Look here&&, a path
+straight to enemy headquarters&&. You may
+fool others&&, but you won't fool me!
+Ngươi nói đội hình ta có lỗ hổng&, kẻ địch cũng thế thôi! Nhìn nè&, một con đường dẫn thẳng vào đại bản doanh của chúng&. Xí gạt ai chứ gạt Himiko này đâu dễ!
+\
+// 布陣の穴なら、敵だって同じ！
+// この地図を見れば一目瞭然です！
+// ここに、敵本陣まで続く道があります！
+// 他の人の目はごまかせても、私は騙されません！
+
+@action
+&-message id="兵士１"
+But&&.&&.&&. Himiko&&, you said that was a trap yesterday&&.
+And we all agreed and said we should avoid it&&.&&.&&.
+Êh&.&.&. Thưa công nương&, chẳng hôm qua người bảo đấy là cái bẫy&. Mọi người đều đồng tình nên tránh rồi mà&.
+\
+// でも、それ……
+// 昨日、ヒミコ様、罠だと仰ってましたよ？
+// みんなもそう思うから、避けようって…
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0015&.ogg"
+Ha! We're going to turn their trap back on them&&. They'll
+be completely dumbstruck by my genius plan&&.&&.&&.
+Haha! Ta sẽ dùng gậy ông đập lưng ông&. Chúng sẽ hoàn toàn ngơ ngẩn trước mưu thần của ta&.
+\
+// ふふっ…
+// 敵の裏の裏をかくのです。
+// 敵は、私の高度な戦略に驚きを隠せないでしょう…
+
+@action
+&-message id="兵士１"
+<FONT interval=60>You're not listening&&, are you&&.&&.&&.</FONT>
+Người chẳng chịu biết lắng nghe gì cả&.&.&.
+\
+// <FONT interval=60>き、聞いていませんね…</FONT>
+
+@action
+&-message id="兵士２"
+Himiko&&, let's go home&&. We can't win&&.
+Nobody else bet on us winning either&&.
+Công nương Himiko&, ta về thành thôi&. Ta không thể thắng đâu&. Chẳng ai trong quân nghĩ ta thắng được cả&.
+\
+// ヒミコ様、もう帰りませんかー？
+// 私たちじゃ絶対に勝てませんってー。
+// 誰も、うちらが勝つ方に賭けなかったんですからー。
+
+@action
+&-message id="兵士１"
+Oh&&, I bet on our victory! I believed in you&&, Himiko&&.
+You can trust me on this&&, Himiko&&.
+Vâng&, thuộc hạ e ta khó thể thắng! Chúng thuộc hạ luôn một lòng vì Người&, công nương Himiko&. Nên xin Người lần này hãy nghe lời can của thuộc hạ&.
+
+\
+// あ、私はこちらの勝利に賭けましたよ！
+// ヒミコ様なら、やってくれると思いましたから。
+// ヒミコ様、信じてくださいねー。
+
+@action
+&-message
+//mad
+<FONT interval=30 speed=400 effect="OffCenter">＊Snap＊!</FONT>
+\
+// <FONT interval=30 speed=400 effect="OffCenter">ぷちっ。</FONT>
+
+@action
+&-message id="兵士２"
+Oh&&. She's snapped&&.
+Ôi trời&. Công nương dỗi kìa&.
+\
+// あっ。なんか切れた。
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0016&.ogg"
+<FONT interval=60>Heh&&. Heh heh heh&&.&&.&&.</FONT>
+Then we'll go all out&&, whether we make it out or not!
+Even cornered mice will bite back at a cat!
+Vậy ta lên đường thôi&. Dù không biết có ăn hay không! Con giun xéo lắm cũng quằn mà!
+\
+// <FONT interval=60>ふ、ふふ、ふふふ…</FONT>&.&.
+// こうなったら玉砕覚悟で突っ込んでやります！
+// ネズミだって、頑張ったら猫を噛めるんですからね！
+
+@action
+&-message id="兵士１"
+Himiko&&, did you just refer to us as mice&&.&&.&&.?
+Ý công nương ám chỉ chúng ta là giun??
+\
+// ヒミコ様、自分たちのことを、ネズミって…
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0017&.ogg"
+<FONT interval=30>Overcome the wall before us&&, and there is
+nothing between us and their headquarters! We'll
+get her this time for sure! All troops&&, forward
+march! The foe is before our eyes!</FONT>
+Hãy vượt qua tường thành trước mặt&, và tiến thẳng vào đại bản doanh của địch! Lên đường thôi! Toàn quân&, xông lên&, địch đang ở ngay trước mắt!
+\
+// <FONT interval=30>目の前の壁さえ取り除けば、本陣まで一直線です！
+// 今日こそは、ぎゃふんと言わせてやるんですからーっ！
+// 全軍、進めー！！
+// 敵は本陣にあり、ですー！</FONT>
+
+@se_stop ch="All"&, time=1000
+//@bgm_stop ch=0&, time=700
+@ＣＧ id="黒"&, name="CG"&, time=1000&, effect="CurtainLeft"
+@立ち絵消去 id=""&, time=0
+@風景消去 id=""&, time=0
+@ＣＧ消去 name="CG"&, time=1000&, effect="CurtainLeft"
+
+@地図移動 spot="江戸"
+
+@風景 id="江戸"&, time=500
+@bgm_stop ch=0&, time=2000
+
+@action
+&-message
+＜Enemy Stronghold＞
+\
+// ＜敵軍・本陣＞
+
+@立ち絵 id="ヒミコ"&, time=300
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0018&.ogg"
+Hahaha! Look!
+I took advantage of their trap&&, just like I said I would!
+Hahaha! Nhìn xem! Thấy ta lợi dụng lỗ hổng từ cái bẫy của địch chưa&, ta đã bảo mà!
+\
+// ふふふふ！
+// さすが私です！
+// 見事、裏の裏をかいてやりました！
+
+@action
+&-message id="兵士１"
+<FONT interval=60>Really&&.&&.&&.? Looks like we fell right into the trap to me&&.&&.&&.</FONT>
+Thật ạ? Chúng thuộc hạ lại thấy như ta rơi vào tròng thì đúng hơn&.
+\
+// <FONT interval=60>そうでしょうか……
+// まんまと、術中にはまったような…</FONT>
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0019&.ogg"
+That's not true! Look at who's in the
+general's seat&&, sitting proudly as usual&&.&&.&&.
+Làm gì có! Nhìn lên cái ghế chủ tướng của chúng kìa&, ả hẳn giờ đang ngồi chễnh chệ như mọi ngày&.&.&.
+\
+// そんなことはありません！
+// ほら、いつものように、
+// 大将席にふんぞりかえった、あの人が……
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0020&.ogg"
+Um&&.&&.&&. What? Where is she&&.&&.&&. Where did she go!?
+Êh&.&.&. Hả? Cô ta đâu&.&.&. Cô ta đâu rồi!?
+\
+// あれ…あれれ？
+// あの人は、どこ……どこにいるんですかっ！？
+
+@action
+&-message id="織田信長"&, log_name="？？？"&, message_name="？？？"&, face="None"&, voice="織田信長##S01_ジパング編_プロローグ#0001&.ogg"
+You sure are dumb&&.
+Cô ngốc quá đó&.
+\
+// お前って、本当に間抜けだよな。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0021&.ogg"
+&&.&&.&&.Huh?
+Hử?
+\
+// …へ？
+
+@bgm_stop ch=0&, time=1000
+
+@se ch=0&, sound="布はずし１&.ogg"
+//@立ち絵消去 id=""&, time=300
+
+@bgm ch=0&, sound="ピンチ"&, time=1000
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0022&.ogg"
+r
+\
+// <FONT interval=30 speed=400 effect="Jump">きゃっ…！？</FONT>&.&.&.
+// 誰もいないのに、陣幕が落ちた…！？
+
+//＠↓《冷静です》
+@action
+&-message id="織田信長"&, log_name="？？？"&, message_name="？？？"&, face="None"&, voice="織田信長##S01_ジパング編_プロローグ#0002&.ogg"
+Muskets&&, ready&&.
+Xạ thủ&, vào vị trí&.
+\
+// 鉄砲隊、構え。
+
+@se sound="銃構え複&.ogg"
+
+@action
+&-message id="兵士１"
+Enemy troops!?
+Có địch?
+\
+// てっ、敵兵！？
+
+@action
+&-message id="兵士２"
+Musketeers! We're surrounded! Lady Himiko!
+Là xạ thủ! Thưa công nương Himiko&, ta bị vây rồi!
+\
+// 鉄砲隊です！
+// 囲まれました！
+// ヒミコ様！！
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0023&.ogg"
+<FONT interval=30 speed=200 effect="OffCenter">W&&-What!?</FONT> I thought there was nobody here!
+Why are there so many of them!?
+Ta tưởng không có ai ở đây chứ! Sao giờ nhiều quá vậy!?
+\
+// <FONT interval=30 speed=200 effect="OffCenter">え、ええー！？</FONT>&.&.&.
+// だ、誰もいないと思っていたら、こんなに…！
+// どうしてこんなに、人がいるんですか！？
+
+//＠↓《あきれ気味です》
+@action
+&-message id="織田信長"&, log_name="？？？"&, message_name="？？？"&, face="None"&, voice="織田信長##S01_ジパング編_プロローグ#0003&.ogg"
+Because it's a trap&&, of course&&. Who would even
+charge in like this? You understand you're
+the leader&&, responsible for the lives of all your
+troops&&, don't you? How stupid can you get&&.&&.&&.
+Vì nó là cái bẫy chứ sao trăng gì&. Làm quái có kẻ nào chịu khoang tay ngồi sẵn đợi cô tới trói? Tướng cầm quân kiểu gì ngốc mà thế không biết? Bao nhiêu sinh mạng nằm trong tay cô đó&.&.&.
+\
+// 罠だからに決まってるだろ。
+// っていうか、普通、突っ込んでくるか？
+// 味方の命預かってる大将の自覚あんのかよ。
+// どこまで馬鹿なんだ…
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0024&.ogg"
+That voice&&.&&.&&.
+\
+// そ、その声は……
+
+@立ち絵 id="織田信長"&, time=300
+@se ch=0&, sound="c足音単鎧２&.ogg"
+
+@action
+&-message id="織田信長"&, face="笑顔"&, voice="織田信長##S01_ジパング編_プロローグ#0004&.ogg"
+Hey&&, Himiko&&. Long time no see&&.
+Glad to see you're still as dumb as always&&.
+Chào Himiko&. Lâu ngày không gặp&. Mừng vì cô vẫn ngốc như ngày nào&.
+\
+// よお、ヒミコ。
+// 久しぶりだな。
+// あいかわらず間抜けそうで、何よりだ。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0025&.ogg"
+We made it this far&&, and you catch us
+in a trap&&, Nobunaga? This is unfair!
+Victory was right before our eyes!
+Bọn tôi bị mắc bẫy ư? Ăn gian! Bọn này sắp thắng rồi mà!
+\
+// せっかくここまで辿り着いたのに、
+// 罠を仕掛けるなんて卑怯です、信長さん！
+// 私の勝利は目前だったんですよ！
+
+//@bgm_stop ch=0&, time=1000
+
+//@bgm ch=0&, sound="日常３"&, time=1000
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0005&.ogg"
+<FONT interval=60>&&.&&.&&.Haa&&.
+Where does that confidence come from&&, I wonder&&.</FONT>
+Ủa&, đâu ra cái tự tin đó thế&.
+\
+// <FONT interval=60>……はあ…
+// その自信が、どこから生まれているんだか…</FONT>
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0026&.ogg"
+From this bountiful chest&&. <FONT speed=200 effect="Jump">See?</FONT>
+Dĩ nhiên là từ bộ ngực nảy nở này&.
+\
+// このこぼれ落ちそうな胸からです。&.&.
+// <FONT speed=200 effect="Jump">えっへん。</FONT>
+
+//＠↓《冒頭は嘲笑です》
+@action
+&-message id="織田信長"&, face="笑顔"&, voice="織田信長##S01_ジパング編_プロローグ#0006&.ogg"
+&&.&&.&&.Ha&&. Bountiful&&, you say?
+Haha&. Nảy nở á?
+\
+// ……はっ。
+// こぼれ落ちそう、ねぇ。
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0027&.ogg"
+Hey&&, stop laughing! Yours aren't that big either!
+Nè&, không được cười! Của cô cũng chả to hơn tôi!
+\
+// あー、笑いましたね！
+// 信長さんだって、そんなに大きくないくせに！
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0007&.ogg"
+They're just hidden behind armor&&.
+They're not as pathetic as yours&&.
+Vì chúng được giấu kĩ bên dưới lớp chiến y&. Chứ đâu có thảm hại như cô&.
+\
+// これは鎧で隠れてるだけだ。
+// 貧相なお前の胸と一緒にすんな。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0028&.ogg"
+<FONT speed=200 effect="OffCenter">Wha&&.&&.&&.!</FONT> My chest is full of hope!
+Gì chứứứ! Ngực tôi là hiện thân của niềm khát vọng đó!
+\
+// <FONT speed=200 effect="OffCenter">わっ…！</FONT>&.&.&.
+// 私の胸には希望が詰まってるんです！
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0008&.ogg"
+What a tiny hope&&.
+You have plenty of evil intentions&&, though&&.
+To think that's what's behind that cute guise&&.
+Niềm khát vọng rõ le lói&.
+Tôi thừa biết&, cô thoạt trông tính con nít chứ trong đầu cô đặc nghẹt mấy suy định ranh ma&. 
+
+\
+// ちっちゃい希望だなぁ。
+// 腹には黒いモンがたっぷり詰まってるけど。
+// 見た目可愛い分、タチが悪すぎだ。
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0009&.ogg"
+I remember all the times we had together&&.
+The time you made me eat a mud cake&&, when
+you took the ladder away after I climbed up&&,
+when you dropped me into a trap hole&&.&&.&&.
+Tôi còn nhớ lúc ta ở chung&. Hết cho tôi ăn bùn đến rút thang khiến tôi ngã chổng vó xuống hố&.
+\
+// 昔から色々ちょっかいかけてくれたよな。
+// お遊びでドロ饅頭を食わされたり、
+// 高い場所まで登ったとこで、ハシゴを外されたり、
+// 山で、落とし穴に落とされたり……
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0029&.ogg"
+<FONT interval=60>&&.&&.&&.Youthful indiscretions&&.</FONT>
+&.&.&.Ơ&, nông nỗi tuổi trẻ ấy mà&.
+\
+// <FONT interval=60>…わ、若さゆえの過ちです。</FONT>
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0010&.ogg"
+Hey&&. Why don't you look me in
+the eyes when you speak?
+Vậy sao không dám nhìn thẳng mặt tôi khi nói?
+\
+// おいこら。
+// こっち見て話せ。
+
+@action
+&-message
+<FONT size=30 interval=60 speed=400 effect="Spring">＊Squeeze＊!</FONT>
+\
+// <FONT size=30 interval=60 speed=400 effect="Spring">むぎゅぅ～～～～～っ！</FONT>
+
+//＠↓《いたた、ほっぺいたいです。離して》
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0030&.ogg"
+<FONT interval=60 speed=400 effect="Wave">Ow&&, owowow! Thah hurrs! Ret me ho!</FONT>
+\
+// <FONT interval=60 speed=400 effect="Wave">いひゃ、いひゃひゃひゃっ！
+// ほっぺいらいれすっ…！
+// は、はなひて～～！</FONT>
+
+@action
+&-message
+<FONT size=30 interval=60 speed=400 effect="Spring">＊Squeeze＊</FONT>&&.&&.&&. <FONT size=30 interval=30 speed=400 effect="Splash">＊Smack＊&&.</FONT>
+\
+// <FONT size=30 interval=60 speed=400 effect="Spring">むぎゅぅ～～～～～っ！</FONT>&.&.&.　<FONT size=30 interval=30 speed=400 effect="Splash">ぽんっ。</FONT>
+
+//＠↓《１行目は離された衝撃です》
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0031&.ogg"
+//はぁはぁ…ひどいです！
+<FONT speed=400 effect="OffCenter">Wah!</FONT> That hurt! I hate you&&, Nobunaga! Stupidhead!
+\
+// <FONT speed=400 effect="OffCenter">はぅあ！</FONT>&.&.&.
+// う、うう～…ひどいです！
+// 信長さんのバカぁ！
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0011&.ogg"
+You're the stupid one&&, falling for such an obvious trap&&.
+Cô rõ ngốc&, cái bẫy lồ lộ ra mà cũng mắc vào cho được&.
+\
+// 馬鹿って言う方が馬鹿なんだよ。
+// 見え見えの罠に引っかかってるクセに、
+// 何、言ってやがる。
+
+@action
+&-se sound="ぐさり１&.ogg"
+//&-揺れ name="MainChar"&, time=500&, 方向="縦"&, 幅=8&, 回数=10
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0032&.ogg"
+<FONT size=30 interval=30 speed=400 effect="Jump">Ự!</FONT>
+\
+// <FONT size=30 interval=30 speed=400 effect="Jump">はうっ！</FONT>
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0012&.ogg"
+Every time you attack it fails&&.
+Every time there's a trap you fall for it&&.
+And you keep coming back for more&&, like now&&.&&.&&.
+Đánh đâu thua đó&, toàn rơi vào ổ mai phục&. Thế mà cứ khoái đánh hoài&.&.&.
+\
+// 攻め込む度に返り討ちにあって、
+// 罠を仕掛ける度に引っかかって。
+// で、懲りずにまたやってきて、こうして囲まれて……
+
+@action
+&-se sound="ぐさり２&.ogg"
+//&-揺れ name="MainChar"&, time=500&, 方向="横"&, 幅=16&, 回数=30
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0033&.ogg"
+<FONT size=33 interval=30 speed=400 effect="Wave">Wahhh!</FONT>
+\
+// <FONT size=33 interval=30 speed=400 effect="Wave">ふぁぁ！</FONT>
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0013&.ogg"
+You have no strength&&, no wit&&.
+You're just plain weak&&, so give up already&&.
+Không sức không mưu&. Cô non lắm&, bỏ mộng là vừa&.
+\
+// 武力もない。
+// 知謀もない。
+// 要は、へっぽこなんだよ。
+// いい加減に諦めろ。
+
+@action
+&-se sound="ぐさり３&.ogg"
+//&-揺れ name="MainChar"&, time=1000&, 方向="縦横"&, 幅=32&, 回数=50
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0034&.ogg"
+<FONT size=36 interval=20 speed=400 effect="OffCenter">Bahhh!!</FONT>
+\
+// <FONT size=36 interval=20 speed=400 effect="OffCenter">ぷはぁぁぁ！！</FONT>
+
+//＠↓《呆然としています》
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0035&.ogg"
+<FONT interval=60 speed=400 effect="Normal">&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.</FONT>
+\
+// <FONT interval=60 speed=400 effect="Normal">…………</FONT>
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0036&.ogg"
+<FONT interval=60>Heh&&.&&.&&. Heh heh&&.&&.&&. I was beginning to
+realize it&&, but I&&.&&.&&. I didn't think you would
+be the one to tell me so&&, Nobunaga&&.&&.&&.</FONT>
+He&, he he&. Tôi lờ mờ biết rồi&, nhưng&, tôi chưa từng nghĩ lại phải nghe những lời đó từ chính miệng cô&, Nobunaga&.
+\
+// <FONT interval=60>ふ、ふふ…ふふふ……
+// 薄々気付いていたものの……
+// 信長さんに言われるとは、思いませんでした…</FONT>
+
+@action
+&-message id="織田信長"&, face="笑顔"&, voice="織田信長##S01_ジパング編_プロローグ#0014&.ogg"
+So you knew&&, but didn't want to admit it&&. But good
+for you&&. Now you can finally give it all up and
+go down a different path&&. Hahahaha&&.
+Biết mà vẫn không muốn thừa nhận à&. Tốt&. Cô nên từ bỏ và chọn một hướng mục tiêu khác đi&. Hahahaha&.
+\
+// 自覚はあったけど、認めたくなかったって訳か。
+// でも良かったな。これで何もかも諦めて、
+// 別の道に進めるってもんだ。
+// ははははっ。
+
+@action
+&-message id="兵士１"
+Lady Nobunaga! Please&&, no more!
+Thưa ngài Nobunaga! Xin đừng nói nữa!
+\
+// の、信長様ー！
+// もうお許しを！
+
+@action
+&-message id="兵士２"
+Himiko's heart's Hit Points are already in the negative!
+Ahhh&&, something's coming out of her mouth!
+Công nương Himiko sắp chịu hết nổi rồi! Ôi không&, công nương sắp trào bọt mép kìa!!!
+\
+// ヒミコ様の心のヒットポイントが
+// マイナスになってます！
+// ああっ、ヒミコ様の口からなんか出てるー！
+
+@action
+&-message id="織田信長"&, face="笑顔"&, voice="織田信長##S01_ジパング編_プロローグ#0015&.ogg"
+Good for you&&, Himiko&&, looks like you
+at least have some loyal troops&&.
+Cũng may cho cô&, coi bộ cô vẫn còn những tên thuộc hạ trung thành&.
+\
+// 良かったな、ヒミコ。
+// 人望だけはあるみたいで。
+
+@action
+&-message id="織田信長"&, face="笑顔"&, voice="織田信長##S01_ジパング編_プロローグ#0016&.ogg"
+Or maybe they're just worried about you because
+you're so weak&&. Oh well&&, it doesn't matter either way&&.
+Hoặc cũng có khi tại cô yếu quá nên chúng mới lo&. Mà thôi&, chẳng phải chuyện của tôi&.
+\
+// っていうか、へっぽこすぎて
+// ほっとけないってのがホントのとこかな。
+// ま、どっちでもいいや。
+
+//＠↓《からかう感じです》
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0017&.ogg"
+Now&&.&&.&&. I could capture you like this&&, but it'd
+be a hassle to take you back with me&&.&&.&&.
+Còn giờ&. Tôi sẽ tạm giam cô&. Để cô cứ thế ra về e sau này chuốc thêm rắc rối&.
+\
+// さて……と。
+// このまま、とっ捕まえるのも手だが、どうすっかな。
+// 下手に連れて帰ったところで、面倒そうだし…
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0037&.ogg"
+W&&-What are you going to do to me!?
+G&-Gì chứ&, cô định làm gì!?
+\
+// わ、私を捕まえて、どうするつもりなんですか…！？
+
+//＠↓《からかう感じです》
+@action
+&-message id="織田信長"&, face="笑顔"&, voice="織田信長##S01_ジパング編_プロローグ#0018&.ogg"
+I'm going to take your goofy self and do stuff
+that people do to hostages&&, of course&&.
+Làm mấy điều thú vị như người ta hay làm với con tin&.
+\
+// 決まってるだろ。
+// 脳天気なお前に、
+// 人質らしいことをさせてやるんだよ。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0038&.ogg"
+Wha&&-&&.&&.&&. <FONT interval=30 speed=200 effect="OffCenter">Whaaaaat!</FONT>
+Hảảảảảảả!
+\
+// えっ…&.&.&.<FONT interval=30 speed=200 effect="OffCenter">えええっ…！</FONT>
+
+//中村　ここ、回想に行くそれっぽいブロック系のエフェクトの方がいいでしょうか。
+
+//*シーン再生開始位置
+
+@action
+&-message_hide
+&-se_stop ch="All"&, time=1000
+&-bgm_stop ch=0&, time=1000
+&-ＣＧ id="白"&, name="cover"&, time=1000&, z=1100
+&-wait time=1000
+&-立ち絵消去 id=""&, time=0
+&-bgm ch=0&, sound="Ｈ"
+&-ＣＧ id="ヒミコ拷問"&, name="s001"&, time=1500&, z=1100&, effect=@Universal&(mask="mosaic"&, fade=128&)
+//&-ＣＧ id="黒"&, name="CG"&, time=1500&, z=1100&, effect=@Universal&(mask="mosaic"&, fade=128&)
+&-wait time=1500
+
+@mode_cinema
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0039&.ogg"
+Please&&, stop&&.&&.&&.
+Làm ơn&, đừng mà&.
+\
+// や、やめてください…
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0019&.ogg"
+You're a hostage&&. Why are you telling me what to do?
+Kêu cứu vô ích&. Cô là con tin&. 
+\
+// お前は人質なんだ。
+// オレが何をしようが勝手だろ？
+
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0040&.ogg"
+This is inhumane&&.&&.&&. You won't get away with this&&.&&.&&.
+Đây là vô nhân đạo&.&.&. Cô không được phép làm điều này&.&.&.
+\
+// お、横暴です…
+// こんなことが許されるわけがありません…
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0020&.ogg"
+I'm the law around here and there's
+nobody to question it&&. Besides&&.&&.&&.
+Tôi là luật ở đây&. Ai dám cự cãi&. Với cả&.&.&.
+\
+// ここではオレが法だ。
+// 誰も文句を言うヤツなんていねえよ。
+// それにだ…
+
+@action
+&-se ch=0&, sound="鞭１&.ogg"
+&-フラッシュ blend="Normal"&, time=300
+&-wait time=500
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0041&.ogg"
+Oww! That hurts!
+Ou!! Đau!!!
+\
+// はぅぅっ…！
+// いたぁい…！
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0021&.ogg"
+You look like you're enjoying being whipped&&.
+Are you sure you weren't looking forward to it?
+Coi cô khoái ra mặt kìa&. Coi bộ đúng ý cô luôn nhỉ?
+\
+// 鞭で叩かれてる割には気持ちよさそうじゃねえか。
+// 本当は期待していたんじゃないのか？
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0042&.ogg"
+No&&, I wasn't&&.&&.&&.
+Không&, tôi không có&.&.&.
+\
+// そ、そんなことありません…
+
+//＠↓《弄ばれて＝もてあそばれて》
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0022&.ogg"
+You liar&&.
+You enjoy being treated like this&&, tied up and helpless&&.
+Bớt dối lòng đi&. Cô khoái bị trói cứng và hành hạ kiểu vầy chứ gì&.&.&. 
+\
+// 嘘つけ。
+// こうやって自由が利かない状態で&(弄/もてあそ&)ばれて、
+// 乱暴にされるのが好きなんだろ？
+
+
+//*SE鞭で叩く音、ぴしっ
+//@se ch=0&, sound="鞭１&.ogg"
+@action
+&-se ch=0&, sound="鞭１&.ogg"
+&-フラッシュ blend="Normal"&, time=300
+&-wait time=300
+&-se ch=0&, sound="鞭１&.ogg"
+&-フラッシュ blend="Normal"&, time=300
+&-wait time=500
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0043&.ogg"
+Kya! Mguh&&.&&.&&.
+\
+// きゃっ！　んっ、くぅ…
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0023&.ogg"
+How indecent&&.
+It's hard to think that you're actually a hostage&&.
+Dâm quá đó&. Ai mà tin nổi cô là con tin&.
+\
+// だらしないったらねえな。
+// とても人質の立場とは思えねえ。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0044&.ogg"
+Ah&&.&&.&&. Please&&.&&. Please stop&&.&&.&&. No more&&.&&.&&.
+Ah&.&.&. Xin cô&.&.&. Dừng lại đi&.&.&. Đừng mà&.&.&.
+\
+// はぁはぁ…
+// やめ…やめて、ください…
+// これ以上は、もう…
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0024&.ogg"
+Can't do that&&.
+I still need to pay you back for everything&&.
+Sao dừng được&. Cô phải trả cho đủ lời lãi chứ&.
+\
+// そういうわけにはいかねえな。
+// お前には今までの借りを返さなくちゃいけねえ。
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0025&.ogg"
+Hehe&&.&&.&&. I'll make it so you won't be able to live
+without me&&, always craving the feel of my whip&&.
+Hehe&.&.&. Tôi sẽ khiến cô phải sống dở vì tôi&, lúc nào cũng tơ tưởng đến cây roi này&.
+\
+// ふふっ…
+// 今日からはオレなしではいられない身体にしてやるよ。
+// 鞭で叩かれるだけで、よがる女にな。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0045&.ogg"
+No&&.&&.&&. No more&&.&&.&&. I'm getting hot&&.&&.&&. At this rate&&, I&&.&&.&&.
+Somebody help&&.&&.&&.
+Không&.&.&. Đừng mà&.&.&. Tôi thấy nóng&.&.&. Tôi&.&.&. Ai cứu với&.&.&.
+\
+// そ、そんな…これ以上はもう…
+// んっ、身体が熱く…くぅ…
+// あ、ああ…このままじゃ、私…
+// はっ、んぅ…誰か、助けてぇ…
+
+//@ＣＧ消去 name="CG"&, time=1000
+@action
+&-message_hide
+&-wait time=1000
+&-se_stop ch="All"&, time=1000
+&-bgm_stop ch=0&, time=1500
+&-ＣＧ消去 name="s001"&, time=1500&, effect=@Universal&(mask="mosaic"&, fade=128&)
+//&-ＣＧ消去 name="CG"&, time=1500&, effect=@Universal&(mask="mosaic"&, fade=128&)
+&-wait time=1500
+&-ＣＧ消去 name="cover"&, time=1000
+&-wait time=1000
+
+@mode_window
+
+//@シーン再生終了
+
+@bgm ch=0&, sound="日常３"
+
+@立ち絵 id="ヒミコ"&, time=300
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0046&.ogg"
+<FONT size=30 interval=30 speed=400 effect="OffCenter">Nooo!</FONT>
+<FONT size=30 interval=30>Nobunaga&&, you pervert!
+I don't want to be your personal toy!
+Nobunaga&, đồ biến thái! Tôi không phải đồ chơi của cô!</FONT>
+\
+// <FONT size=30 interval=30 speed=400 effect="OffCenter">いやぁぁ！</FONT>&.&.&.
+// <FONT size=30 interval=30>信長さんは、淫乱なんですかぁぁ！
+// 貴方の歪んだ欲望を受け止める役目はいやですぅ！</FONT>
+
+@action
+&-message id="織田信長"&, face="照れ"&, voice="織田信長##S01_ジパング編_プロローグ#0026&.ogg"
+<FONT size=30 interval=30 speed=200 effect="Bang">What do you think I'm going to do!?</FONT>
+<FONT size=30>How did you even come up with that!?
+Your imagination is terrifying!</FONT>
+Cô nghĩ cái quái gì thế!? Đầu óc cô đen vừa thôi!
+\
+// <FONT size=30 interval=30 speed=200 effect="Bang">誰がそんなことするか！</FONT>&.&.&.&.&.
+// <FONT size=30>っていうか、すごい想像力だな！
+// お前の方が、怖いわ！</FONT>
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0047&.ogg"
+Huh? Am I wrong?
+Hử? Không phải à?
+\
+// え？　違うんですか？
+
+//＠↓《ため息つきつつ》
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0027&.ogg"
+&&.&&.&&.Of course you're wrong&&. That's how you've always
+been&&, bullying me like that&&. But now that I'm in your
+position&&, I won't be dragged down to your level&&.
+Dĩ nhiên&. Bởi vậy nên cô toàn bị tôi ăn hiếp&. Dù xét thân phận chúng ta ngang nhau&, nhưng tôi không phải loại ngắn nghĩ như cô&.
+\
+// ……違うに決まってるだろ。
+// はあ…昔から、こうやって弄られてきたんだよな…
+// だけど、もう立場は逆転した。
+// これからは、お前のペースに巻き込まれたりしねえ。
+
+//＠↓《優しく諭すように》
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0028&.ogg"
+Give up your delusions of grandeur and
+your dream of world conquest&&. Go back
+home and live a quiet life&&, or else&&.&&.&&.
+Thôi&, từ bỏ ảo vọng bá chủ thế giới đi&. Về thành mình mà sống an nhàn đi&, bằng không&.&.&.
+\
+// 世界征服なんて不相応な夢は諦めて、
+// 自分の国で隠居してろ。
+// さもないと…
+
+//*SE鉄砲を構える音（複数）、ガチャ
+@se sound="銃構え複&.ogg"
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0029&.ogg"
+My muskets will light up&&. If you don't want
+holes in that little bottom of yours&&, you'd
+better turn tail and go back home&&.
+Xạ thủ của tôi sẽ nổ súng&. Nếu cô không muốn mông mình thủng vài lỗ thì tốt hơn nên quắc đuôi lên chạy nhanh đi&.
+\
+// オレの鉄砲隊が火を噴くぞ。
+// そのお尻を撃たれたくなけりゃ、
+// しっぽ巻いて、とっとと帰れ。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0048&.ogg"
+<FONT interval=30>I&&.&&.&&. I still have a secret plan!
+I'm going to turn this battle around!</FONT>
+T&.&.&. Tôi vẫn còn một kế hoạch bí mật&. Hãy xem tôi xoay chuyển tình thế đây!!
+\
+// <FONT interval=30>わ、私にはまだ秘策があるんです！
+// 今から逆転劇の始まりなんですよ！？</FONT>
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0030&.ogg"
+Sure&&, sure&&. You've got 5 seconds&&.
+Tốt&, tốt&. Cô có 5 giây&.
+\
+// はいはい。
+// ５秒数える間に決めな。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0049&.ogg"
+<FONT interval=30>Wait&&, hold on!
+They say slow and steady wins the race&&.&&.&&.</FONT>
+Khoan&, gượng đã! Từ từ&, đếm chậm thôi&.&.&.!
+\
+// <FONT interval=30>ま、待ってください！
+// 急いては事を仕損じると言いますし、ここはひとつ…</FONT>
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0031&.ogg"
+<FONT interval=60>5&&, 4&&, 3&&.&&.&&.</FONT>
+\
+// <FONT interval=60>５、４、３…</FONT>
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0050&.ogg"
+<FONT interval=60 speed=200 effect="OffCenter">Guhhhhh&&.&&.&&.</FONT> I'll get you next time! I hate you&&, Nobunaga!
+Everyone&&, retreat&&, retreat!
+Lần tới tôi sẽ tóm được cô! Nobunaga là đồ đáng ghét! Toàn quân&, rút&, rút lui! 
+\
+// <FONT interval=60 speed=200 effect="OffCenter">ぐ、う、う、うーっ！</FONT>&.&.&.&.&.
+// つ、次は覚えてなさい！
+// いーだっ！　信長さんなんて嫌いですーっ！
+// 皆さん、撤退！　撤退ですよーっ！
+
+@立ち絵消去 id=""&, time=300
+//@bgm_stop ch=0&, time=3000
+//*SE離れる駆け足、タッタッタッ
+@se sound="駆け足離石３&.ogg"
+
+@立ち絵 id="織田信長"&, time=300
+@se_stop ch="All"&, time=3000
+
+
+@action
+&-message id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0032&.ogg"
+Phew&&, they're finally gone&&.
+But "I'll get you next time&&," seriously?
+Phù&, cuối cùng cũng chịu đi&. Ủa&, nãy cô ta vừa bảo "lần tới" á?
+\
+// やれやれ…やっと行ったか。
+// しっかし、ベタな捨て台詞だな。
+// …まったく。
+
+@action
+&-message id="敵兵士１"
+Lady Nobunaga&&. If Himiko's the only general
+from Yamatai&&, then that rumor must be true&&.
+Thưa ngài Nobunaga&. Himiko là lãnh chúa duy nhất ở Yamatai&, khéo cô ta nói thật ấy chứ&.
+\
+// 邪馬台の大将がヒミコ様だけということは、
+// あの噂は本当のようですね。
+// 信長様。
+
+@action
+&-message id="織田信長"&, face="笑顔"&, voice="織田信長##S01_ジパング編_プロローグ#0033&.ogg"
+Right&&. If we're up against Himiko&&, it should be no
+problem at all&&. Heh&&.&&.&&. Luck is finally on my side&&.
+Ừ&. Himiko không đáng lo ngại&. Heh&, may mắn luôn mỉm cười với chúng ta mà&.
+\
+// そうだな。
+// まあ、相手がヒミコだったら、造作ない。
+// ふっ…オレにも運が回ってきたってことさ。
+
+//＠↓《不敵です》
+@action
+&-message id="織田信長"&, face="笑顔"&, voice="織田信長##S01_ジパング編_プロローグ#0034&.ogg"
+I will rule Zipang&&, even without Kusanagi in my hand&&.
+Ta phải thống nhất Nhật Bản&, dù cho không có Kusanagi&.
+\
+// この手に草薙の剣がなくても、
+// ジパングの王には、オレがなる。
+
+@se_stop ch="All"&, time=1500
+@bgm_stop ch=0&, time=1500
+@ＣＧ id="黒"&, name="CG"&, time=1500//&, effect="CurtainLeft"
+@立ち絵消去 id=""&, time=0
+@風景消去 id=""&, time=0
+@ＣＧ消去 name="CG"&, time=1500&, effect="CurtainLeft"
+
+@地図移動 spot="邪馬台"
+
+@se sound="c雨&.ogg"&, ch=10&, loop=true&, time=1000&, volume=40%
+
+@風景 id="雨空"&, time=500
+//中村　これ、雨を追加した新規追加風景、可能でしょうか？
+
+
+@action
+&-message
+＜Yamatai area &&- some mountain＞
+\
+// ＜邪馬台近辺・某山＞
+
+@立ち絵 id="ヒミコ"&, time=300
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0051&.ogg"
+<FONT interval=60>Ugh&&.&&.&&. This storm is just adding insult to injury&&.
+I'm sorry&&, everyone&&.&&.&&. I'm causing problems for
+everyone because of my incompetence&&.&&.&&.</FONT>
+Ưmmm&.&.&. Đã thua trận còn gặp mưa lớn&. Ta xin lỗi mọi người&. Tại ta bất tài đã khiến các ngươi liên lụy&. 
+\
+// <FONT interval=60>うう…踏んだり蹴ったりです…
+// まさか帰り道で嵐に遭うなんて…
+// ごめんなさい……
+// 私が不甲斐ないばかりに、皆さんに迷惑を…</FONT>
+
+@action
+&-message id="兵士１"
+What are you talking about?
+We've always known you're incompetent&&.
+Công nương đừng nên nói thế&. Chúng thuộc hạ biết thừa mà&.
+\
+// 何を言っているんですか。
+// ヒミコ様が不甲斐ないことは、
+// みんながよく知っていますよ。
+
+@action
+&-se ch=0&, sound="ぐさり１&.ogg"
+&-揺れ name="MainChar"&, time=500&, 方向="横"&, 幅=8&, 回数=10
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0052&.ogg"
+<FONT interval=20 speed=200 effect="OffCenter">Wha&&.&&.&&.!</FONT>
+<FONT interval=80>I want to cry&&.&&.&&.</FONT>
+Gììììì&.&.&.! Ôi&, đau lòng quá&.&.&.
+\
+// <FONT interval=20 speed=200 effect="OffCenter">ふぉ…っ！</FONT>
+// <FONT interval=80>み、皆さんの心が痛いです…</FONT>
+
+@action
+&-message id="兵士１"
+Don't worry about it!
+Once we get over this mountain&&, we'll be back home!
+Xin công nương chớ buồn! Qua được ngọn nói này là vì tới thành!
+\
+// 気にしては負けですよ！
+// この山を越えれば、都ですから頑張りましょう！
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0053&.ogg"
+You're right&&. We'll finally be back&&.&&.&&.
+We'll eat a warm meal&&, and plan our&&-&&-
+Ngươi nói đúng&. Ta sắp về nhà rồi&. Ăn một bữa no nê xong chúng ta sẽ bàn&-&.&.&.
+\
+// そ、そうですね…
+// ああ…やっと着くんですね…
+// 皆さんと温かいご飯を食べて、
+// そして、再起を図――
+
+//@se ch=0&, sound="木動く&.ogg"
+@bgm ch=0&, sound="ピンチ"
+
+@action
+&-message id="兵士２"
+Ambush! Bandits! Bandits are attacking our troops!
+Cấp báo! Có địch! Lũ thảo khấu đang tấn công quân ta!
+\
+// 敵襲ーっ！
+// 山賊です！
+// 山賊が我が軍に攻撃をしかけてきました！
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0054&.ogg"
+<FONT interval=30 speed=200 effect="OffCenter">What!?</FONT>
+What horrible people for showing up at a time like this!
+You should stay home when it rains!
+Mấy cái người khủng khiếp đó lại xuất hiện ngay lúc này ư! Đáng lẽ mưa thì nên ở nhà trú mưa chứ!
+\
+// <FONT interval=30 speed=200 effect="OffCenter">なっ…！！</FONT>&.&.&.
+// このタイミングで現れるなんて、
+// 性根の悪い人たちですね！
+// 雨の日は家でおとなしくするものですよ！
+
+//同背景の切り替え
+//中村　↑これ必要ないかもです。適宜調整お願いします。
+
+//*SE剣撃、カキンキン
+
+@action
+&-message id="兵士１"
+Himiko&&, it's dangerous here! Please go on ahead!
+Công nương Himiko&, ở đây nguy hiểm lắm! Xin người mau theo ngả này tìm sanh lộ!
+\
+// ヒミコ様、ここは危険です！
+// 先に逃げてください！
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0055&.ogg"
+No! I can't leave you all here!
+There's no point if we all don't go back together!
+Không! Ta không thể bỏ mặc các ngươi! Chỉ mình ta sống sót thì còn có nghĩa lý gì&.&.&.! 
+\
+// だめです！
+// 皆さんを置いて、先に行けるわけがありません！
+// 全員で帰らないと、意味がないんですから！
+
+//＠↓《笑顔だけど声は必死です》
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0056&.ogg"
+We're almost home&&, everybody! Once we take
+care of this&&, we'll go back and have a feast!
+Chúng ta sắp tới thành rồi! Chỉ cần dọn dẹp được đám này&, chúng ta sẽ về tới nơi và mở tiệc ăn mừng!
+\
+// 皆さん、もう一息ですよー！
+// これをなんとかした後、
+// みんなでお腹いっぱい、ご飯を食べましょうね！
+
+@message_hide
+@se sound="雷１&.ogg"&, volume=40%
+@action
+&-ＣＧ id="黒"&, name="cover"&, time=1000&, z=1100
+&-wait time=1000
+&-se_volume ch=10&, volume=50%&, time=300
+&-se sound="戦闘&.ogg"&, ch=11&, time=300
+&-立ち絵消去 id=""&, time=0
+&-風景消去 id=""&, time=0
+&-ＣＧ id="ヒミコピンチ"&, name="s002"&, time=2000&, z=1200
+&-wait time=2000
+@se_stop ch=11&, time=8000
+
+@mode_cinema
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0057&.ogg"
+&&(Everyone's worn out from the battle
+with Nobunaga&&, and now this rain&&.&&.&&.&&)
+&(Trận chiến với Nobunaga đã khiến binh sĩ kiệt sức&, dầm thêm trận mưa này&.&.&.&)
+\
+// （みんな、信長さんとの戦いで疲弊しているのに、
+// 　この雨……）
+
+//＠↓《都＝みやこ》
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0058&.ogg"
+&&(And these bandits are strong&&, too&&.
+We'll lose at this rate&&.&&.&&.
+And we're so close to the capital&&.&&.&&.&&)
+&(Lũ cướp lại đang thế mạnh&. Quân ta sẽ thua mất&. Đã gần tới thành thế kia mà&.&.&.&)
+\
+// （しかも、この山賊さんたち、強いです…
+// 　このままじゃ負けてしまいます…
+// 　あと少しで&(都/みやこ&)まで戻れるのに…）
+
+@bgm_volume ch=0&, volume=30%&, time=2000
+@se_volume ch="All"&, volume=20%&, time=2000
+
+//＠↓《戦っているのをぼんやり眺めています》
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0059&.ogg"
+&&(&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&)
+\
+// （……………）
+
+@flip time=0
+&-ＣＧ id="黒"&, name="base"&, z=2000
+&-opaque name="base"&, alpha=0%
+
+//@ＣＧ id="黒"&, name="base"&, time=300&, z=2000
+@opaque name="base"&, alpha=60%&, time=500
+
+//中村　別途ある音声データに、少し回想っぽいエコーをかけたものを鳴らしてください。
+@action
+&-text x="Center"&, y=291&, id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0013&.ogg"
+//&&-message id="織田信長"&&, voice="織田信長##S01_ジパング編_プロローグ#0035&&.ogg"
+//&&(flashback from earlier&&)
+You have no strength&&, no wit&&.
+You're just plain weak&&, so give up already&&.
+Không sức không mưu&. Cô non lắm&, bỏ mộng là vừa&.
+\
+// 武力もない。
+// 知謀もない。
+// 要は、へっぽこなんだよ。
+// いい加減に諦めろ。
+&-clear
+@opaque name="base"&, alpha=0%&, time=300
+//@ＣＧ消去 name="base"&, time=300
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0060&.ogg"
+&&(Yes&&, I'm weak&&, like Nobunaga said&&.&&.&&. Pathetic&&.&&.&&.&&)
+&(Phải&, Nobunaga nói đúng&, mình quá non yếu&.&.&. Quá thảm hại&.&.&.&)
+\
+// （そう…ですね。
+// 　私は信長さんの言うとおり、駄目な子です……
+// 　ほんと、へっぽこです…）
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0061&.ogg"
+&&(Like now&&, we'd have made it through much
+better&&, had Takeru been in command&&.&&.&&.
+I'm the worst&&, most useless&&, helpless&&.&&.&&.&&)
+&(Chẳng qua mình được như giờ là nhờ có Takeru&.&.&. Mình là kẻ tồi tệ&, vô dụng&, bất tài&.&.&.&)
+\
+// （今だって、指揮を執るのが私じゃなく、
+// 　タケルだったら、もっとちゃんと凌げていたはず…
+// 　…駄目です……
+// 　私はほんと…へっぽこで、どうしようもなくて…）
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0062&.ogg"
+&&(&&.&&.&&.But&&.&&)
+\
+// （………だけど…）
+
+//@ＣＧ id="黒"&, name="base"&, time=300&, z=2000
+@opaque name="base"&, alpha=60%&, time=500
+//中村　別途ある音声データに、少し回想っぽいエコーをかけたものを鳴らしてください。
+@action
+&-text x="Center"&, y=291&, id="織田信長"&, voice="織田信長##S01_ジパング編_プロローグ#0014&.ogg"
+//&&-message id="織田信長"&&, voice="織田信長##S01_ジパング編_プロローグ#0036&&.ogg"
+//&&(flashback from earlier&&)
+So you knew&&, but didn't want to admit it&&. But good
+for you&&. Now you can finally give it all up and
+go down a different path&&. Hahahaha&&.
+Biết mà vẫn không muốn thừa nhận à&. Tốt&. Cô nên từ bỏ và chọn một hướng mục tiêu khác đi&. Hahahaha&.
+\
+// 自覚はあったけど、認めたくなかったって訳か。
+// でも良かったな。これで何もかも諦めて、
+// 別の道に進めるってもんだ。
+// ははははっ。
+&-clear
+@ＣＧ消去 name="base"&, time=300
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0063&.ogg"
+&&(But even I had a dream&&.
+I found a goal that I wanted to reach&&.
+And because of it&&, I had everyone fight&&, and suffer&&.&&)
+&(Nhưng giấc mơ của mình&. Khát khao mình ấp ủng bao năm&. Vì nó&, mình phải chiến đấu&, phải sống sót&.&)
+\
+// （だけど、へっぽこな私でも、夢見てしまった。
+// 　目指したい場所を見つけてしまったんです。
+// 　その為に、皆さんに戦ってもらっています。
+// 　大変な目に遭わせています）
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0064&.ogg"
+&&(And for that&&, I need a solution&&.&&.&&.
+Something that even I can do right now&&.&&)
+Phải có thứ gì đó mình có thể làm chứ&. Một lối thoát khỏi tình cảnh này&.&.&.
+\
+// （そのために、何か策を…
+// 　今の私にも取れる手段を探さなくては
+// 　いけないんです）
+
+//@se ch=0&, sound="弓引く&.ogg"
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0065&.ogg"
+&&(I haven't done anything yet&&. I can't just give
+up here&&. I need to do something&&, something&&,
+anything! For me&&.&&.&&. For everyone!&&)
+Dẫu biết không thể buông xuôi&, nhưng mình chẳng nghĩ ra được gì&. Mình cần thứ gì đó&, thứ gì&, bất cứ gì! Cho mình&.&.&. và cho cả ba quân!
+\
+// （私は、まだ何もしていません。
+// 　こんなところで、へこたれている訳にもいきません。
+// 　もっと…もっと、もっと、なんとかしなくちゃ！
+// 　私の為に……みんなのために！）
+
+@se sound="矢発射２&.ogg"
+//中村　ここ、ＳＥの音合わせて゛ボリューム戻してください。
+@ＣＧ id="ヒミコピンチ_矢あり"&, name="s002"&, time=300&, z=1200
+@bgm_volume ch=0&, volume=100%&, time=1200
+//@se_volume ch="All"&, volume=50%&, time=1000
+@se_volume ch=10&, volume=40%&, time=1200
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0066&.ogg"
+Hử&&.&&.&&.
+\
+// えっ……
+
+@action
+&-message id="兵士１"
+Lady Himiko!?
+Công nương Himiko!?
+\
+// ヒミコ様！？
+
+@action
+&-message id="兵士２"
+Lady Himiko!!!
+Công nương Himiko!?
+\
+// ヒミコ様ー！！
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0067&.ogg"
+What&&.&&.&&.
+Hả&.&.&.
+\
+// そん、な……
+
+@bgm_stop ch=0&, time=3000
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0068&.ogg"
+&&(Am I&&.&&.&&. going to die here&&.&&.&&.?
+Without having accomplished anything&&.&&.&&.&&)
+&(Mình&.&.&. sẽ chết sao&.&.&.? Cứ trắng tay mà chết?&)
+\
+// （私……死ぬ、の？
+// 　こんなところで……
+// 　まだ何も始めてないのに……）
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0069&.ogg"
+&&(I haven't even taken the first step
+toward achieving my dream&&.&&.&&.!&&)
+&(Thậm chí mình còn chưa có nổi một chiến công&.&.&.&)
+\
+// （夢のための第一歩さえ、歩んではいないのにっ…！）
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0070&.ogg"
+No&&.&&.&&.
+Không&.&.&.
+\
+// い、や……
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0071&.ogg"
+<FONT size=30 interval=60>Nooo!!!</FONT>
+Ta không cam!!!
+\
+// <FONT size=30 interval=60>いやぁぁっ……！！</FONT>
+
+@bgm_stop ch=0&, time=0
+@se_stop ch="All"&, time=0
+//@wait time=1000
+//中村　出来れば音が終わるまでここにウェイトを……
+
+@se sound="雷１&.ogg"&, ch=11
+
+@action
+&-フラッシュ blend="Normal"&, time=5000
+&-ＣＧ id="ヒミコピンチ_主人公b"&, name="s002"&, time=0&, z=1200
+&-wait time=100
+&-se sound="剣対剣２&.ogg"&, ch=12
+&-wait time=2000
+&-bgm ch=0&, sound="優勢"
+&-wait time=3000
+
+&-ＣＧ id="ヒミコピンチ_主人公"&, name="s002"&, time=2500&, z=1200
+//&-wait time=2000
+//@入力待ち
+
+/*
+@action
+&-フラッシュ blend="Add"&, time=3000
+&-ＣＧ id="ヒミコピンチ_主人公b"&, name="s002"&, time=0&, z=1200
+&-bgm ch=0&, sound="優勢"
+&-wait time=3000
+*/
+
+//@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+<FONT interval=100>&&.&&.&&.&&.&&.&&.Ohh&&.&&.&&.&&.&&.&&.</FONT>
+\
+// <FONT interval=100>……ォ……</FONT>
+
+//中村　ここの主人公の台詞ふたつ、雄叫びなのですが、同時に産声です。
+//　　　ここで｢誕生したというネタフリで入れていますが、
+//　　　いらないようならカットしていただいてもと思います。
+
+//@action
+//&-フラッシュ blend="Normal"&, time=2000
+//&-フラッシュ blend="Add"&, time=1000
+//&-ＣＧ id="ヒミコピンチ_主人公"&, name="s002"&, time=200&, z=1200
+//&-se sound="剣対剣２&.ogg"&, ch=12
+
+//@action
+&-message id="主人公"&, face="None"&, log_name="？？？"&, message_name="？？？"
+<FONT size=36 interval=30>Graaaaaaaahhhhhh!!!</FONT>
+\
+// <FONT size=36 interval=30>オオオオオオオオオオオ！！！！</FONT>
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0072&.ogg"
+Huh&&.&&.&&.
+Hử&.&.&.?
+\
+// えっ…
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0073&.ogg"
+&&(Who is it? Why did they save me?&&)
+&(Người ấy là ai? Sao lại cứu mình?&)
+\
+// （誰……？
+// 　どうして、私を助けてくださったの…？）
+
+@action
+&-message id="兵士１"
+&&.&&.&&.Who's there?
+Ngươi là ai?
+\
+// ……誰だ…？
+
+@action
+&-message id="兵士２"
+Wait&&.&&.&&. He came from the heavens?
+Khoan&.&.&. Lẽ nào anh ta là sứ giả thiên đàng?
+\
+// っていうか…
+// 空から降りてきた……？
+
+//@bgm ch=0&, sound="戦闘"
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0074&.ogg"
+The heavens&&.&&.&&. A Servant of&&.&&.&&. Heaven?
+Thiên đàng&.&.&. Sứ giả&.&.&. thiên đàng?
+\
+// …空から…
+// ……天の…御使い…？
+
+@action
+&-message id="兵士１"
+Yes&&.&&.&&. Yes&&, Lady Himiko!
+Phải&.&.&. Đúng đó&, công nương Himiko!
+\
+// そっ…そうですよ、ヒミコ様！
+
+@action
+&-message id="兵士２"
+//thinking the word "angel" should be avoided
+Truly&&, a Servant of Heaven!
+Đúng rồi&, sứ giả Thiên đàng!
+\
+// 仰るとおり、天の御使いですよっ！
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0075&.ogg"
+Hơ&&.&&.&&.
+\
+// ……ぁ……
+
+//@se ch=0&, sound="玉串"
+
+//＠↓《御旗＝みはた》
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0076&.ogg"
+The heavens have sided with us! Our flag bears
+victory! Push these bandits back&&, and show
+them what the Himiko Army is made of!
+Cao xanh cũng ủng hộ chúng ta! Mọi người hãy giương lên ngọn cờ chiến thắng! Hãy đánh lui bọn thảo khấu kia&, và cho chúng chứng kiến sức mạnh tướng sĩ Himiko ta đi!
+\
+// て、天は、私たちに味方しています！
+// 勝利は、我が&(御旗/みはた&)の元にあります！
+// 山賊さんを一気に押し返してください！
+// ヒミコ軍の底力を見せてあげましょう！
+
+@se_stop ch="All"&, time=500
+@bgm_stop ch=0&, time=500
+@立ち絵消去 id=""&, time=300
+@風景 id=""&, time=500
+@ＣＧ消去 name="cover"&, time=0
+@ＣＧ消去 name="s002"&, time=1000
+
+@mode_window
+
+//&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-
+//■戦闘開始
+@戦闘 id="プロローグ"
+
+//戦闘　プロローグ
+//味方主人公、ヒミコ
+//ユニット山賊
+//能力補正なし
+
+//戦闘開始時会話
+:embed_page_begin "戦闘開始"
+
+@action
+&-message id="ヒミコ"&, face="シリアス"
+Is he protecting us? That means this is our chance!
+Fight back&&, everyone! Let's destroy these bandits!
+Anh ấy về phe mình!? Đây là cơ hội phản công! Chiến đấu đi&, mọi người! Hãy tiêu diệt lũ cường san đó đi!
+\
+// この人、私たちを守ってくれている…？
+// それなら、チャンスは今しかありません！
+// 皆さん、反撃開始でーす！
+// 山賊さんを、こてんぱんにやっつけちゃいましょう！
+
+:embed_page_end
+//戦闘開始時会話終了
+
+////開戦　プロローグ
+
+////終戦
+
+//戦闘終了時会話（勝利時）
+:embed_page_begin "戦闘終了_勝利"
+
+//@トロフィー id=1
+
+@action
+&-message id="ヒミコ"
+We&&.&&.&&. We did it&&.&&.&&. Now we can go back to the city&&.&&.&&.
+Chúng ta&.&.&. chúng ta đã thắng&.&.&. Mọi người nhanh về kinh thành thôi nào&.&.&.
+\
+// な、なんとか勝てました…
+// これで都まで無事に戻れます…
+
+:embed_page_end
+//戦闘終了時会話終了（勝利時）
+
+//戦闘終了時会話（敗北時）
+:embed_page_begin "戦闘終了_敗北"
+
+@action
+&-message id="ヒミコ"&, face="シリアス"
+We lost&&.&&.&&. without even making it back&&.&&.&&.
+I guess my battle ends here&&.&&.&&.
+Ta thua rồi&.&.&. thảm bại đến nỗi có thành còn chẳng về được&.&.&.
+Giấc mộng của mình vậy là chấm dứt&.&.&.
+\
+// ま、まだ都に着いていないのに
+// こんなところで負けてしまうなんて…
+// く、くやしいです…
+// 私の戦いはもう終わりなんですね…
+
+:embed_page_end
+//戦闘終了時会話終了（敗北時）
+//ゲームオーバー
+
+//■戦闘終了
+//&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-
+
+//戦闘結果後会話
+
+@bgm_stop ch=0&, time=500
+@se sound="c雨&.ogg"&, ch=10&, loop=true&, time=1000&, volume=20%
+@風景 id="雨空"&, time=500
+//@bgm ch=0&, sound="日常１"
+
+@立ち絵 id="ヒミコ"&, time=300
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0077&.ogg"
+Phew&&.&&.&&.! I think we're good for now&&.
+I thought we might not make it&&.&&.&&.
+Phù&.&.&. Cứ tưởng là mình tiêu đời rồi chứ&.
+Suýt nữa chúng tôi đã bỏ thây tại đây&.&.&.
+\
+// はあ…！
+// どうにか、一段落つきましたね…
+// 一時は、どうなるかと思いました…
+
+@action
+&-message id="主人公"&, face="固有"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.
+\
+// ……………
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0078&.ogg"
+Um&&.&&.&&. I don't know who you are&&,
+but thank you for rescuing us!
+Ưm&.&.&. Dù không biết anh là ai&, nhưng xin cảm ơn anh đã cứu chúng tôi!
+\
+// あ、あの……
+// どなたか知りませんが、ありがとうございます！
+// 私たちを助けてくれて…
+
+@action
+&-message id="主人公"&, face="固有"&, log_name="？？？"&, message_name="？？？"
+Ưghh&&.&&.&&.
+\
+// う、うぅっ…
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0079&.ogg"
+&&.&&.&&.&&.&&.&&.?
+\
+// ……？
+
+@action
+&-message id="主人公"&, face="固有"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.Guh&&, augh!
+\
+// ……くっ、あっ……！！
+
+@action
+&-se sound="ぶつかる１&.ogg"&, volume=50%
+&-画面揺れ time=300&, 方向="縦横"&, 幅=4&, 回数=20
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0080&.ogg"
+Huh&&.&&.&&.?
+<FONT interval=30 speed=200 effect="OffCenter">Ahhhhh!</FONT>
+\
+// えっ……&.&.&.
+// <FONT interval=30 speed=200 effect="OffCenter">きゃ、きゃああ！！</FONT>
+
+//中村　音の長さに合わせて、画面を揺らしてください。
+
+@立ち絵消去 id=""&, time=500
+@se sound="倒れる２&.ogg"
+@画面揺れ time=1000&, 方向="縦横"&, 幅=32&, 回数=50
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0081&.ogg"
+<FONT interval=60 speed=400 effect="Wave">Gah&&.&&.&&. So heavy&&.&&.&&.!</FONT>
+Why did you fall over&&.&&.&&. Huh!?
+Gahh&.&.&. Nặng quá! Anh bị sao vậy!?
+\
+// <FONT interval=60 speed=400 effect="Wave">ぐっ…く、お、重いですぅぅ～！</FONT>&.&.&.
+// ど、どうして、急に倒れて…
+// ……えっ！？
+
+@action
+&-message id="兵士１"
+Are you all right&&, Lady Himiko! You&&.&&.&&. You
+might be a Servant of Heaven&&, but you can't
+assault Himiko like that! How dare you!
+Công nương không sao chứ!? Ngươi&.&.&. Ngươi dám&.&.&. đừng tưởng là Sứ Giả Thiên Đàng thì dám cả gan mạo phạm công nương!
+\
+// 大丈夫ですか、ヒミコ様！
+// この…天の御使いとはいえ、無礼な！
+// ヒミコ様に、のしかかるなど！
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0082&.ogg"
+<FONT interval=30>I'm fine! But this man is hurt&&, badly!
+He needs help now!</FONT>
+Ta không sao! Nhưng người này đang bị trọng thương!
+Anh ấy cần giúp đỡ!
+\
+// <FONT interval=30>私は大丈夫です！
+// それより、この人、怪我をしています！
+// けっこう、ひどいです！
+// 早く、手当を！</FONT>
+
+@action
+&-message id="兵士２"
+U&&-Understood! Right away!
+Đã&, đã rõ! Thuộc hạ tới ngay!
+\
+// わっ、わかりました！
+// すぐ、手配します！
+
+@action
+&-message id="ヒミコ"&, face="照れ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0083&.ogg"
+<FONT interval=60>Who is this man&&.&&.&&.
+He's burning up&&, probably because of his injury&&.&&.&&.</FONT>
+If we don't treat him soon&&.&&.&&.!
+Người này là ai nhỉ&.&.&. Trông anh ấy khá đau đớn&, chắc tại vết thương&. Nếu ta không nhanh chóng chữa trị e&.&.&.
+\
+// <FONT interval=60>このお方は、一体…
+// …怪我のせいなのかしら…熱もすごい…</FONT>&.&.&.
+// ほんとに、早く…早く手当をしないと…！
+
+//＠↓《主人公を見て、ちょっとぽわんとしています》
+@action
+&-message id="ヒミコ"&, face="照れ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0084&.ogg"
+&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.
+\
+// …………
+
+@action
+&-message id="ヒミコ"&, face="照れ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0085&.ogg"
+&&(Why did he help me when he's hurt so badly himself?
+Is it because he's a Servant of Heaven&&.&&.&&.?&&)
+&(Tại sao anh ấy lại giúp mình trong khi chính bản thân lại bị trọng thương?
+Hay lẽ nào đó là nghĩa vụ Thiên Đàng giao phó&.&.&.?&)
+\
+// （……こんなにひどい怪我をしてるのに、
+// 　私を助けてくれた……
+// 　どうしてかしら…
+// 　天の御使いだから…？）
+
+@action
+&-message id="ヒミコ"&, face="照れ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0086&.ogg"
+<FONT interval=60>&&(He's so warm&&.&&.&&. and firm&&, masculine&&.&&.&&.&&)</FONT>
+&(Anh ấy thật ấm&, và rắn chắc&, cơ bắp&.&.&.&)
+\
+// <FONT interval=60>（……温かい…
+// 　それに、がっちりしていて、逞しくて…）</FONT>
+
+@action
+&-message id="ヒミコ"&, face="照れ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0087&.ogg"
+<FONT interval=60>&&(If I had an older brother&&, maybe
+this is what he'd be like&&.&&.&&.&&)</FONT>
+&(Nếu mình có một người anh trai&,
+hẳn người ấy cũng sẽ trông như thế này&.&.&.&)
+\
+// <FONT interval=60>（…私にお兄様がいれば……
+// 　こんな感じなのかしら……）</FONT>
+
+@message_hide
+@wait time=500
+@se sound="雷１&.ogg"&, volume=60%
+@se_stop ch="All"&, time=2000
+@bgm_stop ch=0&, time=2000
+@ＣＧ id="黒"&, name="CG"&, time=2000
+@立ち絵消去 id=""&, time=0
+@風景消去 id=""&, time=0
+@wait time=3000
+
+@ＯＰムービー
+
+//&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-
+//中村　ここで、プロローグが終わり。
+//ターンエンドさせて、以降をターントップのイベントに。
+//これが終わったら、またターンエンド、として、
+//ターンで日数が過ぎたのを感じるようにする＋
+//ユーザーに｢ああん、コマンド選ばせてぇぇ」と、じらすのはいかがでしょうか。
+//もしくは、ここでムービーとか。
+
+
+//中村　ＳＥと、場面切り替え的な長さに調整お願いいたします。
+
+
+//主人公の回想、全部が現代の台詞に勘違いするように書いています。
+//全員の台詞は？？？です
+
+//中村　すみません、ここからＳＥの入れ込み、やってません……
+//　　　台本に必要となりましたら、すみませんがお願いいたします。
+
+@se_stop ch="All"&, time=2000
+@bgm_stop time=2000
+@背景 id="黒"&, time=2000
+@bgm ch=0&, sound="回想"&, time=1000
+@wait time=1000
+
+
+@mode_cinema
+
+@action
+&-message id="老人"&, log_name="？？？"&, message_name="？？？"&, face="None"
+A man protects his village&&, and the village protects
+him&&. Sometimes he must put his life on the line&&.
+That is the duty of those who plant their roots in the
+village&&. Surely you know the meaning of this&&.
+Nghĩa vụ của người một người đàn ông là bảo vệ lấy mảnh đất chôn nhau cắt rốn của mình&, thậm chí liều cả sinh mạnh bản thân&. Con phải luôn ghi tâm trọng trách ấy&.
+\
+// ……人は村を守り、村は人を守る。
+// 時には命をかけて守らなければならぬ。
+// 生きとし生けるもの、村に根付いた者の役目じゃ…
+// お主であれば、その意味を理解できるじゃろうて。
+
+@action
+&-message
+My head&&.&&.&&. it hurts&&.&&.&&.
+Đầu mình&.&.&. đau quá&.&.&.
+\
+// 頭が…痛い…
+
+//*SE斬撃、カキン、キン
+
+@action
+&-message id="壮年の男性"&, log_name="？？？"&, message_name="？？？"&, face="None"
+There's nothing more I can teach you&&. Heh&&.&&.&&.
+I didn't think you would surpass me this quickly&&.
+Ta đã dạy cho con mọi điều có thể&. Heh&.&.&. Con đã đủ trưởng thành rồi&.
+\
+// お前にはもう教えることはない。
+// ふっ…こんなに早く、
+// 俺を越えるとは思わなかったがな。
+
+@action
+&-message id="壮年の男性"&, log_name="？？？"&, message_name="？？？"&, face="None"
+With your skill in the sword&&, you'll be able to make a
+living anywhere&&. That is&&, if you can find a place&&.
+Với kiếm thuật của con&, con sẽ sinh tồn được ở bất cứ đâu&.
+\
+// その剣の腕があれば、
+// どこに行っても食っていけるだろう。
+// 場所さえあれば、だけどな。
+
+@action
+&-message
+Where am I&&.&&.&&.? I feel like I'm floating&&.&&.&&.
+What's happening to me&&.&&.&&.
+Đây là đâu&.&.&.? Cơ thể mình như đang lơ lửng&.&.&.
+Chuyện gì xảy ra với mình&.&.&.
+\
+// 俺は、どこにいるんだろうか…？
+// まるで宙に浮いているようで……
+// 自分の身に何が起こっているのか、わからない…
+
+//*SEキーボードを叩く音
+
+@action
+&-message id="女性"&, log_name="？？？"&, message_name="？？？"&, face="None"
+&&.&&.&&.If I can just finish this report&&,
+I'll be able to show them up&&.
+&.&.&.Xong bản báo cáo này là đi thuyết trình ngon lành&.
+\
+// ……うん。
+// このレポートさえできれば、
+// 今まで私たちをバカにした人を見返せるわ。
+
+@action
+&-message id="女性"&, log_name="？？？"&, message_name="？？？"&, face="None"
+It's all thanks to you&&.
+I owe you a reward&&, so come up with something&&.
+//Cũng nhờ cả vào cậu đấy&.
+May nhờ cậu&. Phen này tớ nợ cậu rồi&, phải báo đáp mới được&. 
+\
+// 貴方が協力してくれたおかげよ。
+// 近いうちに何かお礼をしなくちゃいけないわね。
+// 何がいいか、考えておいて。
+
+@action
+&-message
+//……俺は今まで何をしていたんだろうか？
+A scene flashes through my head like a film&&.&&.&&.
+Một cảnh tượng tựa phước phim chợt thoáng qua trong đầu tôi&.&.&.
+\
+// 頭を過ぎる光景が、映画のフィルムのように流れる…
+
+//*SE喧噪、ざわざわ
+
+@action
+&-message id="男性"&, log_name="？？？"&, message_name="？？？"&, face="None"
+That last movie was pretty boring&&. We looked around
+for a good one&&, but what was up with that ending?
+Bộ phim đợt trước chán chết&. Cứ tưởng phim hay&, ai ngờ cái kết lãng xẹt?
+\
+// さっきの映画、つまんなかったよなー。
+// ハシゴしたのに、最後の最後でアレかよ。
+
+@action
+&-message id="男性"&, log_name="？？？"&, message_name="？？？"&, face="None"
+I know we left to take a break from exams&&,
+but it would have been better to stay
+home and study world history&&.
+Tớ biết đây là khoảng thời gian xả hơi sau kỳ thi&,
+nhưng tốt hơn là chúng ta nên ở nhà ôn tập môn lịch sử thế giới&.
+\
+// 試験の息抜きで出かけたのに最悪だよな。
+// 家で世界史の勉強してた方がよかったぜ。
+
+@action
+&-message
+Who am I&&.&&.&&. Where did I come from&&.&&.&&. Why&&.&&.&&.
+Tôi là ai&.&.&. Tôi từ đâu đến&.&.&. Tại sao&.&.&.&.
+\
+// 俺が、いつ…どこで…どうして…
+// 何をしていたのか…
+
+@action
+&-message
+My memories are a jumbled mess&&.&&.&&.
+They feel like a swirling vortex of mud&&.&&.&&.
+Ký ức của mình là hỗn độn quá&.&.&.
+Chúng cứ như là một cơn lốc bùn vậy&.&.&.
+\
+// 記憶が混濁する…
+// 泥の渦の中にいるみたいだ……
+
+@action
+&-message
+&&.&&.&&.&&.&&.&&.I&&.&&.&&.
+\
+// ……俺は…
+
+@action
+&-message
+&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.
+\
+// ……………
+
+@action
+&-message
+Who am I&&.&&.&&.?
+Tôi là ai&.&.&.?
+\
+// 俺は『誰』なんだ……？
+
+//*SE鳥のさえずり
+//中村　ＳＥの長さに合わせて、エフェクトウェイト調整お願いします。
+
+@se_stop ch="All"&, time=2000
+@bgm_stop ch=0&, time=2000
+@ＣＧ id="白"&, name="CG"&, time=2000
+@立ち絵消去 id=""&, time=0
+@背景消去 id=""&, time=0
+//@風景消去 id=""&, time=0
+@風景 id="主人公部屋"&, time=0
+@wait time=1000
+@se sound="朝チュン&.ogg"
+@ＣＧ消去 name="CG"&, time=3000
+
+@se_stop ch="All"&, time=2000
+
+@mode_window
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Ugh&&.&&.&&.
+\
+// うっ、うぅん…
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.
+\
+// ……っ……
+
+//*SE布団から動く音、がさごそ
+@se sound="起床２&.ogg"
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Ah&&.&&.&&.! Ow&&.&&.&&.
+\
+// つっ…！
+// いてて……
+
+@se_stop ch="All"&, time=1000
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.
+\
+// …………
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Where am I&&.&&.&&.
+What happened&&.&&.&&.
+Mình đang ở đâu&.&.&.
+Chuyện gì đã xảy ra&.&.&.
+\
+// ここは…
+// 俺は、何をして…
+
+@action
+&-message
+It looks like a movie set&&.&&.&&.
+Did I fall asleep during rehearsal?
+Nơi này sao như phim trường vậy&.&.&.
+Lẽ nào mình ngủ quên trong lúc đang diễn kịch?
+\
+// まるで映画のセットみたいな場所だ…
+// リハーサル中に、うたた寝でもしたのか？
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Rehearsal&&.&&.&&.? Am I an actor&&.&&.&&.?
+Diễn kịch&.&.&.? Mình là diễn viên&.&.&.?
+\
+// ……リハーサル…？
+// 俺、役者だったっけ…？
+
+@action
+&-message
+I don't know&&. My memory's clouded&&.&&.&&.
+I can form thoughts&&, but everything
+about myself is beyond the haze&&.
+Mình không biết&. Ký ức mù mờ quá&.&.&.
+Mọi thứ về bản thân trong đầu mình sao mơ hồ&.
+\
+// ……わからない。
+// まだ記憶がどろどろで…
+// 言葉は思い出しても、肝心の『俺』については、
+// 霧の向こうだ……
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+I don't really know what's happening&&, but I should get up
+first&&.
+Thật sự chuyện gì đang xảy ra&. thôi&, cứ tỉnh dậy trước đã&.
+\
+// よくわからないけど、まずは起きて…
+
+//*SE寝床から身体を起こす、バサッ
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Ouch! Augh&&.&&.&&.
+\
+// いっ、つぅ…
+// あっ…！！
+
+//*SE倒れる音、バタッ
+@se sound="c倒れ男&.ogg"
+@画面揺れ time=500&, 方向="縦"&, 幅=16&, 回数=20
+
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+<FONT interval=30>Damn&&.&&.&&.!</FONT>
+What is this&&.&&.&&.
+Chết tiệt&.&.&.!
+Cái gì đây&.&.&.
+\
+// <FONT interval=30>いっ…ててて！</FONT>&.&.&.
+// …くそっ…なんなんだ…
+
+@action
+&-message
+What's going on? I'm covered in bandages&&.&&.&&.
+Did I get hit by a car or something?
+Chuyện gì thế này? Cơ thể mình quấn đầy băng&.&.&.
+Mình bị xe tông hay sao?
+\
+// 何がどうなっているんだ？
+// 全身が包帯まみれになって…
+// 車にでもぶつかったのか？
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+It doesn't look like I'm in a hospital&&.&&.&&.
+Nhưng nơi này không có vẻ giống bệnh viện&.&.&.
+\
+// ここは、病院…なわけないよな…
+
+//*SE近づく早足
+@se sound="c足音近木1&.ogg"
+@bgm ch=0&, sound="日常１"&, time=2000
+
+//中村　普通のままの音声より、扉の向こうのような加工をした方が合うかもです。
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0088&.ogg"
+First impressions are the most important&&. He should
+be waking soon&&, so I'll go in first and greet him&&.&&.&&.
+Ấn tượng ban đầu là việc quan trọng nhất&. Anh ấy sẽ 
+sớm tỉnh dậy thôi&, vì thế ta sẽ vào trước và chào anh ấy&.&.&.
+\
+// 何事も第一印象が肝心なんですよ。
+// そろそろ目が覚める頃ですし、
+// まず私が、一番にご挨拶を…
+
+//中村　普通のままの音声より、扉の向こうのような加工をした方が合うかもです。
+@action
+&-message id="女性"
+But&&, Lady Himiko&&.&&.&&.
+You shouldn't bite off more than you can chew&&.&&.&&.
+Nhưng&, Công nương Himiko&.&.&.
+Ngài nên biết tham thực là cực thân đấy&.&.&.
+\
+// ですが、ヒミコ様…
+// あまりご無理はされない方が…
+
+//中村　普通のままの音声より、扉の向こうのような加工をした方が合うかもです。
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0089&.ogg"
+I'm fine! I can handle a tray by myself&&. If I can win
+over his stomach&&, it's as good as our victory&&.
+Ta ổn! Ta có thể tự lo liệu được! Chiến thắng được
+dạ dày của anh ấy sẽ như là chiến thắng cho chúng ta&.
+\
+// 大丈夫です！
+// お膳ぐらい、私１人で運べます。
+// 殿方の胃袋さえ掴んでしまえば、
+// 今回の作戦は勝利したも当然なんですから。
+
+//中村　普通のままの音声より、扉の向こうのような加工をした方が合うかもです。
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0090&.ogg"
+And besides&&, you were the ones who said that men
+appreciate women who take care of their needs&&.
+Và ngoài ra&, chính ngươi cũng nói rằng đàn ông
+thích phụ nữ hay chăm lo họ mà&.
+\
+// それに、甲斐甲斐しく看病する女性は、
+// 殿方に好かれると、
+// 皆さんも言っていたじゃないですか。
+
+//中村　普通のままの音声より、扉の向こうのような加工をした方が合うかもです。
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0091&.ogg"
+We can't let the Servant of Heaven get
+away&&. I'll make a good impression on
+him and steer matters to our favor!
+Chúng ta không thể để Sứ Giả Thiên Đường rời đi được&.
+Ta phải tạo ra ấn tượng ban đầu thật tốt và 
+và nhờ anh ấy giúp chúng ta!
+\
+// 天の御使いを、絶対に逃がすわけにはいきません。
+// あの御方に良い印象を持ってもらって、
+// 話を有利に進めてみせますよ！
+
+@action
+&-message
+&&.&&.&&.I think they're talking about me? I don't
+know what Servant of Heaven means&&, but
+I guess it's an award of some sort&&.&&.&&.
+&.&.&.Hình như đang nói về mình? "Sứ Giả Thiên Đường" là quái gì&,
+chắc là danh hiệu hay gì đó&.&.&.
+\
+// ……よくわからないけど、俺のことを話してるのか？
+// 天の御使いの意味がわからないけど、
+// 賞状の名称か何かだろうか…
+
+//＠↓《少し緊張しています》
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0092&.ogg"
+Ah&&, umm&&.&&.&&. Ahem&&. Excuse me&&.
+Ah&,umm&.&.&. Ahem&. Xin thứ lỗi&.
+\
+// あ、あー…あー、こほん。
+// 失礼いたします。
+
+//中村　作戦室が障子だったので、流用しました。静かに開く方です。
+//　　　主人公の部屋の４番が、ガラガラはあっていないと私も思います。
+
+@se sound="cフスマあける１&.ogg"
+
+@立ち絵 id="ヒミコ"&, time=300&, effect="Transit"
+
+@action
+&-message id="女性"
+Lady Himiko! There's someone beneath you!
+Công nương Himiko! Có người nằm dưới chân Người kìa!
+\
+// ヒ、ヒミコ様！　足下に人がぁぁ！
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0093&.ogg"
+<FONT size=30>Huh? Oh!</FONT>&&.&&.&&. <FONT size=30 interval=30 speed=400 effect="OffCenter">Ky&&-kyahhhh!!</FONT>
+Hả? Oh!
+\
+// <FONT size=30>えっ、あっ！！</FONT>&.&.&.　<FONT size=30 interval=30 speed=400 effect="OffCenter">きゃ、きゃああ！！</FONT>
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Ow&&.&&.&&.
+\
+// いっ…！！
+
+@message_hide
+@bgm_stop ch=0&, time=2000
+@action
+&-move name="MainChar"&, y=1500&, time=800
+&-zoom name="MainChar"&, sx=150%&, sy=150%&, time=500
+&-opaque name="MainChar"&, alpha=0%&, time=300
+&-wait time=500
+
+//*SE派手にずっこける音＆お膳が落ちる音
+@se sound="倒れる２&.ogg"&, ch=11
+@se sound="棚倒れ&.ogg"&, ch=12
+
+@画面揺れ time=2000&, 方向="縦横"&, 幅=48&, 回数=100
+
+@se_stop ch="All"&, time=1000
+@bgm_stop ch=0&, time=1000
+@ＣＧ id="黒"&, name="CG"&, time=1500
+@立ち絵消去 id=""&, time=0
+@wait time=1000
+@ＣＧ消去 name="CG"&, time=1000&, effect="BlindLeft"
+
+@bgm ch=0&, sound="日常３"
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0094&.ogg"
+<FONT interval=60>Not only did I step on your wounded body&&, but I also
+dropped the tray&&.&&.&&. I'm sorry&&.&&.&&. </FONT><FONT interval=30>I'm so&&, so sorry!</FONT>
+Vừa đạp lên vết thương của anh&, vừa làm
+rớt khay đồ ăn&.&.&. Em&.&.&. em xin lỗi&.&.&.
+\
+// <FONT interval=60>怪我をしているお身体を踏みつけ、
+// お膳までひっくりかえしてしまい…
+// ごめんなさい…</FONT>&.&.&.
+// <FONT interval=30>本当に、ごめんなさい…！</FONT>
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Ah&&.&&.&&. yeah&&. I'm fine&&. Don't worry about it&&.
+Lift up your head&&.
+À&.&.&. phải&. Tôi ổn&. Đừng lo&.
+Ngẩng mặt lên đi&.
+\
+// ああ…うん。
+// 大丈夫だから、そんなに気にしなくていい。
+// もう、頭をあげてくれ。
+
+@立ち絵 id="ヒミコ"&, time=300
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0095&.ogg"
+&&.&&.&&.Phew&&. You're so kind&&. Are all servants of the
+heavens as kind as you are&&, Big Brother?
+&.&.&.Phù&. Anh thật là tốt bụng&. Có phải mọi sứ giả trên Thiên Đường
+cũng đều tốt bụng như anh không&, Anh Hai?
+\
+// ……ほっ。
+// お優しいのですね。
+// 天の御使いは、皆さんそうなのですか？
+// お兄様。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+So you were talking about me when you
+mentioned a Servant of Heaven earlier&&.
+And&&, brother&&.&&.&&. are we siblings?
+Vậy là hồi nãy cô nói Sứ Giả Thiên Đường là ám chỉ tôi&.
+Ủa&, anh hai&.&.&. Chúng ta là anh em à?
+\
+// やっぱり、さっき言っていた
+// 天の御使いって、俺のことなのか。
+// それと、お兄様って…俺は君と兄妹なのか？
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0096&.ogg"
+Yes&&, Big Brother&&, you are the Servant
+of Heaven&&, but not my big brother&&.
+Phải&, Anh Hai&, anh là Sứ Giả Thiên Đường&,
+nhưng anh không phải là anh hai của em&.
+\
+// お兄様は天の御使いですけど、
+// 私のお兄様ではありません。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+But then why "Big Brother"&&.&&.&&.?
+Vậy thì tại sao lại gọi "Anh Hai"&.&.&.?
+\
+// でも、俺のこと、お兄様って…
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0097&.ogg"
+I don't know your name&&.
+Could you be so kind as to tell me what it might be?
+Tại em không biết tên của anh&.
+Anh có thể vui lòng cho em biết tên của anh là gì được không?
+\
+// はい、お名前がわかりませんでしたので。
+// 教えてくださいますか？
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.
+\
+// …………
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.Sorry&&, I don't know&&.
+I don't remember who I am&&, where I'm from&&.&&.&&.
+I just don't have any memory of it&&.
+&.&.&.Xin lỗi&, tôi không biết&.
+Tôi không nhớ tôi là ai&, hay tôi đến từ đâu&.&.&.
+Tôi không hề có ký ức gì về những thứ đó&.
+\
+// ……ごめん、わからない。
+// 思い出せない…
+// …俺は、自分がどこの誰かわからないようだ。
+// 記憶がはっきりしない。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0098&.ogg"
+You were hurt badly&&.
+Maybe that caused you to lose your memory&&.&&.&&.
+Anh bị thương rất nặng&.
+Có lẽ do vậy nên anh bị mất trí nhớ&.&.&.
+\
+// …ひどい怪我をされていたので、
+// もしかしたら、その時に記憶をなくすようなことが
+// あったのでしょうか…？
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0099&.ogg"
+But you are most definitely a Servant of Heaven!
+You descended from the skies and saved us&&.
+I'll never forget that brilliant light&&.&&.&&.
+Nhưng anh chắc chắn là Sứ Giả nơi Thiên Đường!
+Anh từ trời ngự xuống và giải cứu bọn em&.
+Em sẽ không bao giờ quên ánh sáng chói lọi đó&.
+\
+// で、でも、天の御使いであることには、
+// 間違いありません！
+// 天空より舞い降りて、私たちを救ってくれました。
+// あの時の光は、一生忘れられません。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+The skies? Saved you? What are you talking about?
+Trên trời à? Giải cứu cô? Cô đang nói gì vậy?
+\
+// ……天空？
+// 危機？
+// …何の話だ？
+
+@action
+&-message id="ヒミコ"&, face="照れ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0100&.ogg"
+What? You don't remember?
+Sao? Anh không nhớ à?
+\
+// えっ…覚えて…ないんですか？
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+And who are you&&.&&.&&.?
+Và cô là ai vậy&.&.&.?
+\
+// それに、君は…？
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0101&.ogg"
+Oh&&, my apologies&&. Allow me to introduce myself&&.
+Ơ&, em xin lỗi&. Cho phép em tự giới thiệu&.
+\
+// あ、すみません。
+// 申し遅れました。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0102&.ogg"
+I am Himiko&&, Queen of Yamatai &&-
+a part of Zipang&&, Big Brother&&.
+Em là Himiko&, Nữ hoàng của Yamatai&, thuộc Nhật Bản&.
+\
+// 私の名は、ヒミコ。
+// ジパングの邪馬台で女王を務めております。
+// お兄様。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0103&.ogg"
+I will never forget this debt&&. I owe you my life&&. I wish
+for you to heal your wounds in this country&&. Let me
+know if there is anything at all I can do for you&&.
+Em sẽ không bao giờ quên ân huệ này&. Em nợ anh cả mạng sống này&.
+Em mong anh sẽ sớm hồi phục khi đang ở đây&.
+Hãy cho em biết nếu anh muốn yêu cầu em làm gì đó&.
+\
+// この度のご恩は、一生忘れません。
+// 私の命を救っていただき、誠に感謝しております。
+// この国で傷を癒していただければと思っております。
+// 何かご希望があれば、遠慮なくお申し付けください。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+<FONT interval=60>&&.&&.&&.Huh? I don't really get what you mean&&.&&.&&.</FONT>
+&.&.&.Hả? Tôi không hiểu ý cô&.&.&.
+\
+// <FONT interval=60>………え？
+// えっと…何がなんだか、よくわからないんだけど…</FONT>
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0104&.ogg"
+Um&&.&&.&&. <FONT speed=400 effect="Splash">What!?</FONT>
+Cái gì!?
+\
+// え…&.&.&.<FONT speed=400 effect="Splash">えーっ！？</FONT>
+
+@se_stop ch="All"&, time=1000
+//@bgm_volume ch=0&, volume=30%&, time=1000
+@ＣＧ id="黒"&, name="CG"&, time=1000&, effect="BlindLeft"
+@wait time=1000
+//@bgm_volume ch=0&, volume=100%&, time=1000
+@ＣＧ消去 name="CG"&, time=1000&, effect="BlindLeft"
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0105&.ogg"
+And that's how you heroically
+saved the day&&, Big Brother&&.
+Anh đã anh dũng cứu nguy bọn em&, Anh Hai à&.
+\
+// とまあ、そんな感じでかっこよく、
+// お兄様は私たちを助けてくれたんです。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Umm&&.&&.&&.
+\
+// え、えーと…
+
+@action
+&-message
+Yamatai&&, and not Yamataikoku? Himiko?
+What's this girl talking about?
+In the first place&&, these clothes are so retro&&.
+Yamatai&, Yamataikoku à? Himiko?
+Cô gái này đang nói gì vậy nhỉ?
+Trông thoạt qua&, mấy bộ đồ đó trông khá cổ điển&.
+\
+// 邪馬台国ではなく、邪馬台？　ヒミコ？
+// この子は何の話をしているんだ？
+// そもそも、この時代錯誤な服はなんだ？
+
+@action
+&-message
+What have I gotten into?
+If this isn't a dream&&, I have no idea&&.&&.&&.
+Mình bị mắc vào chốn nào đây?
+Nếu không phải chiêm bao thì là gì chứ&.&.&.
+\
+// 俺は何に巻き込まれたんだ？
+// これが夢じゃなければ、何がどうなって……
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0106&.ogg"
+&&(He seems a little strange&&, but I should have left
+a good impression&&. It must be good karma&&.&&)
+&(Anh ấy có vẻ lạ&, mình nên để lại ấn tượng tốt&.
+Chắc chắn nó sẽ mang lại hiệu quả&.&)
+\
+// （なんだかご様子が変ですけど、
+// 　第一印象は良かったはず。
+// 　これも、日頃の行いのおかげですね）
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0107&.ogg"
+&&(Hit the iron while it's hot! I can't let this opportunity
+slip away! Father and Mother in heaven&&,
+please watch over me as I fulfill my duty!&&)
+&(Phải bắt lấy cơ hội này! Mình không thể vuột tay mất cơ hội như này! Phụ thân ơi&, Mẫu thân ơi&, trên trời cao có linh hãy
+phù hộ con hoàn thành nghĩa vụ! &)
+\
+// （鉄は熱いうちに打て！
+// 　この機会を逃す手はありません！
+// 　天国のお父さん、お母さん…
+// 　ヒミコは、お役目を立派に成し遂げてみせます…）
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0108&.ogg"
+Um&&, Big Brother! I'd like to have a talk with you&&.
+Do you have time?
+Um&, Anh Hai! Em muốn nói chuyện với anh một chút&.
+Anh có rãnh không?
+\
+// あ、あの、お兄様！
+// お話があるのですが…
+// これから、ご予定はありますか！？
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Oh&&. Well&&, I need to go home&&.&&.&&.
+Oh&, Thật ra&, tôi cần phải về nhà&.&.&.
+\
+// あ、ああ。
+// 家に帰らないと…
+
+@action
+&-se sound="ガーン&.ogg"
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0109&.ogg"
+<FONT size=33 interval=20 speed=200 effect="OffCenter">You have a home!?</FONT>
+Anh có gia đình á!?
+\
+// <FONT size=33 interval=20 speed=200 effect="OffCenter">か、帰る家があるんですか！？</FONT>
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+I don't remember&&, but don't I? It'd be weird if I didn't&&.
+Tôi không nhớ&, không lẽ không có? Thật kỳ lạ nếu tôi không có gia đình&.
+\
+// 覚えてないけど、普通にあるんじゃないか？
+// ないと、逆におかしいだろ。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0110&.ogg"
+<FONT interval=60>&&(I don't believe it&&.&&.&&.
+Big Brother has ties to another nation&&.&&.&&.&&)</FONT>
+&(Không thể tin được&.&.&.
+Anh Hai đã có bổn phận với một quốc gia khác&.&.&.&)
+\
+// <FONT interval=60>（まさかの展開です…
+// 　お兄様が、どこかの国に所属しているなんて…）</FONT>
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0111&.ogg"
+&&(No&&, he might just be going back to the heavens&&.&&.&&. <FONT interval=30>
+But that's even worse!
+How would I go after him there?&&)</FONT>
+&(Không phải&, anh ấy chắc chỉ quay trở về Thiên Đường thôi&.&.&.
+Nhưng như vậy thì còn tệ hơn!
+Về đó thì làm sao mình có thể tìm anh ấy được?&)
+\
+// （いえ、そうとは限りません！
+// 　もしかしたら、天に帰るだけかも…
+// 　<FONT interval=30>それでしたら、さらに大問題です！
+// 　追いかけるのは不可能ですもの</FONT>）
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0112&.ogg"
+<FONT interval=60>Augh&&.&&.&&.
+My first step to world conquest is about to fall apart!</FONT>
+Augh&.&.&.
+Bước đầu trong việc chinh phục thế giới của em sắp đổ vỡ rồi!
+\
+// <FONT interval=60>ううっ…！
+// 私の世界征服の第一歩が、
+// 早くも崩壊しようとしていますぅ～っ！</FONT>
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+I can hear you&&, you know&&.&&.&&. World conquest?
+Sounds dangerous&&.
+Tôi có thể nghe thấy đấy&, cô biết chứ&.&.&. Chinh phục thế giới à?
+Nghe có vẻ nguy hiểm&.
+\
+// 普通に聞こえてるんだけどな…
+// というか、世界征服…？
+// なんだか物騒な響きだな。
+
+@se sound="c足音単畳&.ogg"&, volume=60%
+@立ち絵 id="ヒミコ"&, kind="高"&, x=555&, y=730&, effect="Fade"&, time=200
+@画面揺れ time=500&, 方向="縦横"&, 幅=32&, 回数=30
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0113&.ogg"
+<FONT size=30 interval=30>Big Brother! Please&&, please stay with us here!
+We'll make sure everything is perfect!</FONT>
+Anh Hai! Làm ơn&, xin anh hãy ở lại đây với bọn em!
+Có đây em dám chắc mọi chuyện sẽ thuận buồn xuôi gió!
+\
+// <FONT size=30 interval=30>お、お兄様っ！
+// 是非とも、この国に留まってください！
+// 決して不自由はさせませんから！</FONT>
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0114&.ogg"
+Our country is a small&&, dedicated team of experts
+but we welcome those with no experience! We're
+like a big family&&, and our country is going to
+expand rapidly in the coming months!
+Đất nước em tuy nhỏ&, nhưng có rất nhiều những người dày dặn kinh nghiệm
+và tận tâm&, bọn em luôn chào đón mọi tân binh!
+Bọn em như là một đại gia đình&, và đất nước của bọn em
+sẽ nhanh chóng mở mang bờ cõi trong vài tháng tới!
+\
+// 私たちの国は少数精鋭！
+// 未経験者も歓迎しています！
+// アットホームな雰囲気で、
+// 今からぐんぐんと成長する国なんですよ！
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Sounds pretty fishy to me&&.&&.&&.
+Sao tôi thấy nghi quá&.&.&.
+\
+// そこはかとなく、ブラック臭がするんだけど…
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0115&.ogg"
+It's not fishy at all!
+And if you act now you'll get three meals&&, plus snacks!
+We'll even throw in a free hedge trimmer!
+Nó hoàn toàn không có đáng nghi gì hết!
+Nếu anh ưng thuận thì anh cứ yên tâm cơm ngày ba bữa&, cộng thêm đồ ăn vặt!
+Bọn em cũng sẽ tặng anh cái kéo tỉa cây hàng rào!
+\
+// 黒くなんかありません！
+// それに、今ならお買い得ですよ！
+// 一日３食のところを、おやつありにします！
+// 枝切りバサミもお付けします！
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0116&.ogg"
+<FONT interval=30>In this wonderful country&&, you're rewarded the more
+effort you put in! You're sure to like it here!</FONT>
+Ở quốc gia tuyệt vời này&, anh sẽ được thưởng còn nhiều hơn
+những gì anh làm! Chắc chắn anh sẽ thích ở đây!
+
+\
+// <FONT interval=30>頑張った分だけ報われる、素晴らしい国なんですーっ！
+// きっとお兄様も満足してくれますからーっ！</FONT>
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0117&.ogg"
+So what are you waiting for? Just sign here&&.
+<FONT interval=60>That's it&&, that's all you need to do&&.&&.&&.</FONT>
+Vậy nên anh đừng chần chừ nữa! Cứ ký tên vào đây&.
+Đó là tất cả những gì cần làm&.&.&.
+\
+// さあ、さあさあ！
+// この書類に拇印を…&.&.
+// <FONT interval=60>それだけで…それだけでぇ～…</FONT>
+
+@action
+&-message id="ヤマトタケル"&, face="None"&, log_name="？？？"&, message_name="？？？"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0001&.ogg"
+I think it's about time I stopped you&&.
+Còn ta nghĩ đến lúc ta ngăn cô lại rồi&.
+\
+// そろそろ、止め時のようだな。
+
+
+@action
+&-立ち絵消去 id=""&, time=300
+&-message
+<FONT interval=30 speed=400 effect="Jump">＊Grasp＊&&.</FONT>
+\
+// <FONT interval=30 speed=400 effect="Jump">ひょいっ。</FONT>
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0118&.ogg"
+<FONT interval=30>W&&-Who is it? Don't just grab me like a cat!</FONT>
+Ai&, ai đó? Đừng có gắp tôi lên như là con mèo vậy chứ!
+\
+// <FONT interval=30>だ、誰ですかーっ！
+// いきなり、猫みたいに掴まないでくださーいっ！</FONT>
+
+@action
+&-message id="ヤマトタケル"&, face="None"&, log_name="？？？"&, message_name="？？？"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0002&.ogg"
+Calm down&&, or you'll&&.&&.&&.
+Bình tĩnh nào&, không thì cô sẽ&.&.&.
+\
+// 暴れるな。
+// そんなに動いたら…
+
+//*SE倒れる音、ドテーン
+@se sound="倒れる&.ogg"
+@画面揺れ time=1000&, 方向="縦"&, 幅=32&, 回数=60
+
+@action
+&-message id="ヤマトタケル"&, face="None"&, log_name="？？？"&, message_name="？？？"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0003&.ogg"
+&&.&&.&&.fall&&. Guess it's too late for that&&.
+&.&.&.rớt&. Chắc quá trễ để nhắc cô&.
+\
+// 手が離れると、
+// 言おうとしたんだがな。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0119&.ogg"
+<FONT interval=60>Ow&&, my behind&&.&&.&&. Unnh&&.&&.&&.</FONT>
+Ow&, lưng của em&.&.&. Unnh&.&.&.
+\
+// <FONT interval=60>お、お尻が痛いです…
+// うう…</FONT>
+
+@立ち絵 id="ヤマトタケル"&, time=300
+
+@action
+&-message id="ヤマトタケル"&, log_name="？？？"&, message_name="？？？"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0004&.ogg"
+Looks like your plan to win over the Servant of Heaven
+didn't work&&, Himiko&&. The handmaids were laughing&&.
+Có vẻ như kế hoạch chiếm lấy lòng tin của Sứ Giả Thiên Đường
+của cô đã thất bại rồi&, Himiko&. Mấy hầu nữ bên ngoài đang cười kìa&.
+\
+// 天の御使いを懐柔するための練習成果は
+// 出なかったようだな。
+// ヒミコ。
+// 侍女達が苦笑いをしていたぞ。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0120&.ogg"
+Ughh! Don't tell me that!
+Ughh! Đừng có nói mấy chuyện đó!
+\
+// う、ううー！
+// そういうことは、言わないでください！
+
+@action
+&-se sound="cコミカル連打&.ogg"
+&-揺れ name="MainChar"&, time=500&, 方向="横"&, 幅=8&, 回数=30
+&-message
+<FONT interval=30 speed=200 effect="Jump">Bop bop bop!</FONT>
+\
+// <FONT interval=30 speed=200 effect="Jump">ぽこぽこぽこっ！</FONT>
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, log_name="？？？"&, message_name="？？？"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0005&.ogg"
+Ahh&&, what a nice massage&&.
+Ahh&, cô mát xa thật tuyệt&.
+\
+// この力加減、程良く身体が解されていくな。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0121&.ogg"
+Are you saying I'm weak!?
+I was able to do a pushup just recently&&, you know!
+Ý chị muốn nói tôi yếu à?
+Hồi nãy tôi vừa mới chống đẩy được một cái đấy&, chị biết không!
+\
+// 私が非力だって言いたいんですねーっ！
+// これでもこの前、腕立て伏せが成功したんですからー！
+
+@action
+&-message
+This woman&&, who picked up this Himiko girl with
+one hand&&, was also wearing some retro&&-styled
+armor&&. Questions continued to boil up in me&
+Người phụ nữ nhấc Himiko lên bằng một tay&,
+cô ấy cũng mặc một bộ giáp phong cách cổ điển tương tự&.
+\
+// ヒミコと名乗る女の子を、片手で持ち上げる女性。
+// 彼女もまた、時代錯誤な鎧を身につけている。
+// 俺の中で、疑問が膨れあがっていく。
+
+@action
+&-message id="ヤマトタケル"&, log_name="？？？"&, message_name="？？？"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0006&.ogg"
+It looks like you want to ask something&&, Servant of
+Heaven&&.
+Có vẻ như anh muốn hỏi tôi gì đó&, phải không
+Sứ Giả Thiên Đường?
+\
+// 何か聞きたいようだな。
+// 天の御使い。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Um&&, well&&.&&.&&. I wanted to ask your name&&.
+Um&, thật ra&.&.&. Tôi muốn biết tên của cô&.
+\
+// あ、その…
+// 名前を聞きたいんだけど…
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0007&.ogg"
+My apologies&&, I forgot&&. My name is Yamato
+Takeru&&. I used to be called Zipang's strongest
+warrior&&, but now I've retired to Yamatai&&.
+Xin lỗi&, tôi quên mất&. Tên tôi là Yamato Takeru&.
+Tôi từng được xưng tụng là chiến binh mạnh nhất Nhật Bản&,
+nhưng giờ tôi đã rửa tay gác kiếm tại Yamatai này&.
+\
+// 失礼。申し遅れた。
+// 私の名はヤマトタケル。
+// 昔はジパング最強の戦士と呼ばれていたが、
+// 今は邪馬台で隠居の身だ。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+No&&, I meant your real names&&.
+And the name of this place&&.&&.&&.
+Không&, ý tôi là tên thật của cô cơ&.
+Và tên của nơi này&.&.&.
+\
+// いや、そうじゃなくて…
+// ２人とも、本名を教えてくれないか？
+// あと、ちゃんとした街の名前と…
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0122&.ogg"
+&&.&&.&&.? I don't know what you're talking about&&.&&.&&.
+&.&.&.? Em không hiểu anh đang nói gì hết&.&.&.
+\
+// …？　何の話か、わかりませんが…
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0008&.ogg"
+What gives you cause for doubt&&, Servant of Heaven?
+Thế điều gì khiến anh nghi ngờ vậy&, Sứ Giả Thiên Đường? 
+\
+// いったい、何を疑っているのだ。
+// 天の御使い。
+
+@action
+&-message
+It doesn't look like they're lying to me&&. Then
+where am I? If it's not a movie set and
+is actually real&&, then where is this?
+Họ không có vẻ như đang nói dối mình&. 
+Mình đang ở đâu? Nếu đây không phải là phim trường
+mà là địa điểm thật&, vậy đây là đâu?
+\
+// ２人が嘘をついているように見えない。
+// じゃあ、俺は今、どこにいるんだ？
+// 映画の撮影って訳じゃなく……
+// 現実だとしたら、ここはどこなんだ？
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.Is it okay if I leave here?
+I want to have a look around the city&&.
+&.&.&.Có ổn không nếu tôi rời khỏi đây?
+Tôi muốn ra ngoài nhìn quang cảnh của thành phố&.
+\
+// …ここから出てもいいか？
+// できれば、街を見たい。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0123&.ogg"
+But you can barely walk in your current condition&&.
+Nhưng với tình trạng của anh hiện giờ anh khó có thể bước đi được&. 
+\
+// ですけど、今の状態ですと、
+// 歩くのが精一杯では…
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0009&.ogg"
+I'll help&&. Is that all right?
+Tôi sẽ giúp&. Vậy có được không?
+\
+// 私が肩を貸そう。
+// それでもいいか？
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Yeah&&, thanks&&.
+Được&, cảm ơn cô&.
+\
+// そうしてくれると助かる…
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0124&.ogg"
+W&&-Wait! I'll go too!
+Ch&, chờ đã! Em đi nữa!
+\
+// ま、待ってください！
+// 私も一緒に行きますっ！
+
+@se_stop ch="All"&, time=1000
+//@bgm_stop ch=0&, time=1000
+@ＣＧ id="黒"&, name="CG"&, time=1000&, effect="CurtainLeft"
+@立ち絵消去 id=""&, time=0
+@風景消去 id=""&, time=0
+@ＣＧ消去 name="CG"&, time=1000&, effect="CurtainLeft"
+
+//@風景 id="庭"&, time=500
+@風景 id="青空"&, time=500
+
+//*SEゆっくりとした足音
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0010&.ogg"
+Do your wounds hurt?
+Vết thương của anh còn đau không?
+\
+// 傷は痛むか？
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+It does hurt more than I thought&&.
+I want to know why I'm in such terrible shape&&.
+Nó đau hơn tôi tưởng&.
+Tôi muốn biết tại sao tôi lại bị như thế này&.
+\
+// 地味に響いてる。
+// ここまで、大怪我を負った理由が知りたい…
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0011&.ogg"
+I can only guess&&, but it might be because you fell
+from the heavens&&. They were strange wounds&&,
+and it's amazing you can even walk&&.
+Tôi chỉ có thể đoán thôi&, có lẽ bởi vì anh rơi từ trên trời xuống&.
+Những vết thương này khá kỳ lạ&, và thật kì diệu
+khi anh vẫn còn có thể đi được&.
+\
+// 推測しか出来んが、
+// 天から下りた影響かもしれないな。
+// 不可思議な傷だった。
+// 立って歩けるのかと感心するくらいだ。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Strange wounds?
+Vết thương kỳ lạ à?
+\
+// 不可思議な傷…？
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0012&.ogg"
+They weren't cuts&&, stabs&&, or tears&&. I don't know how
+it would happen&&, but it looked like wounds from
+an explosion&&. The doctors were baffled&&.
+Chúng không phải vết cắt&, đâm&, hay cào xé&. Tôi không biết làm thế nào
+xảy ra được chuyện này&, nhưng có lẽ những vết thương đó là
+từ một vụ nổ&. Các thái y đều bế tắc&.
+\
+// 刀傷でも、矢傷でも、裂傷でもない。
+// どういう仕組みかわからんが、
+// まるで爆ぜたような傷だった。
+// 医者も首を捻っていた。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Why would I have such wounds?
+Tại sao tôi lại có những vết thương này?
+\
+// どうして、そんな傷が…
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0013&.ogg"
+If you don't know&&, how should I?
+Nếu anh không biết&, làm sao tôi biết được?
+\
+// お前にわからぬものが、
+// 私にわかるはずがなかろう。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+That's true&&.&&.&&.
+Cô nói đúng&.&.&.
+\
+// それもそうだな…
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0125&.ogg"
+The wind is really nice around this mansion&&.
+There's a river nearby and the moonlight is beautiful&&.
+I never grow tired of looking at it&&.
+Không khí ở quanh đây rất thanh bình&.
+Có một con sông ở cạnh bên và đêm trăng thì rất đẹp&.
+Tôi chưa bao giờ chán nhìn ngắm nó&.
+\
+// この館の周辺は、風通りがすっごくいいんですよ。
+// 川も近くて、月明かりも綺麗で、
+// いつ見ても飽きません。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0126&.ogg"
+I think you'll like it too&&, Big Brother&&.
+Look&&, we're almost at the city&&.
+Em nghĩ anh cũng sẽ thích ngắm nó&, Anh Hai&.
+Nhìn kìa&, chúng ta sắp vào trong thành phố rồi&.
+\
+// お兄様も気に入ってくれると思います。
+// ほら、もうすぐ街が見えますよ。
+
+@action
+&-message
+The sunlight was shining through the trees&&. I envisioned
+the concrete jungle beyond&&, and placed all my
+hopes in the view Himiko was pointing at&&.
+Ánh mặt trời đang chiếu rọi qua các hàng cây&. Tôi hình dung
+một khu đô thị bằng bê tông nằm phía xa&, và tập trung nhìn về
+hướng mà Himiko đang chỉ tới&.
+\
+// 木々の隙間から入り込む光。
+// その先にあるコンクリートジャングルを思い浮かべて、
+// 俺は願いを託すように、ヒミコの指さす方を見た。
+
+//中村　ここの背景、全画面にした方が印象強くなるようでしたら、すみませんが設定お願いいたします。
+
+@se_stop ch="All"&, time=2000
+@bgm_stop ch=0&, time=2000
+@ＣＧ id="白"&, name="CG"&, time=1500//&, effect="CurtainLeft"
+@立ち絵消去 id=""&, time=0
+//@風景消去 id=""&, time=0
+@wait time=1000
+@風景 id="邪馬台"&, time=0
+//@back obj="&.&./Location/cc001_邪馬台&.png"&, time=0
+@se sound="c草原の風&.ogg"
+@ＣＧ消去 name="CG"&, time=1500//&, effect="CurtainLeft"
+
+@se_stop ch="All"&, time=10000
+
+@action
+&-message
+What meets my eyes is a view full of vivid
+green&&, wet with rain and glistening brilliantly&&.
+Quang cảnh trước mặt tôi đầy những màu xanh rực rỡ&,
+thấm ướt nước mưa và sáng lộng lẫy&.
+\
+// 俺の視界に映り込んだものは、色鮮やかな若葉。
+// 一面に広がる緑は雨露を乗せて、
+// 日の光をきらめかせている。
+
+@action
+&-message
+There are no cold&&, hard concrete buildings in
+sight&&, but instead warm homes made of wood&&,
+blending in with the surrounding nature&&.
+Không hề có một tòa nhà bê tông lạnh lẽo&, cứng ngắc nào hết&,
+trước mặt tôi chỉ toàn là những ngôi nhà gỗ ấm cúng&,
+ẩn mình trong rừng cây xung quanh&.
+\
+// 無機質なコンクリートの建物などひとつもなく、
+// 郷愁を感じさせる、温かみのある木造の家々が
+// 自然と調和するように建ち並んでいた。
+
+@action
+&-message
+I look around and find the same view everywhere&&. This
+doesn't seem like a movie set or an elaborate prank&&.
+If this isn't a dream&&, then this must be reality&&.&&.&&.
+Tôi nhìn xung quanh và chỉ thấy cùng một quang cảnh như vậy ở khắp nơi&.
+Nơi đây không có vẻ là một phim trường hay là một trò đùa công phu nào đó&.
+Nếu đây thật sự không phải là mơ&, vậy đây chính là sự thật rồi&.&.&.
+\
+// どこを見渡しても、視界はほとんど変わらない。
+// どこかにドッキリの仕掛け人がいるわけでもなく、
+// 大金をかけて建築したセットにも見えない。
+// 夢でないのなら、今の状況は真実なわけで…
+
+//＠↓《都＝みやこ》
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0127&.ogg"
+Ahem&&. How do you like it?
+This is Yamatai's capital and most thriving city&&.
+The market is busy with traders every day&&.
+E hèm&. Anh thấy thế nào?
+Đây chính là thủ đô của Yamatai và là thành phố thịnh vượng nhất&.
+Khu chợ luôn bận rộn với nhiều thương nhân tới hằng ngày&.
+\
+// こほん。気に入ってもらえましたか？
+// 邪馬台では一番栄えている&(都/みやこ&)なんですよ。
+// 行商人も多くて、毎日のように市場が開いています。
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0128&.ogg"
+We've lifted the taxes to encourage active trade&&.
+Which was my idea&&, by the way&&.
+Bọn em nới lỏng việc đánh thuế để khuyển khích việc buôn bán&.
+Tiện thể&, đó là ý tưởng của em&.
+\
+// 税を免除して、
+// 活発な取り引きができるようにしたんですよ。
+// これ、私の案なんです。えっへん。
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0014&.ogg"
+I heard you got that idea from Nobunaga&&.
+You shouldn't lie&&.
+Ta nghe nói cô lấy ý tưởng đó từ Nobunaga&.
+Cô không nên nói xạo&.
+\
+// 信長からアイデアをもらったと聞いたが？
+// 嘘はいけないな。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0129&.ogg"
+D&&-Don't say that here!
+I'm trying to make a good impression on Big Brother!
+Đừng&, đừng có nói chuyện đó ở đây!
+Tôi đang cố gây ấn tượng tốt cho Anh Hai mà!
+\
+// い、今はそういうこと言わないでくださいっ！
+// お兄様に対して、私の評価を上げるのが
+// 目的なんですからぁ～っ！
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0015&.ogg"
+What comes around goes around&&.
+You just have to tell the truth&&. As I recall&&, Edo uses&&.&&.&&.
+Gieo gió thì gặt bão&.
+Cô chỉ cần nói ra sự thật thôi&. Như tôi nhớ thì Edo sử dụng&.&.&.
+
+\
+// 周り巡って自分の元に返る。
+// 事実だけ伝えればいい話だ。
+// 確か、江戸では…
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+<FONT interval=60>The rakuichi rakuza free market policies&&.&&.&&.</FONT>
+Chính sách buôn bán tự do rakuichi rakuza&.&.&.
+\
+// <FONT interval=60>楽市、楽座…</FONT>
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0016&.ogg"
+Yeah&&, I'm surprised you knew&&.
+I heard Nobunaga just began that recently&&.
+Phải&, thật ngạc nhiên khi anh biết điều đó&.
+Tôi nghe nói Nobunaga chỉ vừa mới bắt đầu chính sách đó thôi&.
+\
+// よく知っているな。
+// 信長も、ついこの前、始めたばかりと聞いたが。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+<FONT interval=60>&&(Oda Nobunaga&&.&&.&&. Himiko&&.&&.&&. Yamato Takeru&&.&&.&&.&&)</FONT>
+&(Oda Nobunaga&.&.&. Himiko&.&.&. Yamato Takeru&.&.&. &)
+\
+// <FONT interval=60>（織田信長…
+// 　ヒミコ…
+// 　ヤマトタケル…）</FONT>
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0130&.ogg"
+In Yamatai&&, I've added my own touch&&.
+I'm not always copying someone&&.
+See that sign over there? I designed that&&-&&-
+Ở Yamatai&, em có thêm vài thứ riêng&.
+Đâu phải em chỉ sao chép người khác đâu&.
+Anh nhìn thấy tấm bảng bên kia không? Em thiết kế nó đấy&.&.&.
+\
+// 邪馬台では、私のアレンジを加えているんですよ。
+// いつも真似ばかりしているわけじゃありません。
+// 実際、あそこにある垂れ幕は私がデザインして…
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+<FONT interval=60>Ahahaha&&.&&.&&. Hahahaha! Ah&&.&&.&&.</FONT>
+\
+// <FONT interval=60>あは、あはは…はははは…はぁ…</FONT>
+
+@message_hide
+//*SE倒れる音、バタッ
+@se sound="倒れる２&.ogg"
+@画面揺れ time=1000&, 方向="縦横"&, 幅=24&, 回数=50
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0131&.ogg"
+Big Brother&&, are you okay!? Big Brother!
+Get hold of yourself!
+Anh Hai&, anh ổn chứ!? Anh Hai!
+Hãy bình tĩnh lại đi!
+\
+// お兄様？　どうしたんですか！？
+// お兄様、しっかりしてくださーい！
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0017&.ogg"
+Good grief&&, he must have pushed himself too hard&&.
+I guess I'll carry him back&&.
+Thật tình&, anh ấy chắc đã cố gắng quá mức&.
+Ta nghĩ là ta sẽ đưa anh ấy về&.
+\
+// やれやれ、無理をするからだ。
+// 担いで帰るとするか。
+
+//@bgm_volume ch=0&, volume=50%&, time=1000
+@se_stop ch="All"&, time=1500
+@bgm_stop ch=0&, time=1500
+@ＣＧ id="黒"&, name="CG"&, time=1500
+@立ち絵消去 id=""&, time=0
+@風景消去 id=""&, time=0
+@ＣＧ消去 name="CG"&, time=1000&, effect="CurtainLeft"
+//@bgm_volume ch=0&, volume=100%&, time=1000
+
+@風景 id="主人公部屋"&, time=500
+@bgm ch=0&, sound="日常１"
+
+@立ち絵 id="ヒミコ"&, time=300
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0132&.ogg"
+&&.&&.&&.Are you okay now?
+&.&.&. Bây giờ anh đã ổn chưa?
+\
+// …もう落ち着きましたか？
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+<FONT interval=60>Yeah&&, thanks&&.&&.&&.
+I'm beginning to accept this as my reality&&.</FONT>
+Rồi&, cảm ơn&.&.&.
+Tôi bắt đầu chấp nhận đây là sự thật rồi&.&.&.
+\
+// <FONT interval=60>おかげさまで…
+// 何とか、この現実を受け入れられるようになってきた。</FONT>
+
+@action
+&-message
+I passed out from shock&&. They cared for
+me until I woke up&&, and now I'm collecting
+myself as I listen to their explanation&&.
+Tôi đã bất tỉnh vì quá sốc&. Họ đã chăm sóc cho tôi
+cho đến khi tôi tỉnh dậy&, và giờ tôi đang hoàn hồn lại
+trong khi họ giải thích cho tôi nghe&.&.
+\
+// あまりの衝撃に気を失ってしまった。
+// 部屋で介抱されて、目を覚まして……
+// 説明を受けるうちに、
+// ようやく冷静な思考を取り戻していた。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+So&&.&&.&&. In this world&&, there are heroes all over&&.
+Vậy&.&.&. Ở thế giới này&, có nhiều anh hùng ở khắp mọi nơi&.
+\
+// つまり……
+// ここは、あちこちに英雄が存在してる世界なのか…
+
+@action
+&-message
+I tried mentioning names of various people I could
+think of&&, and these two seemed to know half of
+them&&. Regardless of time period or background&&.
+Tôi thử nêu ra vài cái tên mà tôi có thể nghĩ tới&,
+và hai người họ có vẻ biết được một nửa số đó&.
+
+\
+// 俺の記憶に残る名前を試しに挙げたら、
+// その半数は、２人が何らかの形で知っていた。
+// しかも、生きていた時代や背景は関係ないようだ。
+
+@action
+&-message
+At first I tried to come up with an explanation&&,
+but I just couldn't&&, so I gave up&&.
+Ban đầu tôi cố để tìm ra lời giải thích nào đó&.
+Nhưng không thể được&, vì thế nên tôi bỏ cuộc&.
+\
+// 最初は理由を付けようとしたものの、
+// どうやっても説明できないから諦めた。
+
+@action
+&-message
+I don't know why it's just me here&&, and there's
+nothing I can do but accept it&&. Also&&.&&.&&.
+Tôi không biết tại sao chỉ có mình tôi ở đây&, và không còn cách nào khác
+ngoài việc chấp nhận sự thật&.&.&. Ngoài ra&.&.&.
+\
+// 俺がここにいる理由もわからないし、
+// ただある事実を受け入れるしかない。
+// それに…
+
+@立ち絵 id="ヤマトタケル"&, time=300
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0018&.ogg"
+What are you looking at me like that for?
+Tại sao anh lại nhìn tôi như thế?
+\
+// なんだ？　私をじっと見て。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.Can you tell me your name one more time?
+I need to hear it&&. Please&&.
+&.&.&.Liệu cô có thể nói tên cô cho tôi nghe thêm một lần nữa được không?
+Tôi cần phải nghe lại cái tên đó&. Làm ơn&.
+\
+// …もう一度、名前を聞いてもいいか？
+// どうしても聞きたいんだ。
+// 頼む。
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0019&.ogg"
+&&.&&.&&.Fine&&. My name is Yamato Takeru&&. I used to be
+called Zipang's strongest warrior&&, but I'm living
+out my days of retirement here in Yamatai&&.
+&.&.&.Được thôi&. Tên tôi là Yamato Takeru&. Tôi từng được gọi là
+chiến binh mạnh nhất Nhật Bản&, nhưng giờ tôi đang nghỉ hưu tại Yamatai đây&.
+\
+// …仕方ないな。
+// 私の名はヤマトタケルだ。
+// 昔はジパング最強の戦士と呼ばれていたが、
+// 邪馬台で隠居生活をしている。
+
+//＠↓《小声》
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0133&.ogg"
+<FONT size=24 interval=60>I haven't accepted your retirement&&.&&.&&.
+We would have won if you were at that last battle&&.&&.&&. mumble&&.&&.&&.</FONT>
+Tôi vẫn chưa chấp nhận cho chị nghỉ hưu mà&.&.&.
+Chúng ta đã có thể dành chiến thắng nếu có chị ở trận chiến lúc trước&.&.&.&.
+\
+// <FONT size=24 interval=60>隠居だなんて、私は認めていませんけどね…
+// この間の戦いだって、タケルがいたら…ぶつぶつ…</FONT>
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.You're a woman&&, right?
+&.&.&. Cô là phụ nữ&, phải không?
+\
+// …女、だよな？
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0020&.ogg"
+That's right&&. Do I not look like one?
+Đúng vậy&. Trông tôi không giống phụ nữ à?
+\
+// そうだ。
+// そうは見えんか？
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+No&&, you look very much like one&&.
+I'm sorry&&, it was just different from what I knew&&.
+Không phải&, cô trông đúng là một phụ nữ&.
+Xin lỗi&, chỉ là nó hơi khác so với tôi tưởng&.
+
+\
+// いや…ちゃんと女に見える。
+// 悪い、俺の中にある知識と食い違ってて…
+
+@action
+&-message
+//そう。
+If I recall correctly&&, Yamato Takeru is a man&&. Oda
+Nobunaga is also a woman according to Himiko&&,
+and I'm having a hard time just accepting it&&.
+Nếu mình nhớ không lầm&, Yamato Takeru là đàn ông&.
+Oda Nobunaga cũng là một phụ nữ theo Himiko nói&,
+và mình thì lại khó chấp nhận chuyện đó&.
+\
+// 俺の記憶が正しければ、ヤマトタケルの性別は男だ。
+// ヒミコの話では、織田信長も女だと聞くし、
+// 本当に受け止めるだけで精一杯だ。
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0021&.ogg"
+I don't think I'm that ladylike&&, but I didn't
+think I'd get mistaken for a man&&.
+Tôi không nghĩ mình dịu dàng như một phụ nữ&, 
+nhưng tôi cũng không nghĩ mình dễ bị nhìn nhầm thành đàn ông&.
+\
+// 自分を女らしいとは思ってないが、
+// まさか、男と間違われるとはな。
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0022&.ogg"
+If you don't believe me&&, do you want to see my body?
+I think you'll see the truth then&&.
+Nếu anh không tin tôi&, vậy anh muốn xem cơ thể của tôi không?
+Tôi nghĩ anh sẽ hiểu ra được ngay&.
+\
+// 信用できないのなら、
+// 私の裸体を見てみるか？
+// そうすれば、真実も明らかになるぞ。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+<FONT interval=30 speed=200 effect="OffCenter">No&&, you don't have to go that far!</FONT>
+Không&, cô không cần phải làm tới như vậy!
+\
+// <FONT interval=30 speed=200 effect="OffCenter">そ、そこまでしなくてもいい！</FONT>
+
+//＠↓《もう一人はタケルのことをさしています》
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0134&.ogg"
+<FONT interval=60>This is the second one&&.&&.&&.</FONT>
+Đây là cái thứ hai&.&.&.
+\
+// <FONT interval=60>これで、２人目ですね…</FONT>
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.Huh?
+&.&.&.Hả?
+\
+// …え？
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0023&.ogg"
+It doesn't seem like you've forgotten everything&&.
+Trông anh không có vẻ như là quên hết mọi thứ&.
+\
+// 何もかも、忘れているようには感じないが。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Yeah&&, I can remember bits and pieces&&.
+I've heard memories can come
+back over time&&, but I don't know&&.
+Phải&, tôi có thể nhớ lẻ tẻ các mảnh ký ức&.
+Tôi nghe nói ký ức có thể quay trở lại theo
+thời gian&, tôi không biết nữa&.
+\
+// あ、ああ。ぶつ切りで残っている感じだ。
+// 記憶喪失は、時間の経過で回復することもあると
+// 聞いたことがあるけど…
+// こればっかりは、わからないな。
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0024&.ogg"
+If there's anything you need&&, any
+questions&&, you can come to me&&.
+Nếu anh cần gì hay muốn hỏi điều gì&, anh có thể đến gặp tôi&.
+\
+// 何かあれば、私を頼るといい。
+// 相談相手にはなれるだろう。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Thanks&&.
+Cảm ơn&.
+\
+// ありがとう。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0135&.ogg"
+<FONT interval=60 speed=400 effect="Wave">Grrr～～～～&&.&&.&&.</FONT> You're talking to Takeru and not me&&.
+Grrr&.&.&.Anh nói chuyện với Takeru mà lại không nói chuyện với em&.
+\
+// <FONT interval=60 speed=400 effect="Wave">むぅぅ～～～～…</FONT>&.&.&.
+// タケルとばかり話しています。
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0025&.ogg"
+Jealous already?
+Ghen tỵ rồi à?
+\
+// 早くもヤキモチか？
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0136&.ogg"
+N&&-no&&, I'm just concerned about
+you hogging him to yourself&&.
+Đ&, đâu có&, tôi chỉ lo là chị cứ bám víu vào anh ấy miết thôi&.
+\
+// ち、違います。
+// タケルが一人占めしてるのが気になっただけです。
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0026&.ogg"
+I think you'd normally call that jealousy&&,
+but I will hand him over to you&&.
+Ta nghĩ như vậy gọi là ghen tỵ rồi&,
+nhưng được thôi&, ta sẽ trả anh ấy lại cho cô&.
+\
+// 何も変わらない気もするが…
+// 独占権は譲るとしよう。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Um&&.&&.&&. Do I get a say in this?
+Um&.&.&. Tôi có được nói gì về việc này không?
+\
+// その…俺の意思は…
+
+@立ち絵 id="ヒミコ"&, time=300
+
+@action
+&-message id="ヒミコ"&, face="照れ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0137&.ogg"
+<FONT interval=60>&&.&&.&&.Do you not like me?</FONT>
+&.&.&. Anh không thích em à?
+\
+// <FONT interval=60>……いやなんですか？</FONT>
+
+@action
+&-message
+Himiko is looking up at me with watery eyes&&.&&.&&.
+Himiko đang nhìn mình với cặp mắt đẫm lệ&.&.&.
+\
+// ヒミコは瞳に涙を浮かべて、
+// 上目遣いに俺を見てるけど…
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.Don't use a water dropper to fake tears&&.
+&.&.&. Đừng có dùng nước nhỏ mắt để giả khóc chứ&.
+\
+// …水差しで、涙を演出しないように。
+
+//*SEグサッ
+
+@action
+&-se sound="ぐさり１&.ogg"
+&-揺れ name="MainChar"&, time=500&, 方向="横"&, 幅=16&, 回数=30
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0138&.ogg"
+<FONT interval=60 speed=200 effect="OffCenter">Guh&&.&&.&&.</FONT>
+\
+// <FONT interval=60 speed=200 effect="OffCenter">うぐっ…</FONT>
+
+//＠↓《くすりと笑うように》
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0027&.ogg"
+He can see right through you&&.
+Anh ấy biết tỏng cô rồi&.
+\
+// 見透かされているな。
+
+@action
+&-message
+Was Himiko such an aggressive person?
+That's not really the Himiko I envisioned&&.&&.&&.
+Himiko là một cô gái năng động như vậy à?
+Đó không giống như hình tượng Himiko mà mình nghĩ tới&.&.&.
+\
+// ヒミコって、ここまでアクティブな性格なのか？
+// 俺が知る人物像と食い違っているんだけど…
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Say&&, you did mention world conquest before&&.&&.&&.
+À&, hồi nãy cô có nhắc tới việc chinh phục thế giới&.&.&.
+\
+// そういえば、
+// 世界征服なんて言っていたし…
+//俺を和ませる冗談かと思ったが、
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0028&.ogg"
+Wait&&, that's&&.&&.&&.
+Khoan đã&, việc đó&.&.&.
+\
+// 待て、その話は…
+
+@bgm_stop time=1000
+//*SEシャキーン
+@se sound="c自慢&.ogg"
+
+@bgm ch=0&, sound="コミカル"&, time=1000
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0139&.ogg"
+I'm glad you asked! As I explained earlier&&, the
+world is at war right now&&. Battles are taking place
+everywhere&&, and there's no end in sight&&.
+Em mừng vì anh đã nhắc! Như em đã nói hồi nãy&,
+thế giới đang trong tình trạng chiến tranh tràn lan&. Các cuộc chiến
+diễn ra ở khắp nơi&, và không hề có điểm dừng&.
+\
+// よくぞ聞いてくれました！
+// お兄様に先ほど説明した通り、今は戦乱の世。
+// 争いが各地で起こっていて、
+// 終結する気配がありません。
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0140&.ogg"
+In order to bring order to this world&&, we
+need a strong leader to unify it&&. A supreme
+commander to bring an end to this!
+Nhằm mục đích đem lại trật tự mới cho thế giới&,
+bọn em cần một thủ lĩnh tài giỏi để đảm nhiệm việc này&.
+Một vị thủ lĩnh tối cao kết thúc mọi cuộc chiến trên thế giới&.
+\
+// この世界を安定させるためには、
+// 有能な統一者が必要なんです。
+// 戦乱の世を終結させる、絶対的な統一者が！
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0141&.ogg"
+Yes&&.&&.&&. <FONT interval=30>Someone like me!</FONT>
+Đúng vậy&.&.&.Một người như em đây!
+\
+// そう…&.&.&.
+// <FONT interval=30>たとえば、この私のような！</FONT>
+
+//*SEキラーン
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0142&.ogg"
+Someone with the power of divination that runs
+in the family! Someone loved by all of Yamatai!
+Someone who oozes with charisma!
+Người phụ nữ mang trong mình dòng máu chứa sức mạnh tiên đoán&.
+Người phụ nữ được mọi người dân Yamatai yêu quý!
+Người phụ nữ tràn ngập vẻ đẹp quyến rũ&.
+\
+// 先祖代々受け継いだ未来予知能力！
+// 邪馬台の皆さんから慕われる人望！
+// そして、全身から溢れ出る、このカリスマ！
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0143&.ogg"
+There is none but I who will bring an end
+to these turbulent times! And even if there
+were&&, they are to be ignored completely!
+Em chính là người duy nhất sẽ kết thúc tất cả chiến tranh!
+Và nếu có ai đó khác cũng như em&, họ cũng sẽ bị làm ngơ thôi!
+\
+// 戦乱の世を安定に導くのは、
+// この私しか存在しません！
+// もしいても、完全無視です！
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0144&.ogg"
+<FONT size=30>Vote Himiko of Yamatai&&, everyone of the world!
+Himiko of Yamatai&&, ladies and gentlemen!</FONT>
+Hãy bỏ phiếu bầu cho Yamatai&, tất cả mọi người trên thế giới!
+Himiko của Yamatai&, thưa quý ông quý bà!
+\
+// <FONT size=30>世界中の皆さーん！　邪馬台のヒミコ！
+// 邪馬台のヒミコをよろしくお願いしまーす！</FONT>
+
+//*SEどんどんぱふぱふ
+
+//＠↓《ため息混じりに》
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0029&.ogg"
+<FONT interval=60>And so it begins&&.&&.&&.</FONT>
+Lại bắt đầu nữa rồi&.&.&.
+\
+// <FONT interval=60>始まってしまったか……</FONT>
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Uhh&&, what is this?
+Uhh&, chuyện gì thế?
+\
+// えーと、これは…？
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0030&.ogg"
+She gets these attacks sometimes&&.
+Don't worry about it&&.
+Lâu lâu cô ấy bị như vậy&.
+Anh khỏi cần phải lo&.
+\
+// 時折起こる発作だ。
+// 気にしなくていい。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0145&.ogg"
+<FONT interval=30>Don't treat me like I'm insane!
+I'm always serious&&, you know!</FONT>
+Đừng có đối xử em như là đồ điên chứ!
+Em lúc nào cũng nghiêm túc hết&, chị biết không!
+\
+// <FONT interval=30>病気みたいに言わないでください！
+// 私はいつでも本気なんですからね！</FONT>
+
+//@bgm ch=0&, sound="日常１"
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0031&.ogg"
+I don't mean to disagree with you there&&,
+but you can't even use those powers of
+divination you mentioned properly&&.
+Ta không có ý phản đối cô&,
+nhưng thật ra cô còn không biết cách sử dụng
+sức mạnh tiên đoán của mình&.
+\
+// そこに異論を挟むつもりはないが、
+// 一押しの予知能力は、まともに使えないはずだ。
+
+@bgm_stop ch=0&, time=2000
+
+@action
+&-se sound="ぐさり１&.ogg"
+&-揺れ name="MainChar"&, time=500&, 方向="横"&, 幅=16&, 回数=10
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0146&.ogg"
+<FONT interval=60 speed=200 effect="OffCenter">Urk&&.&&.&&.</FONT>
+\
+// <FONT interval=60 speed=200 effect="OffCenter">うっ…</FONT>
+
+@bgm ch=0&, sound="日常３"//&, time=1000
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0032&.ogg"
+You've been lowered from a charismatic Queen to a
+mascot because of your ridiculous demands recently&&.
+Your popularity's starting to wane&&, as well&&.
+Cô tự hạ thấp mình từ một nữ Công nương quyến rũ 
+xuống chỉ còn là biểu tượng đơn sơ&, đó là do hướng chỉ đạo
+ngu ngốc của cô&. Độ nổi tiếng của cô cũng giảm xuống đáng kể&.
+\
+// ここ最近の無理難題が原因で、
+// 憧れの女王様からマスコットキャラに格下げ。
+// 人望にも陰りが出ていると言ってもいい。
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0033&.ogg"
+And now here you are trying to force a Servant of
+Heaven to join you&&. World conquest is far&&, far away&&.
+Và giờ cô đang cố thuyết phục Sứ Giả nơi Thiên Đường
+gia nhập chúng ta&. Làm bá chủ thế giới vẫn còn xa vời lắm&.
+\
+// さらに、天の御使いを強引に勧誘してはな。
+// 世界征服は、お前から遙か彼方に存在しているぞ。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0147&.ogg"
+<FONT interval=60>You could at least praise my determination&&.&&.&&. Sniff&&.&&.&&.</FONT>
+Ít nhất chị cũng phải khen ngợi sự kiên trì của em chứ&.&.&.&. Hix&.&.&.&.
+\
+// <FONT interval=60>こ、心意気だけは認めてください…
+// ぐすん…</FONT>
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+She really is aggressive&&.&&.&&.
+Cô ấy đúng là năng nổ mà&.&.&.
+\
+// 本当にアクティブだな…
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0034&.ogg"
+She's a rowdy Queen&&, but she's a good girl at heart&&.
+If you could just forget about the fishy business
+and bear with her&&, I'd appreciate it&&.
+Cô ấy là một vị Nữ hoàng hay ầm ĩ&, nhưng trong thân tâm cô ấy là một cô gái tốt&.
+Nếu anh có thể gạt qua mọi nghi ngờ và giúp cô ấy&,
+tôi sẽ rất cảm kích&.
+\
+// 騒がしい女王だが、根はいい子だ。
+// 勧誘の件は忘れて、付き合ってくれると助かる。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0148&.ogg"
+<FONT interval=60>M&&-My plan&&.&&.&&. Big Brother will join Yamatai&&.&&.&&. Unnh&&.&&.&&.</FONT>
+Kế&, kế hoạch của em&.&.&. Anh Hai sẽ gia nhập Yamatai&.&.&. Unnh&.&.&.
+\
+// <FONT interval=60>わ、私の計画が…
+// お兄様を邪馬台に引き入れる…うぅ～…</FONT>
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0035&.ogg"
+You'll just have to let what happens happen&&.
+Anh chỉ cần để mọi chuyện xảy ra theo bản chất thôi&.
+\
+// 成り行きに身を任せるしかないだろう。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0149&.ogg"
+Oh&&, but! Regardless of that&&, I still owe you for saving
+my life&&. It would bring question to my character
+as Queen to not thank you properly for that&&.
+Oh&, nhưng mà em vẫn còn nợ anh ân huệ vì đã cứu sống em&.
+Sẽ rất là tệ cho hình tượng nữ hoàng của em nếu em
+không đền đáp cho anh một cách xứng đáng&.
+\
+// あっ…でも…！
+// そんなことと関係なく、お兄様は命の恩人なんです。
+// 礼を欠いては、一国の女王としての品格に関わります。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0150&.ogg"
+So&&, Big Brother&&. Please stay here a while to recover&&.
+You don't need to worry about us&&.
+Vì thế Anh Hai à&. Anh cứ ở lại đây để nghỉ ngơi&.
+Anh không cần lo lắng gì về bọn em hết&.
+\
+// だから、お兄様。
+// しばらくは、ここで療養してくださいね。
+// 私たちに気を使う必要はありませんから。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+I might cause you trouble&&, though&&.&&.&&.
+Tôi có thể sẽ gây rắc rối cho cô&.&.&.
+\
+// だけど、迷惑をかけるかもしれないし…
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0036&.ogg"
+You don't know left from right yet&&, do you?
+You can stay at least until your wounds heal&&.
+Anh vẫn chưa biết rõ phải trái mà đúng không?
+Anh có thể ở lại đây cho đến khi vết thương của anh lành lại&.
+\
+// 今の状態では右も左もわからないだろう。
+// 少なくとも、怪我が治るまでは滞在するといい。
+
+@action
+&-message
+I don't know what happened to me&&, but I can't
+move all bandaged up like this&&. Should I indulge
+in their good intentions&&, and try and figure
+out what's going on with this world?
+Mình không biết chuyện gì đã xảy ra&, nhưng mình không thể
+rời đi khi cơ thể mình bị băng bó như thế này được&.
+Hay là mình nên chiều theo ý tốt của bọn họ&, và thử tìm hiểu xem
+chuyện gì đang xảy ra ở thế giới này?
+\
+// 自分の身に何が起こったのかわからないけど、
+// 包帯まみれの状態では、動くことすらままならない。
+// 今は２人の厚意に甘えて、
+// この世界を見極めるべきだろうか？
+
+//＠↓《都＝みやこ》
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0037&.ogg"
+Looks like you're not convinced yet&&, but knowing
+is half the battle&&. I'll show you around the capital
+so you can relax a bit&&. Either way&&, it's not a
+bad idea to learn about the outside world&&.
+Có vẻ như anh vẫn chưa cảm thấy thuyết phục lắm&, 
+nhưng hiểu được đối phương cũng là một nửa chiến thắng rồi&.
+Tôi sẽ dẫn anh đi vòng quanh thành phố để anh có thể thư giãn&.
+Dù sao thì cũng tốt để tìm hiểu thêm về thế giới bên ngoài&.
+\
+// どうやら、まだ決心できないようだな。
+// 何事も知ることから始まる。
+// 少しでも落ち着けるように&(都/みやこ&)を案内しよう。
+// 何をするにしろ、外の世界を知るのは悪くない。
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0151&.ogg"
+Yeah&&, Takeru's right&&.
+If you learn where you are&&, you'll know what's best&&.
+Phải&, Takeru nói đúng&.
+Nếu anh tìm hiểu được nơi anh đang ở&, anh sẽ biết điều gì là tốt nhất&.
+\
+// タケルの言う通りです。
+// お兄様が今どこにいるのか理解すれば、
+// 何が一番なのかわかるはずです。
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0038&.ogg"
+What'll it be? If you can't walk&&, I'll help you up again&&.
+Thế nào? Nếu anh không thể bước đi được&, tôi sẽ giúp anh một tay&.
+\
+// どうする？
+// 歩けないのであれば、また手を貸すが。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+No&&, I'll walk on my own next time&&.
+Thôi khỏi cần&, tôi sẽ tự đi được&.
+\
+// いや。
+// 次回は自分で歩いていくよ。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0152&.ogg"
+All right then&&.
+Please let me know when you're able to move&&.
+Được rồi&.
+Hãy báo cho em biết khi nào anh có thế bước đi lại được&.
+\
+// じゃあ、決まりですね。
+// 動けるようになったら、私に教えてください。
+
+//＠↓《小声》
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0153&.ogg"
+<FONT interval=60>Hehehe&&.&&.&&. One step closer to my goal&&. He'll see
+how great it is here and he won't want to leave&&.</FONT>
+He he he&.&.&. Thế là một bứớc nữa đến gần mục tiêu của mình&. Anh ấy sẽ
+nhận ra ở đây sung sướng như thế nào và anh ấy sẽ không muốn rời đi nữa&. 
+\
+// <FONT interval=60>ふふふ…
+// 野望の達成に、また一歩近づきました…
+// この都の良さを知ってもらって、
+// 離れられないようにしてみせます。</FONT>
+
+//＠↓《小声》
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0154&.ogg"
+If Big Brother stays in Yamatai&&, world conquest
+will be ours for the taking&&.&&.&&. <FONT interval=60>And then Big
+Brother will&&.&&.&&. Hehe&&, hehehe&&, hehehehe&&.&&.&&.</FONT>
+Nếu Anh Hai ở lại Yamatai&, chúng ta sẽ có thể làm bá chủ thế giới&.
+Và sau đó Anh Hai sẽ&.&.&. He he&,  he he he&, hehehehe&.&.&.
+\
+// お兄様が邪馬台に留まってくれれば、
+// 世界征服は目前まで近づいたようなものです…&.&.
+// <FONT interval=60>そしたら…そうすれば、お兄様は…
+// うふ、ふふふ、ふふふふ…</FONT>
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Her thoughts are spilling right out of her mouth&&.&&.&&.
+Cô ấy đang nói ra hết suy nghĩ trong đầu&.&.&.
+\
+// 心の声がダダ漏れだな…
+
+@se_stop ch="All"&, time=15000
+@bgm_stop ch=0&, time=1500
+@ＣＧ id="黒"&, name="CG"&, time=1500//&, effect="CurtainLeft"
+@立ち絵消去 id=""&, time=0
+@風景消去 id=""&, time=0
+@wait time=1000
+@ＣＧ消去 name="CG"&, time=1000&, effect="CurtainLeft"
+
+//◎プロローグ１終了
+//&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-
+
+//@地図移動 spot="邪馬台"
+
+@風景 id="邪馬台"&, time=500
+@bgm ch=0&, sound="日常１"
+
+@action
+&-message
+＜Yamatai &&- Marketplace＞
+< Yamatai &- Khu chợ >
+\
+// ＜邪馬台・市場＞
+
+/*
+@action
+&-message
+市場は大勢の人が行き交い、
+行商人や地元の商人が店を開いていた。
+\
+
+@action
+&-message
+色んな時代が混ざり合っているせいか、
+微妙に統一感はない……が、
+俺にしかわからない違和感だろう。
+\
+*/
+
+@立ち絵 id="主人公"&, kind="普通の剣"&, time=300
+//@立ち絵 id="主人公"&, time=300
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&(There are all kinds of things for sale
+here&&, but it feels kind of messy because
+they're from different time periods&&.&&.&&.&&)
+&(Có rất nhiều thứ được bày bán ở đây&,
+nhưng trông chúng giống như một mớ hỗn độn
+bởi vì chúng đến từ mốc thời gian khác&.&.&.&)
+\
+// （色んな売り物が並んでるけど、
+// 　年代がバラバラなものが混ざり合ってるせいか、
+// 　微妙に統一感がない気がするな…）
+
+@action
+&-message
+Leaving that aside&&.&&.&&.
+Bỏ qua việc đó đã&.&.&.
+\
+// それにしても…
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+I don't know if it's because I'm with you two&&,
+but I feel like someone's watching&&.&&.&&.
+Tôi không biết có phải bởi vì tôi đang ở bên cạnh hai cô hay không&,
+nhưng tôi có cảm giác như là đang bị theo dõi&.&.&.
+\
+// ２人といるせいか？
+// さっきから、視線を感じるけど…
+
+@立ち絵 id="ヒミコ"&, time=300
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0155&.ogg"
+It's probably you&&, Big Brother&&.
+Chắc chắn là người dân đang nhìn anh rồi&, Anh Hai&.
+\
+// 理由はお兄様だと思います。
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0039&.ogg"
+You descended from the heavens and saved
+the Queen of Yamatai&&. Normal people aren't
+going to just come up to talk to you&&.
+Anh từ trên Thiên Đường ngự xuống và giải cứu Nữ hoàng của Yamatai&.
+Người bình thường không chỉ đột nhiên đến bắt chuyện với anh đâu&.
+\
+// 天より舞い降りて、邪馬台の女王を救った人物。
+// 普通の者からすれば、話しかけられるものではない。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+I'm not that special or anything&&.&&.&&.
+Anh không có gì đặc biệt lắm&.&.&.
+\
+// そこまで大層な人間じゃないんだけどな…
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0156&.ogg"
+Don't be silly&&.
+Those who were there to see it even revere you&&.
+Đừng nói như thế&.
+Những người đã chứng kiến việc đó đều rất kính trọng anh&.
+\
+// 何を言っているんですか。
+// あの時に居合わせた人たちは、
+// お兄様に畏敬の念すら持っています。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0157&.ogg"
+The chefs will prepare a feast tonight&&. They say
+they are excited to be able to cook for a Servant of
+Heaven&&. Make sure you taste nice and properly!
+Đầu bếp sẽ chuẩn bị một buổi liên hoan tối nay&. Họ nói
+họ rất phấn khởi khi được nấu ăn cho Sứ Giả nơi Thiên Đường&.
+Mong anh hãy ăn thật ngon miệng và đầy đủ&.
+\
+// 今日は、館の料理人が腕を振るうそうです。
+// 天の御使いに食べてもらえるのが
+// 嬉しいって言ってました。
+// よーく味わってあげてくださいね。
+
+//*SE斬撃（稽古）、カキンキン
+@se sound="剣戟５&.ogg"&, volume=40%&, time=1000
+
+@立ち絵 id="ヤマトタケル"&, time=300
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0040&.ogg"
+Hm&&. The training grounds are close by&&.
+They're training today&&, as always&&.
+Hm&. Khu huấn luyện ở gần đây&.
+Họ vẫn đang tập luyện như thường lệ&.
+\
+// ん…稽古場が近いな。
+// 今日も、皆、鍛錬に励んでいるようだ。
+
+@se_stop ch="All"&, time=1000
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0158&.ogg"
+Big Brother&&, you have learned sword&&-fighting&&, haven't
+you? The way you wielded your sword when you
+saved me struck awe in everyone that saw it&&.
+Anh Hai&, anh đã học về kiếm thuật rồi&, phải không?
+Cái cách anh vung kiếm để giải cứu em khiến
+mọi người lính đều kính phục&.
+\
+// お兄様も、剣を学んでいるんですよね？
+// 私を助けてくれた時の剣さばきは、
+// 他の人も思わず感嘆するほどでした。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+That's what you told me&&, Himiko&&, but I don't
+remember any of it&&. I don't know what to say&&.
+Đó là em kể vậy thôi&, Himiko&, nhưng giờ anh không nhớ được gì hết&.
+Anh không biết phải nói gì&.
+\
+// ヒミコから話は聞いたけど、
+// まったく覚えてないからな…
+// 反応に困る。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0159&.ogg"
+You cut down those bandits&&, one after another&&, with skill
+that could only belong to a legendary warrior&&. Maybe
+you'll remember something if you touch a sword&&.
+Anh hạ gục bọn thảo khấu đó&, từng tên một&, bằng kĩ năng mà chỉ có
+chiến binh huyền thoại mới có được&. Có lẽ anh sẽ nhớ được gì đó
+nếu anh chạm vào thanh kiếm&.
+\
+// 襲いくる山賊をちぎっては投げ、ちぎっては投げ…
+// あの時のお兄様は、まさしく歴戦の勇士でした。
+// ひょっとしたら、剣にふれれば、
+// 記憶を取り戻すきっかけになるかもしれませんね。
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0041&.ogg"
+Remember something&&, huh&&. I guess it's worth a try&&.
+Nhớ được gì đó à&. Anh nghĩ nó cũng đáng để thử&.
+\
+// 記憶を取り戻す、か。
+// そういう話なら足を運んでみよう。
+
+//*SE離れる足音
+@se sound="足音離土１&.ogg"
+@立ち絵消去 id=""&, time=300
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0160&.ogg"
+Where are you going?
+We still haven't seen all of the capital&&.&&.&&.
+Anh đi đâu vậy?
+Chúng ta vẫn chưa coi hết thủ đô mà&.&.&.
+\
+// ど、どこに行くんですか？
+// 都の案内は、まだ終わって…
+
+@se_stop ch="All"&, time=1000
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0042&.ogg"
+To the training grounds&&.
+I want to take a look at his ability&&.
+Tới khu huấn huyện thôi&.
+Tôi muốn xem kiếm thuật của anh ấy&.
+\
+// 稽古場だ。
+// 私が天の御使いの腕前を見てやろう。
+
+@立ち絵消去 id=""&, time=300
+
+//同背景の切り替え
+@se_stop ch="All"&, time=1000
+//@bgm_stop ch=0&, time=1000
+@ＣＧ id="黒"&, name="CG"&, time=1000&, effect="CurtainLeft"
+@立ち絵消去 id=""&, time=0
+//@風景消去 id=""&, time=0
+@ＣＧ消去 name="CG"&, time=1000&, effect="CurtainLeft"
+
+@action
+&-message
+＜Yamatai &&- Training Grounds＞
+< Yamatai &- Khu huấn luyện >
+\
+// ＜邪馬台・稽古場＞
+
+//*SEざわざわ
+
+@action
+&-message id="兵士１"
+That's the guy in the rumors&&.&&.&&.
+Đó là kẻ được nhắc đến trong tin đồn&.&.&.
+\
+// あの男の人って、噂に聞いた…
+
+@action
+&-message id="兵士２"
+He looks weaker than I thought&&.
+Is Himiko's story really true?
+Hắn ta trông yếu ớt hơn tôi tưởng&.
+Liệu Himiko có kể đúng sự thật không?
+\
+// 思ったよりも優男なのね。
+// ヒミコ様の話って、本当なのかしら？
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Their stares hurt&&.&&.&&.
+Ánh nhìn của họ khó chịu quá&.&.&.
+\
+// 視線が痛い…
+
+@立ち絵 id="ヤマトタケル"&, time=300
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0043&.ogg"
+Just think of them as pumpkins or something&&.
+Anyway&&, let's see what you've got&&. Grab a sword&&.
+Cứ tưởng tượng bọn họ là bí ngô hay gì đó cũng được&.
+Dù sao thì hãy cho tôi xem kĩ năng của anh&. Chọn một thanh kiếm đi&.
+\
+// カボチャとでも思えばいい。
+// ではさっそく、お手並み拝見だ。
+// その辺りにある剣を持ってみろ。
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0161&.ogg"
+Takeru&&, Big Brother can barely walk&&.
+I don't think he can handle training right now&&.&&.&&.
+Takeru&, Anh Hai chỉ vừa mới đi lại được một chút&.
+Tôi không nghĩ anh ấy có thể tập luyện bây giờ được&.&.&.
+\
+// タケル、お兄様は歩くだけで精一杯なんですよ。
+// 今から稽古するなんて、無理があるような…
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0044&.ogg"
+Don't be such a square&&.
+He might regain his memory&&, right?
+Đừng lo lắng quá như vậy&.
+Anh ấy có thể tìm lại ký ức mà&, phải không?
+\
+// 固いことを言うな。
+// 記憶を取り戻すかもしれないだろう？
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.All right&&. Where I'm from&&, it was simply
+impossible to have the Yamato Takeru check your
+technique&&. A sword&&.&&.&&. How about this one?
+&.&.&.Được rồi&. Ở nơi của tôi thì không bao giờ có thể
+nhờ Yamato Takeru kiểm tra kĩ năng kiếm thuật của mình&.
+Một thanh kiếm à&.&.&. Thanh này có được không?
+
+\
+// ……わかった。
+// ヤマトタケルが直々に見てくれるなんて、
+// 俺がいた場所じゃ、絶対にあり得ないからな。
+// 剣は、これにするか…
+
+//*SE剣を構える音、スチャ
+@se sound="剣構え１&.ogg"
+
+@action
+&-message id="主人公"&, face="固有"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.&&.&&.&&.
+\
+// っ……
+
+/*
+@action
+&-message
+稽古場にあった剣を手に取った。
+何の違和感もない…
+こうすることが自然のように思えた。
+\
+*/
+
+//*bg黒
+//*SE鈴の音、リィン
+
+@bgm_volume ch=0&, time=500&, volume=60%
+@message_hide
+@se sound="鈴&.ogg"
+@ＣＧ id="黒"&, name="CG"&, time=200
+@wait time=500
+
+//中村　収録した場合、別途ある音声データに、少し回想っぽいエコーをかけたものを鳴らしてください。
+@action
+&-text x="Center"&, y=291&, id="壮年の男性"&, log_name="？？？"//＠声なし&, message_name="？？？"
+There's nothing more I can teach you&&. Heh&&.&&.&&.
+I didn't think you would surpass me this quickly&&.
+Ta không còn gì để dạy cho ngươi nữa&. Heh&.&.&.
+Ta không nghĩ ngươi lại vượt qua ta nhanh như vậy&.
+\
+// お前にはもう教えることはない。
+// ふっ…こんなに早く、
+// 俺を越えるとは思わなかったがな。
+&-clear
+
+//中村　収録した場合、別途ある音声データに、少し回想っぽいエコーをかけたものを鳴らしてください。
+@action
+&-text x="Center"&, y=291&, id="壮年の男性"&, log_name="？？？"//＠声なし&, message_name="？？？"
+With your skill in the sword&&, you'll be able to make a
+living anywhere&&. That is&&, if you can find a place&&.
+Với kiếm thuật của ngươi&, ngươi có thể kiếm ăn được ở mọi nơi&.
+Nếu ngươi tìm được chỗ&.
+\
+// その剣の腕があれば、
+// どこに行っても食っていけるだろう。
+// 場所さえあれば、だけどな。
+&-clear
+@wait time=500
+@bgm_volume ch=0&, time=1000&, volume=100%
+@ＣＧ消去 name="CG"&, time=500
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+<FONT interval=60>&&(I know how to use a sword&&.&&.&&. Why&&.&&.&&.
+Where did I learn?&&)</FONT>
+&(Mình biết cách sử dụng thanh kiếm&.&.&. Tại sao&.&.&.
+Mình học được từ khi nào vậy?&)
+\
+// <FONT interval=60>（俺…剣の使い方を知ってる…
+// 　…どうして…どこで覚えたんだ…？）</FONT>
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Hm&&.&&.&&.?
+Hả&.&.&.?
+\
+// ん…？
+
+@action
+&-message
+What's Takeru doing&&, opening and
+closing her hands like that?
+Takeru đang làm gì vậy&, dang tay rồi vòng tay lại như thế?
+\
+// 両手を開いたり閉じたりして…
+// タケルは何を確かめてるんだ？
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0045&.ogg"
+Huh&&. They're still not really recovered&&.&&.&&.
+Hừm&. Có vẻ nó vẫn chưa hồi phục hoàn toàn&.&.&.
+\
+// ふむ…
+// 回復したとは言い難いか…
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0162&.ogg"
+Takeru&&, you aren't going to fight&&, are you&&.&&.&&.?
+Takeru&, chị định đánh thiệt đó hả?
+\
+// タケル、まさか戦うつもりじゃ…
+
+//*SE炎が沸き上がる音、ボワッ
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0046&.ogg"
+It's just training&&. Don't get so upset&&. All
+right&&, let's do this&&. I want to know your skill&&.
+Come at me with everything you've got&&.
+Chỉ là luyện tập thôi&. Đừng lo lắng&. 
+Được rồi&, bắt đầu thôi&. Tôi muốn biết kĩ năng của anh&.
+Hãy tấn công tôi bằng tất cả những gì anh có&.
+\
+// 稽古だと言っている。そう目くじらを立てるな。
+// では、手合わせをお願いしよう。
+// お前の実力が知りたい。
+// 本気でかかってきてくれ。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.I don't know if I'll meet your expectations&&, but I'll try&&.
+&.&.&. Tôi không biết nếu tôi có được như cô mong đợi không&, nhưng tôi sẽ thử&.
+\
+// …どこまで期待に応えられるか
+// わからないけど、頑張ってみる。
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0047&.ogg"
+Let's exchange just one strike&&, since you're injured&&.
+Anh vẫn còn bị thương&, cho nên hãy ra một đòn thôi&.
+\
+// お前の体調を鑑みて、一合で終わらせよう。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Let's do this!
+Bắt đầu nào!
+\
+// よろしくお願いします…！
+
+/*
+@action
+&-message
+目に映る小柄な体躯には不釣り合いな威圧感が、
+建物を包み込む。
+俺は他人事のように構えながらも、
+相手の一挙一動に注視して後の先を狙う。
+\
+*/
+
+@bgm_stop ch=0&, time=1000
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0048&.ogg"
+&&.&&.&&.Come forth&&, flame that devours&&.
+&.&.&. Tiến lên đi&, ngọn lửa thiêu sống kẻ địch&.
+\
+// …纏えや焔。
+
+@message_hide
+@action
+&-se sound="火タケル１&.ogg"
+&-フラッシュ blend="Overlay"&, color=red
+&-立ち絵 id="ヤマトタケル"&, kind="炎"&, time=200&, effect="Transit"
+&-wait time=500
+&-bgm ch=0&, sound="戦闘"
+
+//*SE炎が沸き上がる音、ボワッ
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0049&.ogg"
+Henceforth&&, I am the God&&-Slaying Blade&&.&&.&&.
+Ta là Thanh Kiếm Sát Thần&, từ giờ cho đến mãi về sau&.&.&.
+\
+// 今此の時より、我は神を断つ刃…
+
+/*
+@action
+&-message
+其の剣は、清流の流るるが如く。
+大気の海に従いて、現世の縁を断ち切る刃。
+\
+
+@action
+&-message
+其の剣は、大山の崩るるが如く。
+万物の連鎖に逆らいて、時の歯車を切り裂く刃。
+\
+
+@action
+&-message
+一点に収束する力。
+時の歯車がカチリとはまり、時の空白が発生する。
+\
+*/
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Amazing&&.&&.&&.!
+Tuyệt lắm&.&.&.!
+\
+// …っ…すごい…！
+
+@se sound="剣構え敵３&.ogg"
+
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0050&.ogg"
+<FONT interval=30>Here I come!
+Show me you can handle my ultimate technique!</FONT>
+Tôi tấn công đây!
+Hãy xem anh có thể chịu được kĩ năng tối thượng của tôi!
+\
+// <FONT interval=30>往くぞ！　我が絶技、受け止めてみせろ！</FONT>
+
+//＠↓《つむがりのたち》
+@action
+&-message id="ヤマトタケル"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0051&.ogg"
+<FONT size=36 interval=30>Tsumugari no Tachi!</FONT>
+\
+// <FONT size=36 interval=30>&(都牟刈大刀 つむがりのたち&)ッ！</FONT>
+// tsumugari no tachi is amenomurakumonotsurugi slash kusanagi's old name
+  Tsumugari no Tachi là tên cũ của thanh kiếm huyền thoại Kusanagi
+//*SE斬撃（複数）
+@message_hide
+@se sound="剣振り４&.ogg"
+@ＣＧ id="白"&, name="flash"&, time=10
+
+@mode_cinema
+
+//斬撃画像があれば差し込む？
+
+/*
+@action
+&-message
+切っ先が揺らいだかに見えた刹那
+大気を切り裂く剣戟が、
+燃え盛る刃となって、俺に襲いかかる！
+\
+*/
+
+//*SE風を切り裂く音？、ブォン
+
+/*
+//@action
+&-message
+まさに神速の一撃。
+まともに受けたら、
+大怪我だけではすまない。
+\
+*/
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Wha&&.&&.&&.
+Cái gì&.&.&.&.
+\
+// えっ…
+
+@action
+&-message id="主人公"&, face="固有"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.&&.&&.&&.
+\
+// っ……
+
+@action
+&-message
+&&(I&&.&&.&&. I can see the path of the sword&&.&&.&&.!?&&)
+&(Mình&.&.&. mình có thể nhìn thấy trước đường đi của lưỡi kiếm&.&.&.!?&)
+\
+// （剣筋が…視え…る…！？）
+
+/*
+@action
+&-message
+躱し、身を捻り、刀身で受け流す。
+俺は針穴に糸を通す感覚で、
+英傑の絶技を捌ききろうとする。
+\
+
+@action
+&-message
+コマ送りから静止する世界へ。
+知覚は超感覚に至り、
+あらゆる精密動作を可能にした。
+\
+*/
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+<FONT size=33 interval=30>Haaaaa!</FONT>
+\
+// <FONT size=33 interval=30>はあぁぁぁぁぁぁぁぁっ！</FONT>
+
+//*SE斬撃（複数）
+//*SEチャキーン
+
+@se sound="701b_都牟刈大刀・改_B&.ogg"&, ch=11
+
+@message_hide
+//剣
+@flip time=0
+&-ＣＧ id="黒"&, name="cover"&, z=12000
+//&-sprite obj="&.&./Effect/slash&.png"&, name="slash"&, z=11000
+&-sprite obj="&.&./Effect/都牟刈大刀&.png"&, name="slash"&, z=11000
+&-zoom name="slash"&, sx=80%&, sy=80%
+&-move name="slash"&, relative=true&, x=&-700&, y=&-350
+&-ＣＧ id="黒"&, name="back"&, z=10000
+
+@action
+&-ＣＧ消去 name="cover"&, time=10&, effect=@Universal&(mask="fade_oru"&, fade=128&)
+&-zoom name="slash"&, sx=150%&, sy=150%&, time=10
+&-move name="slash"&, relative=true&, x=500&, y=250&, time=10
+&-wait time=30
+
+@bgm_stop ch=0&, time=3000
+@action
+&-立ち絵 id="ヤマトタケル"&, time=0&, effect="Transit"
+&-ＣＧ消去 name="back"&, time=500
+&-ＣＧ消去 name="slash"&, time=500
+&-ＣＧ消去 name="flash"&, time=500
+&-se sound="剣受け１&.ogg"&, ch=12
+//&-se sound="剣折れ&.ogg"&, ch=13
+
+&-画面揺れ time=3000&, 方向="縦横"&, 幅=36&, 回数=300
+
+//@se sound="倒れる２&.ogg"&, ch=14
+&-wait time=4000
+
+@mode_window
+
+@bgm ch=0&, sound="日常２"
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0052&.ogg"
+Oh? Impressive&&.
+Ồ? Khá lắm&.
+\
+// ほほう…よくぞ、凌いだ。
+
+@action
+&-message id="主人公"&, face="固有"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.&&.&&.&&.&&.&&.&&.
+\
+// ………
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0163&.ogg"
+Amazing&&, Big Brother! Even if Takeru isn't at full strength&&,
+it's amazing you were able to match her sword!
+Tuyệt lắm&, Anh Hai! Cho dù Takeru không sử dụng toàn bộ sức mạnh&,
+nhưng quả là rấy kỳ diệu khi anh vẫn có thể đánh ngang ngửa cô ấy&.
+\
+// さすがはお兄様です！
+// 全力ではないとはいえ、
+// タケルの技を受けきるなんて、すごいです！
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0053&.ogg"
+You're rough at the edges&&, but you've got potential&&.
+It'll be worth training you&.
+Lưỡi kiếm của anh hơi cứng nhắc&, nhưng anh vẫn có tiềm năng&.
+Sẽ rất đáng để huấn luyện cho anh thêm&.
+\
+// 荒削りだが、見所がある。
+// 鍛え甲斐がありそうだ。
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0164&.ogg"
+Did you hear that?
+Takeru rarely acknowledges others' ability like this&&.
+I knew you were special!
+Anh nghe thấy không?
+Takeru ít khi khen ngợi kĩ năng của người khác như thế&.
+Em biết là anh rất đặc biệt mà&.
+\
+// 聞きましたか？
+// タケルがこんな風に認めるって、あまりないんですよ。
+// やっぱり、私の目に狂いはありませんでした…！
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.Ugh&&.&&.&&.&&.&&.&&.
+\
+// …う……
+
+//*SE膝を付く音、どさっ
+@se sound="膝付く男&.ogg"
+@画面揺れ time=500&, 方向="縦"&, 幅=8&, 回数=20
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0165&.ogg"
+Big Brother? What's wrong?
+Anh Hai? Có chuyện gì không ổn à?
+\
+// お、お兄様？
+// どうしたんですか？
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+My legs gave out&&.&&.&&.
+Chân của anh mỏi quá&.&.&.
+\
+// こ、腰が抜けた…
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0166&.ogg"
+A&&-Are you okay!?
+I'll go call a doctor right away&&, so stay put!
+Anh&, anh không sao chứ!?
+Em sẽ đi gọi thái y ngay&, anh ráng chịu một chút!
+\
+// だ、大丈夫ですか！？
+// 今すぐ、お医者さんを呼んできますから、
+// じっとしていてください！
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.W&&-What a pain&&.&&.&&.
+&.&.&. Đ&, đau thật&.&.&.
+\
+// …ま、まいったな…
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0054&.ogg"
+&&.&&.&&.Pff&&. Ahaha&&, ahahaha&&, ahahahahahaha!
+\
+// …ぷっ。
+// あは、あはは、あはははははははははははっ！
+
+@action
+&-message id="ヒミコ"&, face="固有"&, voice="ヒミコ##S01_ジパング編_プロローグ#0167&.ogg"
+Takeru? Why are you laughing?
+Takeru? Sao cô lại cười?
+\
+// タ、タケル？　何を笑って…
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0055&.ogg"
+You're a funny man! You showed off that incredible
+skill&&, and now you're weak at the knees!
+Anh đúng là hài hước! Vừa mới nãy anh phô diễn kiếm thuật của mình
+rất tuyệt vời&, bây giờ anh yếu như sên!
+\
+// お前は面白い男だ！
+// あれだけ見事な技を見せておいて、
+// 最後の最後に、腰を抜かしたときた！
+
+@action
+&-message id="ヤマトタケル"&, face="笑顔"&, voice="ヤマトタケル##S01_ジパング編_プロローグ#0056&.ogg"
+Funny indeed! I like you!
+Rất là hài hước! Tôi thích anh rồi đấy!
+\
+// 実に面白い！
+// 私は気に入ったぞ！
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+I don't know how I feel about being liked for this&&.&&.&&.
+And um&&, could somebody help&&-&&-
+Tôi không biết phản ứng thế nào khi được thích như thế&.&.&.
+Và ờm&, ai đó giúp giùm&.&.&.
+\
+// こ、こんな体たらくで気に入られるのは、ちょっと…
+// それに、えっと…誰か手を貸して――
+//緊張してたんだから、仕方ないだろ…
+//それよりも、誰か手を貸して…
+
+
+@se sound="駆け足慌て２&.ogg"
+@立ち絵消去 id=""&, time=300
+@se_stop ch="All"&, time=1000
+
+@action
+&-message id="兵士１"
+It's true what Lady Himiko was saying!
+He really is the Servant of Heaven!
+Đúng như Công nương Himiko đã kể!
+Anh ấy chính là Sứ Giả nơi Thiên Đường!
+\
+// ヒミコ様の話は合っていたのよ！
+// 天の御使いって、本当に存在してたのね！
+
+@action
+&-message id="兵士２"
+I believed in her from the beginning!
+I saw him come down!
+Tôi đã tin cô ấy từ ban đầu rồi!
+Chính mắt tôi đã thấy anh ấy ngự xuống!
+\
+// 私は最初から信じてたわ！
+// 実際に下りてきたところを見たんだから！
+
+@action
+&-message id="兵士１"
+Why you! Always full of lies! You didn't believe
+her at first! Everyone&&, let's give a warm
+welcome to the Servant of Heaven!
+Cái đồ&.&.&.! Lúc nào cũng nói dối hết! Chính mi ban đầu đã không tin cô ấy!
+Tất cả mọi người&, hãy chào đón Sứ Giả nơi Thiên Đường!
+\
+// このこのっ！　嘘ばっかり言って！
+// 最初は信じていなかったじゃない！
+// みんな、天の御使いを胴上げしましょう！
+// 私たちなりに歓迎するのよ！
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Wait&&, I'm injured! Don't&&.&&.&&.
+Khoan đã&, tôi đang bị thương! Đừng&.&.&.
+\
+// い、今はまだ怪我が…！
+// 揉みくちゃにされると…
+
+@action
+&-message id="兵士１"
+We're going to hoist him up! Everyone ready?
+Chúng ta sẽ tung hô anh ấy! Mọi người chuẩn bị chưa?
+\
+// 一気に持ち上げるわよーっ！
+// みんな、準備はいいわねーっ！
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+No&&, hold on! Please&&, not now! My senses were dulled
+earlier&&, but even touching really hurts now&&-&&-
+Không&, từ từ đã! Không phải bây giờ&, làm ơn! Hồi nãy cơ thể tôi có
+tê liệt một chút&, nhưng giờ chỉ chạm vào thì đau lắm&.
+\
+// ま、待ってくれ！
+// 頼むから、今は勘弁してくれ！
+// 手合わせの間は、感覚が鈍っていただけで、
+// 本当は、触られるだけで痛――
+
+@action
+&-画面揺れ time=1000&, 方向="縦"&, 幅=48&, 回数=10
+&-se sound="ぶつかる２&.ogg"
+&-message id="兵士１"
+<FONT size=33 interval=100 speed=400 effect="Jump">Hooray!</FONT>
+\
+// <FONT size=33 interval=100 speed=400 effect="Jump">わーっしょいっ！</FONT>
+
+//@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+<FONT size=33 interval=30 speed=200 effect="OffCenter">Arrrrgggghhhhhhhhh!!</FONT>
+\
+// <FONT size=33 interval=30 speed=200 effect="OffCenter">ぴゃわあああああ～～～っ！！</FONT>
+//<FONT size=36 interval=20 speed=100 effect="OffCenter">☆◎◆＃♀※□▼～～～っ！？</FONT>
+
+@se_stop ch="All"&, time=1500
+@bgm_stop ch=0&, time=1500
+@ＣＧ id="黒"&, name="CG"&, time=1500//&, effect="CurtainLeft"
+@立ち絵消去 id=""&, time=0
+@風景消去 id=""&, time=0
+@ＣＧ消去 name="CG"&, time=1000&, effect="CurtainLeft"
+
+@風景 id="夕空"&, time=500
+@bgm ch=0&, sound="日常４"
+
+@立ち絵 id="ヒミコ"&, time=300
+
+@action
+&-message id="ヒミコ"&, face="照れ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0168&.ogg"
+Does it still hurt?
+Vẫn còn đau không anh?
+\
+// ま、まだ痛みますか…？
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+It's starting to get better&&.
+Vết thương bắt đầu hồi phục rồi&.
+\
+// いや、さすがに引いてきた…
+//何回か気絶したと思うけど…
+
+@action
+&-message id="ヒミコ"&, face="照れ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0169&.ogg"
+They don't mean any harm&&. Please forgive them&&.
+Bọn họ không có ý gì xấu đâu&. Mong anh tha lỗi cho họ&.
+\
+// みんな、悪気はないんです…
+// できれば、許してあげてください。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+It's all right&&. I'm not mad&&.
+They just wanted to welcome me&&, after all&&.
+Không sao đâu&. Anh không có giận&.
+Họ chỉ muốn chào mừng anh thôi&.
+\
+// 大丈夫。
+// 怒ってはいない。
+// 俺を受け入れてくれてのことだろうし。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0170&.ogg"
+There were people who hadn't seen your ability&&,
+so they were half in doubt&&. But after seeing that
+match&&, they all believed in you immediately&&.
+Họ là những người chưa tận mắt chứng kiến kĩ năng của anh&,
+vì thế nên họ vẫn còn nghi ngờ&. Nhưng sau khi
+chứng kiến trận đấu đó&, bọn họ ngay lập tức tin anh&.
+\
+// 実際に、お兄様の勇姿を見ていない人もいたので、
+// 半信半疑の人もいたみたいです。
+// でも、あの手合わせで、みんな信じてくれました。
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0171&.ogg"
+I'm a bit proud myself&&. But also&&.&&.&&. a little mad&&.
+Em hơi tự hào về bản thân&. Nhưng cũng có&.&.&. hơi buồn bực&.
+\
+// 私も、ほんのちょっとだけ鼻高々です。
+// ほんのちょっと…拗ねちゃいそうですけど。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Shouldn't you be glad?
+You wanted them to believe&&, didn't you?
+Em không mừng à?
+Em muốn bọn họ tin anh mà&, phải không?
+\
+// 嬉しいんじゃないのか？
+// 俺もまだピンと来ないけど、
+// 信じてほしかったんだろ？
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0172&.ogg"
+That's right&&, but&&.&&.&&. you saved me first&&, Big Brother&&.
+I knew from the beginning how amazing you were&&.
+Everyone else is far too late to notice&&.
+Đúng vậy&, nhưng&.&.&. anh đã cứu em trước&, Anh Hai à&.
+Từ ban đầu em đã biết anh tuyệt vời như thế nào&.
+Tất cả những người khác thì rất lâu sau mới nhận ra&. 
+\
+// そうですけど…私が一番最初に、
+// お兄様に助けてもらったんですよ？
+// お兄様の凄さに最初に気づいて、最初から
+// 注目してたのに…みんな、今さらなんですもの。
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+So that's how it is&&. Hmmm&&.&&.&&.
+Not really something to get mad about&&, though&&.
+Như vậy à? Hmmm&.&.&.
+Nó cũng đâu đáng để buồn bực gì&.&.&.
+\
+// そういうことだったのか。
+// うーん…
+// 拗ねるほどのこととは思えないかな。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0173&.ogg"
+But I am mad&&.
+Takeru's changed how she looks at you too&&.
+Nhưng em lại rất buồn bực&.
+Takeru cũng thay đổi cách nhìn của cô ấy về anh&.
+\
+// 拗ねます。
+// タケルも、なんだか見方が変わったみたいですし…
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Yeah&&, she said she'd train with me any time&&. I'll go ask
+her once I heal up&&, since it will be good rehab as well&&.
+Phải&, cô ấy nói sẽ huấn luyện cho anh mọi lúc&. 
+Anh sẽ nhờ cô ấy chỉ dạy sau khi anh hoàn toàn hồi phục&,
+đó cũng là cách hay để giúp cơ thể khỏe mạnh&.
+
+\
+// そうみたいだな。
+// いつでも手合わせするって言ってくれた。
+// 怪我が治ったら、リハビリも兼ねて頼んでみる。
+
+/*
+@action
+&-message
+この世界に来た理由も知りたいけど、
+まずは自分を把握しなければいけない。
+幸いなことに、
+今の居場所は俺を歓迎してくれる人ばかりだ。
+\
+
+@action
+&-message
+記憶にはないが、
+身体の方は覚えている剣を振るう機会が多くあれば、
+何かを思い出すきっかけになるかもしれない。
+\
+*/
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0174&.ogg"
+Anyway&&.&&.&&. Big Brother&&, you saved my life&&.
+Nothing will change that&&.
+Dù sao thì&.&.&. Anh Hai à&, anh là người đã cứu sống em&.
+Không gì có thể thay đổi điều đó&.
+\
+// それは、ともかく…
+// お兄様は私の命を救ってくださいました。
+// その事実は、決して変わりません。
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0175&.ogg"
+Let me know if there's anything at all I can do for you&&.
+I'll grant your every wish!
+Nếu anh cần gì thì hãy nói cho em biết&.
+Em sẽ chấp nhận mọi mong muốn của anh!
+\
+// できることがあれば、遠慮なく言ってください。
+// どんな願いでも、私が果たしてみせますから！
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.Even if I said I wanted to go back to my world?
+&.&.&. Kể cả việc anh muốn quay trở về thế giới của anh?
+\
+// …元の世界に戻りたいと言ってもか？
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0176&.ogg"
+Of course&&.
+Đương nhiên rồi&.
+\
+// もちろんです。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+You sure accepted that one quickly for
+someone trying so hard to keep me here&&.
+Em đã rất cố gắng để giữ anh lại ở đây&,
+mà giờ em lại chấp nhận cho anh rời đi nhanh như vậy&.
+\
+// ものすごく勧誘してきてるのに、
+// すんなりと了承するんだな。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0177&.ogg"
+You need to balance both carrot and stick&&, no
+matter what you're doing&&. It remains unchanged
+that I need you though&&, Big Brother&&.
+Cho dù anh có làm gì đi nữa&, anh cần phải cân bằng giữa
+hình phạt và phần thưởng&. Dù sao thì em vẫn luôn
+muốn anh ở lại&, Anh Hai&.
+\
+// 何事も、飴と鞭が必要ですから。
+// 私にお兄様が必要なことは、
+// 変わりませんけどね。
+
+//@bgm_stop ch=0&, time=3000
+
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0178&.ogg"
+&&(<FONT interval=60>Yes&&.&&.&&. I need you&&.&&.&&. Because&&.&&.&&.</FONT>&&)
+Phải&.&.&. em cần anh&.&.&. Bởi vì&.&.&.
+\
+// （<FONT interval=60>そう…必要なんです…
+// 　…だって……</FONT>）
+
+//＠↓《少しの憂いと決意です》
+@action
+&-message id="ヒミコ"&, face="シリアス"&, voice="ヒミコ##S01_ジパング編_プロローグ#0179&.ogg"
+&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.&&.
+\
+// …………
+
+//@bgm ch=0&, sound="切ない"
+
+//＠↓《冗談っぽく言って》
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0180&.ogg"
+I actually had a vision of the future&&.
+Thật ra em thấy được mộ ảo ảnh trong tương lai&.
+\
+// 実は私、ある予知をしているんです。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+A vision?
+Một ảo ảnh à?
+\
+// 予知？
+
+//＠↓《冗談っぽく言って》
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0181&.ogg"
+Terrible calamity falls upon the world&&, destroying
+it without a trace&&. Before that happens&&,
+I need to unite this world as one&&. That's
+why I need your help&&, Big Brother&&.
+Một tai họa thảm khốc đổ sập xuống toàn thế giới&,
+tiêu diệt hết toàn nhân loại không để lại một dấu vết&.
+Trước khi tai họa đó xảy ra&, em phải thống nhất các quốc gia
+lại làm một&. Đó là lý do em cần sự giúp đỡ của anh&, Anh Hai&.
+\
+// …恐ろしい災厄が世界に降り注いで、
+// 跡形もなく、世界は壊滅してしまうんです。
+// その前に、世界の意志を統一しないといけません。
+// だから私には、お兄様の力が必要で…
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Huh&&.&&.&&.
+\
+// え……
+
+@action
+&-message
+So her talking about world conquest wasn't a joke
+or a game&&, but was because of that anxiety&&.&&.&&.?
+Vậy việc chinh phục thế giới này không phải là đùa hay
+là trò chơi gì hết&, mà là vì nỗi lo lắng đó à&.&.&.?
+\
+// 世界征服って言っていたのは、
+// 冗談でも、遊びでもなく……
+// そんな不安からだったのかな…
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0182&.ogg"
+Of course I'm just joking&&, though&&.
+Tất nhiên em chỉ đùa thôi&.
+\
+// なーんて、ただの冗談ですけどね。
+
+/*
+@action
+&-message
+俺に重く考えないさせないようにするためか、
+ヒミコは冗談めかして微笑む。
+\
+*/
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0183&.ogg"
+Anyway&&, tell me if there's anything you
+need&&. I owe you my life&&, so I'll do everything
+in my power to grant your wishes!
+Dù sao thì hãy cho em biết nếu anh muốn gì đó&.
+Em nợ anh mạng sống này mà&, vì thế em sẽ làm mọi cách
+để thực hiện yêu cầu của anh!
+\
+// とにかく、私にできることがあれば、
+// 本当に遠慮なく、何でも言ってください。
+// 命の恩人のお願い、全力で叶えてみせます！
+
+/*
+@action
+&-message
+簡単に戻れる手段は見つかるのだろうか。
+もう戻れない可能性だってある。
+…それでも、俺が戻りたいと言えば、
+この子は全力を尽くしてくれるだろう。
+\
+*/
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+&&.&&.&&.&&.&&.&&.&&.&&.&&.
+\
+// ………
+
+//@bgm ch=0&, sound="切ない"
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Thanks&&. I'm fine with just your consideration for now&&.
+Cảm ơn em&. Tạm thời anh chưa cần gì hết&, anh sẽ cân nhắc lại việc đó sau&.
+\
+// ありがとう。
+// 今は、気持ちだけ受け取っておくよ。
+
+@action
+&-message id="ヒミコ"&, face="照れ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0184&.ogg"
+&&.&&.&&.Is there really nothing? If you want&&, I'll have every
+person in Yamatai try and find a way back&&.&&.&&.
+&.&.&. Anh thật sự không cần gì à? Nếu anh muốn
+ em sẽ kêu tất cả mọi người ở Yamatai cố tìm ra đường về thế giới của anh&.&.
+\
+// …本当に、何もないんですか？
+// 何でしたら、邪馬台の民全員で
+// お兄様がお家に帰れるよう、ご協力するんですけど…
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+You've got things to take care of too&&, don't
+you&&, Himiko? If you use people like that
+for me&&, the city might stop running&&.
+Em cũng có việc cần phải lo mà&, phải không Himiko?
+Nếu em tiêu tốn hết nhân lực chỉ để giúp anh
+thì thành phố sẽ ngưng hoạt động mất&.
+\
+// ヒミコも大変なんだろ？
+// 俺なんかのために人手を使ったら、
+// この都が回らなくなりそうだ。
+
+@action
+&-message id="ヒミコ"&, face="照れ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0185&.ogg"
+Big Brother&&.&&.&&.
+Anh Hai&.&.&.
+\
+// お兄様…
+
+/*
+@action
+&-message
+天の御使いなんて呼び方には慣れないけど、
+今の状態で、邪馬台を飛び出しても、
+結果は知れているだろう。
+\
+
+@action
+&-message
+今は厚意に甘えて、
+この世界を理解していくべきなんだろう。
+まずは最初に、身の振り方を決めてから。
+\
+*/
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+But&&.&&.&&. Can I really stay in Yamatai?
+I might not be that useful&&, you know&&.
+Nhưng&.&.&. Anh thật sự có thể ở lại Yamatai không?
+Có thể anh sẽ không giúp ích gì nhiều lắm&.
+\
+// だけど…本当に、邪馬台にいてもいいのか？
+// 大して役に立たないかもしれないぞ？
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0186&.ogg"
+Nobody will think you're not useful&&.
+Especially with your swordsmanship&.
+Không ai sẽ nghĩ anh vô dụng đâu&.
+Nhất là với kiếm thuật tuyệt vời của anh&.
+\
+// 役に立たないなんて、誰も思いませんよ。
+// あれだけの剣の腕があれば、なおさらです。
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+I'll probably mess up somewhere along the line&&,
+though&&.
+Chắc chắn anh sẽ làm rối loạn vào lúc nào đó&.
+\
+// そのうち、ボロが出ると思うけどな。
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0187&.ogg"
+Well then&&, we'll see if that becomes reality&&. I know that
+you'll be accepted by everyone before that happens&&.
+Vậy thì&, chúng ta hãy xem nếu đó có thành sự thật hay không&.
+Em biết là mọi người sẽ chấp nhận anh trước khi những chuyện đó có thể xảy ra&.
+\
+// では、ボロが出るかどうか試してみてください。
+// 私は、お兄様がボロを出す前に、
+// 皆に認められる存在になると、
+// 確信してますけどね。
+
+/*
+@action
+&-message
+夕暮れが景色を茜色に染める。
+今まで見た景色よりも赤々としていて、
+言葉を失うほどの美しさを目蓋に焼き付けて。
+\
+
+@action
+&-message
+いずれは見慣れてしまうんだろうと感じながら、
+俺は自分の隣にいる女の子を見やった。
+\
+*/
+
+@action
+&-message id="主人公"&, log_name="？？？"&, message_name="？？？"
+Hahaha&&. I hope so&&.
+Ha ha ha&. Anh mong là vậy&.
+\
+// ははは。
+// そうだといいな。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0188&.ogg"
+Big Brother&&, did you remember anything besides how to
+use a sword earlier? Like your name&&, for instance?
+Anh Hai&, anh còn nhớ gi khác ngoài kiếm thuật của anh không?
+Như là tên của anh chẳng hạn?
+\
+// お兄様、さっきの手合わせで、
+// 剣の使い方以外に何か思い出せましたか？
+// たとえば、お名前とか…
+
+/*
+@action
+&-message
+頭の中に散らばる記憶の断片は
+立体パズルのピースみたいに複雑で、
+それが本当に俺の記憶なのかどうかすら
+怪しく思えてしまう。
+\
+
+@action
+&-message
+ただ、その頼りない記憶の片隅に、
+ただひとつ懐かしさを覚える名前を見つけた。
+それが恐らくは、俺の名前。
+\
+*/
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+My name&&.&&.&&.&&.&&.&&.
+Tên của anh&.&.&.
+\
+// 名前……
+
+@action
+&-message id="主人公"&, face="シリアス"&, log_name="？？？"&, message_name="？？？"
+Hmm&&.&&.&&.
+\
+// …ん～……
+
+@action
+&-message
+Wait&&.&&.&&. Is this it&&.&&.&&.?
+Khoan đã&.&.&. Có phải là&.&.&.?
+\
+// …あれ…
+// もしかして、これが…そうなのか…？
+
+//5pb&.PS3仕様変更。
+//@game_主人公名入力
+
+@game_主人公名入力
+
+//5pb&.PS3専用名前入力ウェイト命令。Winではスルーされる
+//@wait_input
+
+
+@action
+&-message id="主人公"
+<FONT interval=60>[主人公]&&.&&.&&.</FONT>
+\
+// <FONT interval=60>[主人公]…</FONT>
+
+@action
+&-message id="主人公"
+That's right&&. My name is [主人公]&&.
+Đúng rồi&. Tên của anh là [&.&.&.]
+\
+// 間違いない。
+// 俺の名前は、[主人公]だ。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0189&.ogg"
+&&.&&.&&.A wonderful name&
+&.&.&.Một cái tên rất đẹp&.
+\
+// …良いお名前ですね。
+
+@action
+&-message id="主人公"
+Thanks&&. But my name is all I could remember&&.
+Cảm ơn em&. Nhưng anh chỉ nhớ được tên của mình&.
+\
+// ありがとう。
+// でも、思い出せたのは名前だけだ。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0190&.ogg"
+That's a big step already&&.
+I'm glad you were able to remember&&.
+Đó đã là một bước tiến lớn rồi&.
+Em rất mừng khi anh đã nhớ lại tên mình&.
+\
+// 大きな一歩ですよ。
+// 私も嬉しいです。
+
+@action
+&-message id="ヒミコ"&, face="笑顔"&, voice="ヒミコ##S01_ジパング編_プロローグ#0191&.ogg"
+Big Brother&&.&&.&&. Please stay with us&&.
+I promise every day will be full of excitement&&.
+Anh Hai&.&.&. Anh hãy ở lại với bọn em&.
+Em hứa với anh mọi ngày ở đây sẽ luôn tràn ngập điều thú vị&.
+\
+// お兄様…
+// 私たちと一緒にいてください。
+// 騒がしい毎日を、お約束します。
+
+@action
+&-message
+Himiko smiles and offers her hand&&.
+Himiko cười tươi và đưa bàn tay của em ấy&.
+\
+// にっこり笑って、ヒミコは右手を差し出す。
+
+@action
+&-message
+The guiding hand offered to me&&, a stranger who'd lost
+his memories&&. The small hand of this unstable Queen
+whose future I'd like to watch over&&. With gratitude and
+respect&&, and full of expectations for the future&&.&&.&&.
+Một bàn tay đang được đưa ra để giúp đỡ tôi &- một kẻ lạ mặt
+bị mất hết ký ức&. Bàn tay nhỏ nhắn của một nữ Công nương yếu ớt &-
+người mà tôi muốn ở bên chăm sóc trong tương lai&. 
+Với lòng biết ơn và sự kính trọng&, và với vô vàn sự mong đợi ở tương lại&.&.&.
+\
+// 素性不明、記憶喪失の俺に差し伸べられた、導きの手。
+// 危なっかしくて、見守りたくなる女王の、小さな手。
+// 感謝と敬意と、これから起こることへの期待を込めて
+
+@action
+&-message
+I took hold of that small hand&&.
+Tôi nắm lấy bàn tay nhỏ nhắn đó&.
+\
+// 俺はその小さな手を握りかえした。
+
+@action
+&-message id="ヒミコ"&, voice="ヒミコ##S01_ジパング編_プロローグ#0192&.ogg"
+Welcome to Yamatai&&, Big Brother!
+Chào mừng anh tới Yamatai&, Anh Hai!
+\
+// ようこそ、邪馬台へ。
+// お兄様を歓迎いたします！
+
+@action
+&-message id="主人公"
+Thanks&&. My pleasure&&.
+Cảm ơn em&. Anh rất hãnh diện&.
+\
+// ああ。
+// こちらこそ、よろしく頼む。
+
+/*
+@action
+&-message
+天の御使いに未来予知、そして世界征服。
+正直、どれひとつとしてピンとこないけど、
+ともかく、ここがスタート地点だ。
+\
+
+@action
+&-message
+俺はこの先起こるであろう何かを想像しながら、
+紅い空と、隣で微笑む黒髪の少女を
+しっかりと瞼の裏に刻み込んだ。
+\
+*/
+
+@se_stop ch="All"&, time=500
+@bgm_stop ch=0&, time=500
+@立ち絵消去 id=""&, time=300
+@風景 id=""&, time=500
+
+//@トロフィー id=2
+
+//戦闘結果後会話　終了
+
+//プロローグ１エンド
+//****************************************
+//&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-&-
+
